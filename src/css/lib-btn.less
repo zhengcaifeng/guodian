@@ -1,0 +1,109 @@
+/**
+ * Created by wangxiao on 2017/7/31.
+ * 按钮通用样式
+ */
+//@import "lib-reset";
+@import "lib-variable";
+
+//按钮基本样式，input,a,button
+.btn {
+  font-family: "Microsoft YaHei"
+  //font-size: 12px;
+  font-weight: inherit;
+  display: inline-block;
+  padding: 0 15px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  list-style-type: none;
+  outline: none;
+  //line-height: 40px;
+  border: 1px solid transparent;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+a.btn {
+  //pointer-events: none;
+  cursor: pointer;
+  text-decoration: none;
+  //color: black;
+}
+
+//按钮大小
+.btn-lg{
+  height: 50px;
+  line-height: 50px;
+}
+.btn-ms{
+  height: 40px;
+  line-height: 40px;
+}
+.btn-xs{
+  height: 30px;
+  line-height: 30px;
+}
+
+//焦点按钮类型
+.btn-revoke{
+  color: white;
+  //background-color: @var-gray;
+}
+.btn-success{
+  color: white;
+  background-color: @var-green;
+}
+.btn-danger{
+  color: white;
+  background-color: @var-orange;
+}
+.btn-red{
+  color: white;
+  background-color: @var-red;
+}
+.btn-default{
+  color: white;
+  background-color: @var-blue;
+}
+
+//幽灵按钮类型
+.btn-ghost-revoke{
+  //color: @var-gray;
+  background-color: white;
+  //border-color: @var-gray;
+}
+.btn-ghost-success{
+  color: @var-green;
+  background-color: white;
+  border-color: @var-green;
+}
+.btn-ghost-danger{
+  color: @var-orange;
+  background-color: white;
+  border-color: @var-orange;
+  &:hover{
+    color: white;
+    background-color: @var-orange;
+  }
+}
+.btn-ghost-red{
+  color: @var-red;
+  background-color: white;
+  border-color: @var-red;
+}
+.btn-ghost-default{
+  color: @var-blue;
+  background-color: white;
+  border-color: @var-blue;
+}
