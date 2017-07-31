@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(t){var e={url:"http:127.1.1.1"};return e.test=function(){console.log("test")},e});

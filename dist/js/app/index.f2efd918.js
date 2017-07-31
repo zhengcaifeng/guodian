@@ -1,0 +1,1 @@
+"use strict";require(["jquery","artTemplate","./app/util"],function(e,t,l){l.test(),console.log(l.url),e.get("_page/index.html",function(l){var i=t.compile(l);e("#page").html(i(l))})});
