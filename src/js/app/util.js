@@ -42,9 +42,17 @@ define(['jquery'],function($){
         }
     }
     //模板渲染方法
-    $.fn['getTpl'] = $['getTpl'] = function (url,callback) {
-        var url = url+'.html';
-        $.log(url);
+    $.fn['getTpl'] = $['getTpl'] = function (options,callback) {
+        var url = '';
+        if(options.type === 1){
+            url = 'component/' + options.tpl + '.html';
+        }else if(options.type === 2){
+            url = '_page/' + options.tpl + '.html';
+        }
+        $.ajax({
+            type:'GET',
+            url:url
+        });
     }
     return g_data;
 });
