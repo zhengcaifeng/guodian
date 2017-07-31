@@ -4,13 +4,14 @@
         baseUrl:'../../js/',
         paths:{
             "jquery":"lib/jquery-2.1.4.min",
-            "lodash":"lib/lodash.min",
             "artTemplate":'lib/artTemplate'
         }
     });
 </script>
-<%  js.forEach(function(path){ %>
-<script src="<%=path  %>"></script>
-<% }); %>
+<% if(js){ %>
+    <%  js.forEach(function(path){ %>
+    <script src="<%=path  %>"></script>
+    <% }); %>
+<% }  %>
 </body>
 </html>
