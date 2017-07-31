@@ -1,0 +1,16 @@
+<script src="../../js/require.min.js"></script>
+<script>
+    require.config({
+        baseUrl:'../../js/',
+        paths:{
+            "jquery":"lib/jquery-2.1.4.min",
+            "lodash":"lib/lodash.min",
+            "artTemplate":'lib/artTemplate'
+        }
+    });
+</script>
+<%  js.forEach(function(path){ %>
+<script src="<%=path  %>"></script>
+<% }); %>
+</body>
+</html>
