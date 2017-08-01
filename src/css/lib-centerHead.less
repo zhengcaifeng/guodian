@@ -1,0 +1,112 @@
+/**
+ * Created by 姚丽娜 on 2017/7/31.
+ * 供应商、采购商中心头部样式
+ */
+
+/*body底色*/
+.body-content{
+  background-color: #ECF1F8;
+}
+/*采购商导航栏*/
+.nav-purchaser {
+  height: 50px;
+  line-height: 50px;
+  background-color: @var-red;
+}
+.nav-purchaser .logo-shopping {
+  width: 180px;
+  height: 50px;
+  background: url("../../img/logo-shopping-white.png") no-repeat center;
+}
+.nav-purchaser ul li {
+  float: left;
+  font-size: 16px;
+}
+.nav-purchaser ul .active {
+  background-color: #D83D3D;
+}
+.nav-purchaser ul li a {
+  color: #fff;
+  padding: 0 30px;
+}
+
+/*供应商导航栏*/
+.nav-supplier {
+  height: 50px;
+  line-height: 50px;
+  background-color: @var-blue;
+}
+.nav-supplier .logo-shopping {
+  width: 180px;
+  height: 50px;
+  background: url("../../img/logo-shopping-white.png") no-repeat center;
+}
+.nav-supplier ul li {
+  float: left;
+  font-size: 16px;
+}
+.nav-supplier ul .active {
+  background-color: #008AF4;
+}
+.nav-supplier ul li a {
+  color: #fff;
+  padding: 0 30px;
+}
+
+/*采购商、供应商主要内容*/
+.main-content .left-side {
+  float: left;
+  width: 180px;
+  color:#333;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+.main-content .left-side .menu-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: @var-red;
+  padding-left: 50px;
+}
+.main-content .left-side .center {
+  background-image: url("../../slice/icon-center.png");
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+.main-content .left-side .menu-section li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 33px;
+  color: #666;
+  cursor: pointer;
+}
+.main-content .left-side .menu-section li:first-child {
+  color: #92A6CB;
+  background-image: url("../../slice/icon-triangle-down-gray.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.main-content .left-side .menu-section .red li:hover {
+  color: #fff;
+  background-color: @var-red;
+}
+.main-content .left-side .menu-section .blue li:hover {
+  color: #fff;
+  background-color: @var-blue;
+}
+.main-content .left-side .menu-section li:hover.menu-section-title {
+  color: #92A6CB;
+  background-color: #fff;
+}
+.main-content .right-side .crumbs-area {
+  height: 40px;
+  line-height: 40px;
+  width: 1020px;
+  padding-left: 15px;
+  background-color: #fff;
+}
+.main-content .right-side .crumbs-area li {
+  float: left;
+  padding: 0 5px;
+}
