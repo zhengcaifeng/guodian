@@ -56,12 +56,12 @@ a.btn {
 //焦点按钮类型
 .btn-revoke{
   color: white;
-  background-color: @var-gray;
+  background-color: @var-gray-2;
   &:hover{
     background-color: @var-gray-1;
   }
   &:active{
-    background-color: @var-gray;
+    background-color: @var-gray-2;
   }
 }
 .btn-success{
@@ -159,5 +159,45 @@ a.btn {
   }
   &:active{
     background-color: @var-blue-2;
+  }
+}
+
+//btn-box
+.btn-box{
+  margin: auto;
+  text-align: center;
+  //line-height: @height;
+}
+//添加虚线按钮
+.btn-add{
+  background-color: white;
+  color: #CCCCCC;
+  border: 1px dashed #CCCCCC;
+  //width: 400px;
+}
+//下拉菜单按钮样例
+.btn-pullDown{
+  position: relative;
+  &:before{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 5px 5px 0px 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  &:after{
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border-width: 6px 6px 0px 6px;
+    border-style: solid;
+    border-color: @var-blue transparent transparent transparent;
   }
 }
