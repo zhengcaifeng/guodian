@@ -1,0 +1,60 @@
+<%- include('../_block/head.ejs',{ title:'首页',css:['../../../css/style-index.css'] }) %>
+<!-快捷入口->
+<div class="shortcut-blue">
+    <div class="inner fix">
+        <ul class="left fix">
+            <li class="user list-style-no"><a class="tdn" href="#">admin</a></li>
+            <li class="msg list-style-no"><a class="tdn" href="#">消息</a></li>
+        </ul>
+        <ul class="right fix">
+            <li class="list-style-no"><a class="tdn" href="#">首页</a></li>
+            <li class="list-style-no"><a class="tdn" href="#">我的会员中心</a></li>
+            <li class="list-style-no"><a class="tdn" href="#">帮助中心</a></li>
+            <li class="phone list-style-no">
+                <a class="tdn" href="#">手机</a>
+                <div class="box">
+                    <div class="code-area fl">
+                        <img src="../../../img/code.png">
+                    </div>
+                    <div class="content mt10 fr">
+                        <div>扫一扫，下载客户端</div>
+                        <div class="word-green">手机采购 移动办公</div>
+                        <div class="iphone-android"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="collect list-style-no"><a class="tdn" href="#">收藏网站</a></li>
+            <li class="tel list-style-no"><a class="tdn" href="#">客服电话<span>400-018-4000</span></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--首页头部-->
+<div class="header-index inner fix">
+    <a href="#" class="logo-area fl fix">
+        <div class="logo-index fl"></div>
+        <div class="logo-index-attach fl"></div>
+    </a>
+    <div class="search-area mt10 fr fix">
+        <div class="input-area fl fix">
+            <select class="search-select pl20 fl">
+                <option>招投标</option>
+                <option>询比价</option>
+            </select>
+            <input type="text" class="search-input fl" placeholder="请输入关键词进行搜索">
+        </div>
+        <input type="button" class="search-button pl15 f14 fl" value="搜索">
+        <input type="button" class="search-button-all f14 fl" value="搜全栈">
+    </div>
+</div>
+
+<!--首页导航栏-->
+<div class="nav-index inner">
+    <a href="#" class="index fl tdn">首页</a>
+    <ul class="fix fl">
+        <li class="list-style-no fl"><a class="tdn" href="#">招投标</a><i class="new"></i></li>
+        <li class="list-style-no fl"><a class="tdn" href="#">询比价</a></li>
+        <li class="list-style-no fl"><a class="tdn" href="#">商城</a><i class="hot"></i></li>
+    </ul>
+</div>
+<%- include('../_block/footer.ejs',{js:['']}) %>
