@@ -3,19 +3,19 @@ Created by 周志豪 on 2017/7/31.
 公共js库，包含各种公共方法
  */
 
-define(['jquery'],function($){
+define(['jquery','artTemplate'],function($,template){
     var g_data = {
         debug:true,
         url:'http:127.1.1.1'
     };
     //全局ajax设置
     $.ajaxSetup({
-        type:'POST',
+        type:'GET',
         async:true,
         cache:false,
         timeout:100000,
         beforeSend:function(data){
-            console.log(data);
+
         },
         statusCode:{
             404:function(){
@@ -40,19 +40,34 @@ define(['jquery'],function($){
         if(true === g_data.debug){
             console.log(log);
         }
-    }
+    };
     //模板渲染方法
-    $.fn['getTpl'] = $['getTpl'] = function (options,callback) {
-        var url = '';
-        if(options.type === 1){
-            url = 'component/' + options.tpl + '.html';
-        }else if(options.type === 2){
-            url = '_page/' + options.tpl + '.html';
-        }
-        $.ajax({
-            type:'GET',
-            url:url
-        });
-    }
+    $.fn['renderTpl'] = $['renderTpl'] = function (sign,dom,data,callback) {
+        var render = template.compile(dom);
+        $(sign).html(render(data));
+        callback && callback();
+    };
+    //事件的订阅和发布
+    (function($) {
+        var o = $({});
+        $.subscribe = function () {
+            o.on.apply(o, arguments);
+        };
+        $.publish = function () {
+            o.trigger.apply(o, arguments);
+        };
+        $.unsubscribe = function () {
+            o.off.apply(o, arguments);
+        };
+    } (jQuery));
+    //eg:
+    // function handle(e, a, b, c) {
+    //     console.log(a + b + c);
+    // };
+    // 订阅
+    // $.subscribe("/some/topic", handle);
+    // 发布
+    // $.publish("/some/topic", ["a", "b", "c"]);  输出abc
+    // $.unsubscribe("/some/topic", handle);  退订
     return g_data;
 });
