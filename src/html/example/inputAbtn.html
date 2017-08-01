@@ -1,63 +1,91 @@
-<<<<<<< HEAD
 <!--
-=======
-	<!--
->>>>>>> c9f180766b403061416bc31631c5de12c299075d
     	作者：雷清云
     	时间：2017-07-31
     	描述：input和各种提示btn的网站css样式
    -->
 <%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
 <!--input框样式-->
-<!--可以搜索的input框样式-->
-<div class="input-search">
-	<span>单行文本框：</span><input type="text" placeholder="请输入关键字"/>
-</div>
-<div class="input-search">
-	<span>下拉列表一：</span><input readonly="true" type="text"  placeholder="全部"/>
-</div>
+<!--水平排列-->
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label">单行文本框：</label>
+    <input type="text" class="form-control" placeholder="请输入关键字">
+  </div>
+  <div class="form-group">
+    <label class="control-label">可联想文本框：</label>
+    <input type="text" class="form-control" placeholder="请输入关键字和编码">
+  </div>
+</form>
+ 
+  <!--内联表单-->
+<form class="form-inline">
+  <div class="form-group">
+    <label class="control-label">第一项：</label>
+    <input type="text" class="form-control" placeholder="请输入查询项一">
+  </div>
+  <div class="form-group">
+    <label class="control-label">第二项：</label>
+    <input type="text" class="form-control" placeholder="请输入查询项二">
+  </div>
+  <div class="form-group">
+    <label class="control-label">第三项：</label>
+    <input type="text" class="form-control" placeholder="请输入查询项三">
+  </div>
+</form>
+<!--只读状态并且点击下拉-->
+  <div class="form-group">
+    <label class="control-label">单行文本框：</label>
+    <input type="text" class="form-control form-select" placeholder="请输入关键字">
+  </div>
+
+
+  
+
+
+
+
 <!--警告框样式-->
 <!--成功-->
 <div class="message message-success">
-	<p>成功提示的案例</p>
+	<p class="message-p message-success-p">成功提示的案例</p>
 </div>
 <!--失败-->
 <div class="message message-fail">
-	<p>失败提示的案例</p>
+	<p class="message-p message-fail-p">失败提示的案例</p>
 </div>
 <!--警告-->
 <div class="message message-warn">
-	<p>警告提示的案例</p>
+	<p class="message-p message-warn-p">警告提示的案例</p>
 </div>
 <!--注释-->
 <div class="message message-comment">
-	<p>注释提示的案例</p>
+	<p class="message-p message-comment-p">注释提示的案例</p>
 </div>
 <!--带有点击叉号的警告框-->
 <div class="message message-success message-fork">
-	<p>成功提示的案例<span><img src="../../img/inputAbtn/icon-message-fork.png"/></span> </p>
+	<p class="message-p message-success-p">成功提示的案例<span class="message-fork-span"><img class="message-fork-img" src="../../slice/icon-message-fork.png"/></span> </p>
 </div>
 <div class="message message-fail message-fork">
-	<p>失败提示的案例<span><img src="../../img/inputAbtn/icon-message-fork.png"/></span></p>
+	<p class="message-p message-fail-p">失败提示的案例<span class="message-fork-span"><img class="message-fork-img" src="../../slice/icon-message-fork.png"/></span></p>
 </div>
 <div class="message message-warn message-fork">
-	<p>警告提示的案例<span><img src="../../img/inputAbtn/icon-message-fork.png"/></span></p>
+	<p class="message-p message-warn-p">警告提示的案例<span class="message-fork-span"><img class="message-fork-img" src="../../slice/icon-message-fork.png"/></span></p>
 </div>
 <div class="message message-comment message-fork">
-	<p>注释提示的案例<span><img src="../../img/inputAbtn/icon-message-fork.png"/></span></p>
+	<p class="message-p message-comment-p">注释提示的案例<span class="message-fork-span"><img class="message-fork-img" src="../../slice/icon-message-fork.png"/></span></p>
 </div>
 <!--带有“不再提示”警告框样式-->
 <div class="message message-success message-fork">
-	<p>成功提示的案例<span><a href="javascript:void(0)">不再提醒</a></span> </p>
+	<p class="message-p message-success-p">成功提示的案例<span class="message-fork-span"><a class="message-fork-a" href="javascript:void(0)">不再提醒</a></span> </p>
 </div>
 <div class="message message-fail message-fork">
-	<p>失败提示的案例<span><a href="javascript:void(0)">不再提醒</a></span></p>
+	<p class="message-p message-fail-p">失败提示的案例<span class="message-fork-span"><a class="message-fork-a" href="javascript:void(0)">不再提醒</a></span></p>
 </div>
 <div class="message message-warn message-fork">
-	<p>警告提示的案例<span><a href="javascript:void(0)">不再提醒</a></span></p>
+	<p class="message-p message-warn-p">警告提示的案例<span class="message-fork-span"><a class="message-fork-a" href="javascript:void(0)">不再提醒</a></span></p>
 </div>
 <div class="message message-comment message-fork">
-	<p>注释提示的案例<span><a href="javascript:void(0)">不再提醒</a></span></p>
+	<p class="message-p message-comment-p">注释提示的案例<span class="message-fork-span"><a class="message-fork-a" href="javascript:void(0)">不再提醒</a></span></p>
 </div>
 
 <!--带有点击和信息提示的警告框样式-->
@@ -65,22 +93,22 @@
 <div class="messageed messageed-success">
 	<p class="messageed-p1">已成功</p>
 	<p class="messageed-p2">的佛诞节佛ID见覅偶大囧东方今典司法鉴定司法鉴定死哦东方闪电就风刀霜剑佛时代峰峻水电费</p>
-	<p class="messageed-p3"><a href="javascript:void(0)">继续提交</a></p>
+	<p class="messageed-p3"><a class="messageed-a" href="javascript:void(0)">继续提交</a></p>
 </div>
 <div class="messageed messageed-fail">
 	<p class="messageed-p1">出错了</p>
 	<p class="messageed-p2">司法鉴定死哦东方闪电就风刀霜剑佛时代峰峻水电费</p>
-	<p class="messageed-p3"><a href="javascript:void(0)">返回修改</a></p>
+	<p class="messageed-p3"><a class="messageed-a" href="javascript:void(0)">返回修改</a></p>
 </div>
 <div class="messageed messageed-warn">
 	<p class="messageed-p1">已成功</p>
 	<p class="messageed-p2">失败合约：<span>2313123</span>|失败原：<span>实打实的方式的发的</span></p>
-	<p class="messageed-p3"><a href="javascript:void(0)">返回修改</a>&nbsp&nbsp|&nbsp&nbsp<a href="javascript:void(0)">继续提交</a></p>
+	<p class="messageed-p3"><a class="messageed-a" href="javascript:void(0)">返回修改</a>&nbsp&nbsp|&nbsp&nbsp<a class="messageed-a" href="javascript:void(0)">继续提交</a></p>
 </div>
 <div class="messageed messageed-comment">
 	<p class="messageed-p1">已成功</p>
 	<p class="messageed-p2">的佛诞节佛ID见覅偶大囧东方今典司法鉴定司法鉴定死哦东方闪电就风刀霜剑佛时代峰峻水电费</p>
-	<p class="messageed-p3"><a href="javascript:void(0)">前往注册</a></p>
+	<p class="messageed-p3"><a class="messageed-a" href="javascript:void(0)">前往注册</a></p>
 </div>
 <%- include('../_block/footer.ejs',{js:['../../../js/app/test.js']}) %>	
 	
