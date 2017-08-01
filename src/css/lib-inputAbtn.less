@@ -50,16 +50,21 @@ input::-moz-input-placeholder {
         height: 34px;
         line-height: 34px;
         color: #666666;
-        .pl30;
+        .ml10;
+        .pl15;
     }
 }
 //成功提示
 .message-success {
     background-color: #F0F7EE;
+    border: 1px solid #DBEDD6;
     .message-success-p {
-        border: 1px solid #DBEDD6;
-        background: url("../slice/icon-message-success.png") no-repeat 7px 12px;
-        background-size: 13px 13px;
+        height: 34px;
+        line-height: 34px;
+        .bg-img{
+              background-image: url("../slice/icon-message-success.png");
+        }
+        
     }
 }
 //失败提示
@@ -67,8 +72,8 @@ input::-moz-input-placeholder {
     background-color: #fbebeb;
     .message-fail-p {
         border: 1px solid #F5CFCF;
-        background: url("../slice/icon-message-fail.png") no-repeat 7px 12px;
-        background-size: 13px 13px;
+//      background-imgage: url("../slice/icon-message-fail.png") no-repeat 7px 12px;
+//      background-size: 13px 13px;
     }
 }
 //警告提示
@@ -77,7 +82,7 @@ input::-moz-input-placeholder {
     .message-warn-p {
         border: 1px solid #FFE2CF;
         //background: url("../slice/icon-message-warn.png") no-repeat 7px 12px;
-        background-size: 13px 13px;
+        //background-size: 13px 13px;
     }
 }
 //注释提示
