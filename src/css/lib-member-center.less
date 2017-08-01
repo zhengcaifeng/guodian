@@ -23,13 +23,13 @@
   top: 2px;
 }
 .member-content-left .member-foucs-tab .member-foucs-tab-nav li:hover {
-  color: #C00;
-  border-bottom: 2px solid #C00;
+  color: @var-red;
+  border-bottom: 2px solid @var-red;
 }
 
 .member-content-left .member-foucs-tab .member-foucs-tab-nav li.active {
-  color: #C00;
-  border-bottom: 2px solid #C00;
+  color: @var-red;
+  border-bottom: 2px solid @var-red;
 }
 
 .member-table-form {
@@ -44,14 +44,8 @@
   /*border-collapse: collapse;*/
   width: 100%;
 }
-.member-table tr td input {
-  height: 28px;
-  border: 1px solid #d9d9d9;
-  padding-left: 5px;
-}
 .member-table-left{
   width: 270px;
-  float: left;
 }
 .member-table-left .member-span-cont,.member-table-right .member-span-cont{
   display: block;
@@ -62,8 +56,12 @@
 .member-table-left .member-span-input,.member-table-right .member-span-input{
   padding: 12px 3px;
 }
-.member-table-left input,.member-table-right input,.member-table-right select,.member-table-left select{
-  float: left;
+.member-span-input-select{
+  width:148px;
+  height:30px;
+  border:1px solid #d9d9d9;
+}
+.member-table-left input,.member-table-right input{
   height: 28px;
   width: 140px;
   border: 1px solid #d9d9d9;
@@ -84,7 +82,7 @@
 }
 .member-span-button .member-span-button-right{
   color: #fff;
-  border: 1px solid #cc0000;
+  border: 1px solid @var-red;
 }
 .member-table-right{
   width: 430px;
