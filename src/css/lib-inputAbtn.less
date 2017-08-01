@@ -3,36 +3,48 @@
  * 时间：2017-7-31
  * 描述：input和警各种提示btn的网站css样式
  */
-
 /* input框样式 */
-//可以搜索的input样式
-.input-search{
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+input::-moz-input-placeholder {
+    color: #cccccc;
+}
+ //水平排列
+.form-group {
     .mt10;
-    .f12;
-    span {
-        .dib;
-        height: 27px;
-        .tr;
-        line-height: 27px;
-    }
-    input {
-        height: 26px;
+    
+}
+.form-control {
+        height: 20px;
         border: 1px solid #cccccc;
-        .ml10;
         .pl5;
     }
-    input::-webkit-input-placeholder {
-        color: #cccccc;
-    }
-    input::-moz-input-placeholder {
-        color: #cccccc;
-    }
+.control-label{
+    display: inline-block;
+    width: 105px;
+    text-align: right;
 }
+ //内联表单
+.form-inline{
+     zoom:1;
+    .form-group{
+        width: 300px;
+        float: left;
+    }  
+    
+}
+.form-inline:after{display:table; content:''; clear:both;}
+
+
+
+
+
 /*警告框样式*/
-.message{
+.message {
     .f12;
     .mt10;
-    p{
+    .message-p {
         height: 34px;
         line-height: 34px;
         color: #666666;
@@ -40,128 +52,125 @@
     }
 }
 //成功提示
-.message-success{
+.message-success {
     background-color: #F0F7EE;
-    p{
+    .message-success-p {
         border: 1px solid #DBEDD6;
-        background: url(../img/inputAbtn/icon-message-success.png) no-repeat 7px 12px;
+        background: url("../img/inputAbtn/icon-message-success.png") no-repeat 7px 12px;
         background-size: 13px 13px;
     }
 }
 //失败提示
-.message-fail{
+.message-fail {
     background-color: #fbebeb;
-    p{
+    .message-fail-p {
         border: 1px solid #F5CFCF;
-        background: url(../img/inputAbtn/icon-message-fail.png) no-repeat 7px 12px;
+        background: url("../img/inputAbtn/icon-message-fail.png") no-repeat 7px 12px;
         background-size: 13px 13px;
     }
 }
 //警告提示
-.message-warn{
+.message-warn {
     background-color: #FFF3EB;
-    p{
+    .message-warn-p {
         border: 1px solid #FFE2CF;
-        background: url(../img/inputAbtn/icon-message-warn.png) no-repeat 7px 12px;
+        background: url("../img/inputAbtn/icon-message-warn.png") no-repeat 7px 12px;
         background-size: 13px 13px;
     }
 }
 //注释提示
-.message-comment{
+.message-comment {
     background-color: #ECF1F8;
-    p{
+    .message-comment-p {
         border: 1px solid #D1DEED;
-        background: url(../img/inputAbtn/icon-message-comment.png) no-repeat 7px 12px;
+        background: url("../img/inputAbtn/icon-message-comment.png") no-repeat 7px 12px;
         background-size: 13px 13px;
     }
 }
 //带有点击关闭的警告框
-.message-fork{
+.message-fork {
     cursor: pointer;
-    p{
-        span{
+    .message-p {
+        .message-fork-span {
             .fr;
-                img{
+            .message-fork-img {
                 width: 10px;
                 height: 10px;
-                
                 .pr10;
                 padding-top: 12px;
             }
-            a{
+            .message-fork-a {
                 color: #666666;
                 text-decoration: none;
             }
-            a:hover{
-                text-decoration:underline;
-            }
-        }
-        
-    }
-}
-//带有信息和操作提示的警告框
-.messageed{
-        .mt10;
-        height: 132px;
-        .messageed-p1{
-            .f14;
-            height: 24px;
-            line-height: 24px;
-            color: #333333;
-            margin: 30px 0 0 20px;
-            padding-left: 50px;
-        }
-        .messageed-p2{
-            .f12;
-            color: #666666;
-            margin:10px 0 0 70px;
-        }
-        .messageed-p3{
-            .f12;
-            margin:15px 0 0 70px;
-            a{
-                color: #457AB7;
-                text-decoration: none;
-            }
-            a:hover{
+            .message-fork-a:hover {
                 text-decoration: underline;
             }
         }
     }
-//已成功
-.messageed-success{
-        background-color: #F0F7EE;
-        border: 1px solid #DBEDD6;
-        .messageed-p1{
-            background: url(../img/inputAbtn/icon-messageed-success.png) no-repeat 0 0;
-            background-size: 24px 24px;
+}
+//带有信息和操作提示的警告框
+.messageed {
+    .mt10;
+    height: 132px;
+    .messageed-p1 {
+        .f14;
+        height: 24px;
+        line-height: 24px;
+        color: #333333;
+        margin: 30px 0 0 20px;
+        padding-left: 50px;
+    }
+    .messageed-p2 {
+        .f12;
+        color: #666666;
+        margin: 10px 0 0 70px;
+    }
+    .messageed-p3 {
+        .f12;
+        margin: 15px 0 0 70px;
+        .messageed-a {
+            color: #457AB7;
+            text-decoration: none;
         }
+        .messageed-a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+//已成功
+.messageed-success {
+    background-color: #F0F7EE;
+    border: 1px solid #DBEDD6;
+    .messageed-p1 {
+        background: url("../img/inputAbtn/icon-messageed-success.png") no-repeat 0 0;
+        background-size: 24px 24px;
+    }
 }
 //出错了
-.messageed-fail{
-        background-color: #fbebeb;
-       border: 1px solid #F5CFCF;
-        .messageed-p1{
-            background: url(../img/inputAbtn/icon-messageed-fail.png) no-repeat 0 0;
-            background-size: 24px 24px;
-        }
+.messageed-fail {
+    background-color: #fbebeb;
+    border: 1px solid #F5CFCF;
+    .messageed-p1 {
+        background: url("../img/inputAbtn/icon-messageed-fail.png") no-repeat 0 0;
+        background-size: 24px 24px;
+    }
 }
 //请注意
-.messageed-warn{
-        background-color: #FFF3EB;
-       border: 1px solid #FFE2CF;
-        .messageed-p1{
-            background: url(../img/inputAbtn/icon-messageed-warn.png) no-repeat 0 0;
-            background-size: 24px 24px;
-        }
+.messageed-warn {
+    background-color: #FFF3EB;
+    border: 1px solid #FFE2CF;
+    .messageed-p1 {
+        background: url("../img/inputAbtn/icon-messageed-warn.png") no-repeat 0 0;
+        background-size: 24px 24px;
+    }
 }
 //帮助提示
-.messageed-comment{
-       background-color: #ECF1F8;
-       border: 1px solid #D1DEED;
-        .messageed-p1{
-            background: url(../img/inputAbtn/icon-messageed-comment.png) no-repeat 0 0;
-            background-size: 24px 24px;
-        }
+.messageed-comment {
+    background-color: #ECF1F8;
+    border: 1px solid #D1DEED;
+    .messageed-p1 {
+        background: url("../img/inputAbtn/icon-messageed-comment.png") no-repeat 0 0;
+        background-size: 24px 24px;
+    }
 }
-
