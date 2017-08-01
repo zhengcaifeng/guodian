@@ -1,0 +1,79 @@
+<%- include('../_block/head.ejs',{ title:'首页',css:['../../../css/style-index.css'] }) %>
+<!-快捷入口->
+<div class="shortcut-orange">
+    <div class="inner fix">
+        <ul class="left fix">
+            <li class="user list-style-no"><a class="tdn" href="#">admin</a></li>
+            <li class="msg list-style-no"><a class="tdn" href="#">消息</a></li>
+        </ul>
+        <ul class="right fix">
+            <li class="list-style-no"><a class="tdn" href="#">首页</a></li>
+            <li class="list-style-no"><a class="tdn" href="#">我的会员中心</a></li>
+            <li class="list-style-no"><a class="tdn" href="#">帮助中心</a></li>
+            <li class="phone list-style-no">
+                <a class="tdn" href="#">手机</a>
+                <div class="box">
+                    <div class="code-area fl">
+                        <img src="../../../img/code.png">
+                    </div>
+                    <div class="content mt10 fr">
+                        <div>扫一扫，下载客户端</div>
+                        <div class="word-green">手机采购 移动办公</div>
+                        <div class="iphone-android"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="collect list-style-no"><a class="tdn" href="#">收藏网站</a></li>
+            <li class="tel list-style-no"><a class="tdn" href="#">客服电话<span>400-018-4000</span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="body-content">
+    <!--采购商导航栏-->
+    <div class="nav-purchaser">
+        <div class="inner fix">
+            <a href="#" class="logo-shopping fl tdn"></a>
+            <ul class="fl fix">
+                <li class="list-style-no active"><a class="tdn" href="#">首页</a></li>
+                <li class="list-style-no"><a class="tdn" href="#">一级导航01</a></li>
+                <li class="list-style-no"><a class="tdn" href="#">一级导航02</a></li>
+                <li class="list-style-no"><a class="tdn" href="#">一级导航03</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主要内容-->
+    <div class="main-content inner fix">
+        <div class="left-side">
+            <div class="menu-title center">一级导航</div>
+            <ul class="menu-section red">
+                <li class="menu-section-title list-style-no">一级类目01</li>
+                <li class="list-style-no">二级类目01</li>
+                <li class="list-style-no">二级类目02</li>
+                <li class="list-style-no">二级类目03</li>
+            </ul>
+            <ul class="menu-section red">
+                <li class="menu-section-title list-style-no">一级类目02</li>
+                <li class="list-style-no">二级类目01</li>
+                <li class="list-style-no">二级类目02</li>
+                <li class="list-style-no">二级类目03</li>
+            </ul>
+            <ul class="menu-section red">
+                <li class="menu-section-title list-style-no">一级类目03</li>
+                <li class="list-style-no">二级类目01</li>
+                <li class="list-style-no">二级类目02</li>
+                <li class="list-style-no">二级类目03</li>
+            </ul>
+
+        </div>
+        <div class="right-side fl">
+            <ul class="crumbs-area fix">
+                <li class="list-style-no">首页</li>
+                <li class="list-style-no"> > </li>
+                <li class="list-style-no">一级导航</li>
+                <li class="list-style-no"> > </li>
+                <li class="list-style-no">一级类目01</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<%- include('../_block/footer.ejs',{js:['']}) %>

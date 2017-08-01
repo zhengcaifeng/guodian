@@ -1,0 +1,378 @@
+/**
+ * Created by 姚丽娜 on 2017/7/31.
+ * 首页、商城头部样式
+ */
+
+/*快捷入口*/
+.shortcut-blue,.shortcut-orange {
+  background-color: #F8F9FB;
+  height: 40px;
+  line-height: 39px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.left li,.right li {
+  float: left;
+}
+.left li a,.right li a {
+  color: #666;
+  padding: 0 15px;
+  border-left: 1px solid #DEDEDE;
+}
+.left li:first-child a,.right li:first-child a {
+  border-left: 0;
+}
+.shortcut-blue .left .user a {
+  color: @var-blue;
+  padding-right: 30px;
+  background-image: url("../../slice/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 55px center;
+}
+.shortcut-blue .left .msg a {
+  padding-left: 30px;
+  background-image: url("../../slice/icon-message-blue.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.shortcut-blue .right .phone a {
+  padding-left: 25px;
+  background-image: url("../../slice/icon-phone-blue.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.shortcut-blue .right .collect a {
+  padding-left: 30px;
+  background-image: url("../../slice/icon-collect-blue.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.shortcut-orange .left .user a {
+  color: @var-red;
+  padding-right: 30px;
+  background-image: url("../../slice/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 55px center;
+}
+.shortcut-orange .left .msg a {
+  padding-left: 30px;
+  background-image: url("../../slice/icon-message-orange.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.shortcut-orange .right .phone a {
+  padding-left: 25px;
+  background-image: url("../../slice/icon-phone-orange.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.shortcut-orange .right .collect a {
+  padding-left: 30px;
+  background-image: url("../../slice/icon-collect-orange.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.right .tel span {
+  padding-left: 5px;
+  color: #FE7F7E;
+  font-size: 14px;
+}
+
+.right .phone {
+  position: relative;
+}
+.right .phone:hover {
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+  border-bottom: 0px;
+  height: 35px;
+  line-height: 27px;
+  margin-top: 5px;
+  margin-right: -1px;
+}
+.right .phone:hover a {
+  border-left: 0;
+}
+.right .phone:hover .box {
+  display: block;
+}
+.right .phone .box {
+  display: none;
+  position: absolute;
+  top: 34px;
+  left: -1px;
+  z-index: 99;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #DEDEDE;
+  border-top: 0;
+  width: 280px;
+}
+.code-area {
+  width: 128px;
+  height: 128px;
+}
+.code-area img{
+  width: 100%;
+  height: auto;
+}
+
+.right .phone .box .content div {
+  text-align: center;
+  line-height: 22px;
+  width: 114px;
+}
+
+.word-green{
+  color: @var-green;
+}
+
+.iphone-android {
+  width: 114px;
+  height: 60px;
+  background: url("../../img/icon-iphone-android.png") no-repeat;
+}
+
+/*首页头部*/
+.header-index {
+  padding: 20px 0;
+}
+.header-index .logo-area {
+  height: 64px;
+}
+.header-index .logo-area .logo-index {
+  width: 220px;
+  height: 100%;
+  background: url("../../img/logo-index.png") no-repeat;
+}
+.header-index .logo-area .logo-index-attach {
+  width: 184px;
+  height: 100%;
+  background: url("../../img/logo-index-attach.png") no-repeat center;
+}
+.header-index .search-area .input-area {
+  height: 36px;
+  width: 366px;
+  border:2px solid #e4e4e4;
+  border-right: none;
+}
+.header-index .search-area .search-select {
+  width: 100px;
+  height: 30px;
+  color: #333;
+  border-right: 1px solid #e4e4e4;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  margin-top: 4px;
+}
+.header-index .search-area .search-input {
+  width: 260px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 5px;
+  border: none;
+}
+.header-index .search-area .search-button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: @var-blue;
+  background-image: url("../../slice/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 23px 13px;
+}
+.header-index .search-area .search-button-all {
+  width: 100px;
+  height: 40px;
+  margin: 0 10px;
+  line-height: 40px;
+  text-align: center;
+  background-color: @var-green;
+  color: #fff;
+  border: none;
+}
+
+/*商城头部*/
+.header-shopping {
+  padding: 20px 0;
+}
+.header-shopping .logo-area {
+  height: 64px;
+}
+.header-shopping .logo-area .logo-shopping {
+  width: 220px;
+  height: 100%;
+  background: url("../../img/logo-shopping.png") no-repeat;
+}
+.header-shopping .search-area .input-area {
+  height: 36px;
+  width: 500px;
+  border: 2px solid @var-red;
+  border-right: none;
+}
+.header-shopping .search-area .search-select {
+  width: 100px;
+  height: 30px;
+  color: #333;
+  border-right: 1px solid #e4e4e4;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  margin-top: 4px;
+}
+.header-shopping .search-area .search-input {
+  width: 395px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 5px;
+  border: none;
+}
+.header-shopping .search-area .search-button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: @var-red;
+  background-image: url("../../slice/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 23px 13px;
+  border: none;
+}
+.header-shopping .search-area .my-shopping {
+  width: 115px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #BFBFBF;
+  color: #666;
+  padding-left: 40px;
+  background-image: url("../../slice/icon-shopping.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.header-shopping .search-area .my-shopping span {
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 3px;
+  text-align: center;
+  line-height: 20px;
+  background-color: @var-red;
+  color: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/*首页导航栏*/
+.nav-index {
+  height: 40px;
+  border-bottom: 2px solid @var-blue;
+  line-height: 40px;
+}
+.nav-index .index {
+  width: 190px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background-color: @var-blue;
+}
+.nav-index ul li {
+  padding: 0 30px;
+}
+.nav-index ul li a {
+  font-size: 14px;
+  color: #333;
+}
+.nav-index ul li a:hover {
+  color: @var-blue;
+  border-bottom: 1px solid @var-blue;
+}
+.nav-index ul .new {
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: sub;
+  background-image: url("../../slice/icon-new.png");
+  background-repeat: no-repeat;
+}
+.nav-index ul .hot {
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  margin-left: 5px;
+  vertical-align: sub;
+  background-image: url("../../slice/icon-hot.png");
+  background-repeat: no-repeat;
+}
+
+/*商城导航栏*/
+.nav-shopping {
+  height: 40px;
+  border-bottom: 2px solid @var-red;
+  line-height: 40px;
+}
+.nav-shopping .arrow-down {
+  width: 190px;
+  color: #fff;
+  cursor: pointer;
+  background-color: @var-red;
+  background-image: url("../../slice/icon-arrow-down-white.png");
+  background-repeat: no-repeat;
+  background-position: 170px center;
+}
+.nav-shopping .arrow-up {
+  width: 190px;
+  color: #fff;
+  cursor: pointer;
+  background-color: @var-red;
+  background-image: url("../../slice/icon-arrow-up-white.png");
+  background-repeat: no-repeat;
+  background-position: 170px center;
+}
+.nav-shopping .goods {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../../slice/icon-goods.png");
+  background-repeat: no-repeat;
+}
+.nav-shopping ul {
+  margin-left: 1px;
+}
+.nav-shopping ul li a {
+  display: inline-block;
+  font-size: 14px;
+  color: @var-red;
+  padding: 0 30px;
+}
+.nav-shopping ul li a:hover {
+  color: #fff;
+  background-color: @var-red;
+}
+.nav-shopping .other li a:hover {
+  color: @var-red;
+  background-color: #fff;
+}
+.nav-shopping .other .zhaobiao {
+  background-image: url("../../slice/icon-zhaobiao.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.nav-shopping .other .xunjia {
+  background-image: url("../../slice/icon-xunjia.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
