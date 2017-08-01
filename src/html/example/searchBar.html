@@ -1,40 +1,85 @@
 <%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
 <br/><br/><br/>
-<div>
-    <ul>
-        <li>菜单一</li>
-        <li>/</li>
-        <li>一级类目 01</li>
-        <li>/</li>
-        <li>二级类目 01</li>
+<div class="mau pct90 mb10">
+    <ul class="nd fix h16 f12 list-style-no">
+        <li class="fl ml10 mr10 poi c_gray_2">菜单一</li>
+        <li class="fl c_gray_2">/</li>
+        <li class="fl ml10 mr10 poi c_gray_2">一级类目 01</li>
+        <li class="fl c_gray_2">/</li>
+        <li class="fl ml10 mr10 poi">二级类目 01</li>
     </ul>
 </div>
-<div>
-    <table>
-        <tr>
-            <td>
-                查询项一：
-            </td>
-            <td>
-                <input type="" name="" placeholder="请输入查询项一" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                查询项二：
-            </td>
-            <td>
-                <input type="" name="" placeholder="请输入查询项一" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                查询项三：
-            </td>
-            <td>
-                <input type="" name="" placeholder="请输入查询项一" />
-            </td>
-        </tr>
-    </table>
+<div class="p30 f14 pct90 mau bg_bgGray">
+    <div class="fix">
+        <div class="fl pr70 input-search">
+            <span>单行文本框：</span>
+            <input type="text" placeholder="请输入关键字"/>
+        </div>
+        <div class="fl pr40 input-search">
+            <span>单行文本框：</span>
+            <input type="text" placeholder="请输入关键字"/>
+        </div>
+        <div class="fl">
+            <input type="button" class="btn btn-danger btn-xs mr15" value="按钮"/>
+            <button class="btn btn-ghost-danger btn-xs">按钮</button>
+        </div>
+    </div>
 </div>
-<%- include('../_block/footer.ejs',{js:['../../../js/app/test.js']}) %>
+<br/><br/><br/>
+<div class="p30 f14 pct90 mau bg_bgGray">
+    <div class="fix mb30">
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+    </div>
+    <div class="fr mb30">
+        <button class="mr15">111</button>
+        <button>111</button>
+    </div>
+</div>
+<br/><br/><br/><br/>
+<div class="p30 f14 pct90 mau bg_bgGray">
+    <div class="fix mb30">
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+    </div>
+    <div class="fix mb30 dn">
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl pr70">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+        <div class="fl">
+            <span class="pr15">查询项一 :</span>
+            <input type="text" name="" placeholder="请输入查询项一"/>
+        </div>
+    </div>
+    <div class="fr">
+        <button class="mr15">111</button>
+        <button>111</button>
+        <span class="up_down f12 pr20 poi ml15 down" id="up_down">展开</span>
+    </div>
+</div>
+<%- include('../_block/footer.ejs',{js:['../../../js/app/searchBar.js']}) %>
