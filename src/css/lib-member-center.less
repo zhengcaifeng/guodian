@@ -13,16 +13,23 @@
 .member-content-left .member-foucs-tab .member-foucs-tab-nav {
   border-bottom: 2px solid #e4e4e4;
   background: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
 }
 
-.member-content-left .member-foucs-tab .member-foucs-tab-nav li {
+.member-content-left .member-foucs-tab .member-foucs-tab-nav .member-nav-li {
   margin-right: 1px;
   height: 40px;
   line-height: 40px;
   padding: 0 18px;
   top: 2px;
+  float: left;
+  text-align: center;
+  color: @var-gray;
+  position: relative;
 }
-.member-content-left .member-foucs-tab .member-foucs-tab-nav li:hover {
+.member-content-left .member-foucs-tab .member-foucs-tab-nav .member-nav-li:hover {
   color: @var-red;
   border-bottom: 2px solid @var-red;
 }
@@ -46,15 +53,21 @@
 }
 .member-table-left{
   width: 270px;
+  color: @var-gray-2;
+  float: left;
 }
 .member-table-left .member-span-cont,.member-table-right .member-span-cont{
   display: block;
   width: 100px;
   padding: 12px 3px;
   line-height: 28px;
+  font-size: 12px;
+  float: left;
+  text-align: right;
 }
 .member-table-left .member-span-input,.member-table-right .member-span-input{
   padding: 12px 3px;
+  float: left;
 }
 .member-span-input-select{
   width:148px;
@@ -76,16 +89,23 @@
 .member-span-button .memeber-button{
   border: 1px solid #d9d9d9;
   line-height: 32px;
+  margin-top: 10px;
 }
 .member-buttonf{
   background: #fff;
+  padding: 0 20px;
 }
 .member-span-button .member-span-button-right{
   color: #fff;
   border: 1px solid @var-red;
+  background: @var-red;
+  padding: 0 20px;
+  margin-left: 10px;
 }
 .member-table-right{
   width: 430px;
+  float: left;
+  color: @var-gray-2;
 }
 .member-table-right .member-table-right-p{
   padding: 12px 3px;
@@ -107,92 +127,159 @@
 }
 .member-simple-pages .member-simple-pages-span{
   border: 1px solid #d7d7d7;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0 10px;
+  margin-top: 5px;
 }
 .member-simple-pages span:hover{
-  color: #999999;
+  color: @var-gray;
 }
 .member-ulbackgli{
   line-height: 40px;
   border: 1px solid #E4E4E4;
   background: #EFF7E7;
 }
+.member-time-cont{
+  float: left;
+  padding-left: 20px;
+  color: @var-gray;
+}
 .memeber-time{
   color: #336600;
+  float: left;
 }
 .member-messagebot{
   border: 1px solid #e4e4e4;
+  border-top: none;
 }
 .member-tabletra{
   width: 420px;
   border-right: 1px solid #e4e4e4;
-}
-.member-messagebot{
-  border: 1px solid #e4e4e4;
+  float: left;
+  padding: 20px 10px;
+  color: @var-gray;
 }
 .member-message-img{
   width: 80px;
   height: 80px;
   border: 1px solid #e4e4e4;
+  float: left;
 }
 .member-message-content{
   width: 325px;
+  float: left;
+  padding-left: 10px;
 }
 .member-message-contenta{
   display: block;
   line-height: 18px;
-  color: #333333;
+  color: @var-gray-3;
+  font-size: 16px;
 }
 .member-wlbm{
   display: block;
   line-height: 20px;
+  padding-top: 5px;
+  padding-left: 8px;
 }
 .member-name{
   line-height: 122px;
   padding-left: 10px;
   border-right: 1px solid #E4E4E4;
   width: 105px;
+  float: left;
+  color: @var-gray-2;
 }
 .member-money{
   width: 140px;
   height: 122px;
   border-right: 1px solid #E4E4E4;
+  float: left;
+  padding-left: 10px;
+  color: @var-red;
 }
 .member-money .member-money-span{
   padding-top: 50px;
+  font-size: 14px;
+  padding-right: 10px;
+  display: block;
+  text-align: right;
 }
-
+.member-money .member-money-spantwo{
+  padding-top:5px;
+  padding-right: 10px;
+  display: block;
+  text-align: right;
+  color: @var-gray;
+}
 .member-etc{
   width: 140px;
   line-height: 122px;
   border-right: 1px solid #E4E4E4;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  color: @var-red;
 }
 .member-confirm{
   width:140px;
+  float: left;
 }
 .member-confirm-div{
   width: 105px;
+  cursor: pointer;
   background: #f7f7f7;
   border: 1px solid #E4E4E4;
   line-height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  color: @var-gray-2;
+  font-size: 12px;
 }
 .member-confirm-order{
   line-height:30px;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  color: @var-gray-2;
 }
 .member-etc-second{
   width: 140px;
   height: 122px;
   border-right: 1px solid #E4E4E4;
+  float: left;
+  font-size: 14px;
 }
 .member-etc-second-div{
   border-bottom: 1px solid #E4E4E4;
   line-height: 55px;
   color: #00A854;
+  margin-bottom: 5px;
+  margin: 0 10px;
+  text-align: center;
 }
 .member-etc-order-time{
   line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: @var-gray;
 }
 .member-etc-second-div-blue{
   border-bottom: 1px solid #E4E4E4;
   line-height: 55px;
   color: #108EE9;
+  margin-bottom: 5px;
+  margin: 0 10px;
+  text-align: center;
+}
+.member-message-contentno{
+  padding-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
