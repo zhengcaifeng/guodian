@@ -4,11 +4,9 @@
     	描述：表单的网站css样式
    -->
 <%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
-
-<br /><br /><br />
-
 <!--input框样式-->
-<!--水平排列-->
+<!--水平排列--><br />
+<h2>水平排列：</h2>
 <form class="form-horizontal">
   <div class="form-group">
     <label class="control-label">单行文本框：</label>
@@ -20,9 +18,8 @@
   </div>
 </form>
 
-<br /><br /><br />
-
-  <!--内联表单-->
+  <!--内联表单--><br />
+<h2>内联表单：</h2>
 <form class="form-inline">
   <div class="form-group">
     <label class="control-label">查询项一：</label>
@@ -36,11 +33,10 @@
     <label class="control-label">查询项三：</label>
     <input type="text" class="form-control" placeholder="请输入查询项三">
   </div>
-</form>  
+</form> 
 
-<br /><br /><br />
-
-<!--只读状态并且点击下拉-->
+<!--只读状态并且点击下拉--> <br />
+<h2>只读状态下并且点击下拉</h2>
 <div class="form-group form-group-yn">
     <label class="control-label">下拉列表一：</label>
     <input type="text" class="form-control form-select form-yn" readonly placeholder="全部">
@@ -52,5 +48,8 @@
     <input type="text" class="form-control form-select form-num" readonly placeholder="全部">
     <div class="form-div"></div>
 </div>
+
+
+
 <%- include('../_block/footer.ejs',{js:['../../../js/app/form.js']}) %>	
 	
