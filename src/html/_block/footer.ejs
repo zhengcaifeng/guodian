@@ -9,17 +9,14 @@
             "layer":'lib/layer',
             "laypage":'lib/laypage',
             "jedate":'lib/jedate',
-            "css":'lib/css.min'
+            "css":'lib/css.min',
+            "gallerySlide":'lib/gallery-slide'
         },
 
         shim:{
             'layer': {
                 deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
                 exports: "layer"
-            },
-            'jedate1':{
-                deps: ['jquery'],
-                exports: "jedate1"
             },
             'laypage': {
                 deps: ['jquery'],
@@ -28,6 +25,10 @@
             'jedate':{
                 deps: ['jquery','css!/css/style-date.css'],
                 exports: "jedate"
+            },
+            'gallerySlide':{
+                deps: ['jquery','css!/css/style-gallerySlide.css'],
+                exports: "gallerySlide"
             }
         }
     });

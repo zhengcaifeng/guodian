@@ -54,17 +54,6 @@ require(['jquery','laypage'], function ($,laypage) {
             return str;
         };
 
-        //调用分页
-/*        laypage({
-            cont: 'biuuu_city',
-            pages: pages,
-            jump: function(obj){
-                document.getElementById('biuuu_city_list').innerHTML = thisDate(obj.curr);
-
-            }
-        })*/
-
-
         laypage({
             cont: 'biuuu_city', //容器。值支持id名、原生dom对象，jquery对象,
             pages: pages, //总页数

@@ -87,10 +87,12 @@ require(['jquery'], function ($) {
 
 	//调用执行
 	$('.form-num').formNum();
+	
+	
 //	var record;
 //		$.ajax({
 //			type:"get",
-//			url:"../../js/mock/form.json",
+//			url:"../../js/mock/a.txt",
 //			data:{},
 //			dataType:"json",
 //			async:true,
