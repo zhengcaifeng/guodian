@@ -2,17 +2,22 @@
 <script>
     require.config({
         baseUrl:'../../js/',
-        shim:{
-            'layer': {
-                deps: ['jquery'],
-                exports: "layer"
-            }
-        },
         paths:{
             "jquery":"lib/jquery.min",
             "artTemplate":'lib/artTemplate',
             "util":'app/util',
-            "layer":'lib/layer'
+            "layer":'lib/layer',
+            "jedate1":'lib/jedate1'
+        },
+        shim:{
+            'layer': {
+                deps: ['jquery'],
+                exports: "layer"
+            },
+            'jedate1':{
+                deps: ['jquery'],
+                exports: "jedate1"
+            }
         }
     });
 </script>
