@@ -1,6 +1,6 @@
-require(['jquery','jedate1'], function ($,jedate1) {
+require(['jquery','jedate','layer'], function ($,jedate,layer) {
     $(function(){
-        var startDate = jedate1({
+        var startDate = jedate({
             dateCell: "#start-Date",
             format: "YYYY-MM-DD"
         });

@@ -11,21 +11,41 @@
   border: 1px solid #E4E4E4;
   background: #fff;
   border-left: none;
-  /*height: 40px;*/
+  color: @var-gray-2;
+}
+.shop-navigation-left{
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  cursor:pointer;
 }
 .shop-navigation-left .shop-span{
   padding: 0 25px;
+  float: left;
+  text-align: center;
+  display: block;
+}
+.shop-sales{
+  float: left;
+  padding:0 20px;
 }
 .shop-sales .shop-sale-input{
-  height: 25px;
-  margin-top: 7px;
+  height: 20px;
+  margin-top: 8px;
+  float: left;
   max-width: 88px;
+  padding-left:5px;
+}
+.shop-sales .shop-sale-hp{
+  float: left;
+  padding: 0 10px;
 }
 .shop-sort{
-  border: 1px solid #cc0000;
+  border: 1px solid @var-red;
   color: #fff;
   margin-top: -1px;
   margin-bottom: -1px;
+  background: @var-red;
 }
 .shop-border{
   border-right: 1px solid #E4E4E4;
@@ -40,9 +60,12 @@
 }
 .shop-navigation-rigth{
   font-size: 13px;
+  float: right;
+  cursor: pointer;
 }
 .arrow{
   border-left: 1px solid #E4E4E4;
+  float: right;
 }
 .arrow-left{
   width: 35px;
@@ -54,6 +77,11 @@
   width: 35px;
   height: 40px;
   background: url(../../slice/icon-arrows-right.png) center no-repeat;
+}
+.arrow-content{
+  float: right;
+  padding: 0 5px;
+  display: block;
 }
 .arrow .arrow-produce-number{
   color: #E63C3A;
@@ -67,7 +95,11 @@
 .shop-navigation-left span.shop-padding{
   padding: 0;
 }
-.shop-checkbox label.shop-checkbox-lable{
+.shop-checkbox{
+  float: left;
+  padding-left: 20px;
+}
+.shop-checkbox .shop-checkbox-lable{
   margin-left: 10px;
 }
 
@@ -75,49 +107,91 @@
 .shop-list-ul{
   width: 100%;
 }
-.shop-list-ul li{
+.shop-list-ul .shop-list-li{
   width: 222px;
   height: 393px;
   border: 1px solid #E4E4E4;
+  margin-right: 20px;
+  float: left;
+}
+.shop-list-lia{
+  display: block;
+  text-decoration: none;
 }
 .shop-list-ul li.shop-list-linomargin{
   margin-right: 0;
+}
+.shop-list-image{
+  padding: 10px;
 }
 .shop-list-image img{
   width: 200px;
   height: 200px;
 }
+.shop-list-num{
+  font-size: 20px;
+  padding-left: 10px;
+  color: @var-red;
+  float: left;
+}
 .shop-list-money span{
   font-weight: bold;
 }
 .shop-list-cont{
+  float: left;
+  color: @var-gray;
+  padding-left: 5px;
+  font-size: 12px;
   padding-top: 8px;
 }
 .shop-list-underlin{
   line-height: 25px;
   font-weight: bold;
   text-decoration: line-through;
+  padding-left: 10px;
+  color: @var-gray;
 }
 .shop-list-message{
+  padding:0 10px;
+  color: @var-gray-2;
   line-height: 20px;
   height: 40px;
+  font-weight: 600;
   overflow:hidden;
   text-overflow:ellipsis;
   display:-webkit-box;
   -webkit-box-orient:vertical;
   -webkit-line-clamp:2;
 }
+.shop-list-company{
+  padding:0 10px;
+  color: @var-gray-2;
+}
+.shop-list-bottom{
+  padding-left: 10px;
+  margin-top:10px;
+}
 .shop-list-icon{
   border: 1px solid #cc0000;
   line-height: 20px;
+  float: left;
+}
+.shop-list-iconrightcon{
+  float: right;
+  color: @var-gray-2;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 .shop-list-icongreen{
   border: 1px solid #008000;
   line-height: 20px;
+  float: left;
 }
 .shop-list-iconleft{
-  padding-top: 4px;
+  margin-top: 4px;
   height: 16px;
+  padding: 0 5px;
+  float: left;
 }
 .shop-list-iconleft img{
   width: 18px;
@@ -127,14 +201,20 @@
   background: #cc0000;
   line-height: 24px;
   color: #fff;
+  float: left;
+  padding: 0 5px;
 }
 .shop-list-iconrightgreen{
   background: #008000;
   line-height: 24px;
   color: #fff;
+  line-height: 24px;
+  color: #fff;
+  float: left;
+  padding: 0 5px;
 }
 .shop-list-ul li:hover{
-  border: 1px solid #cc0000;
+  border: 1px solid @var-red;
 }
 
 
