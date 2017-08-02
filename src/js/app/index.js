@@ -24,10 +24,10 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
         };
         var renderHtml = (function(){
             $.subscribe('dataRender',function(e,data){
-                $.ajax({url:'component/title.html'}).then(function(dom){
+                $.ajax({url:'component/title.html'}).done(function(dom){
                     $.renderTpl('#header',dom,data);
                 });
-                $.ajax({url:'_page/index.html'}).then(function(dom){
+                $.ajax({url:'_page/index.html'}).done(function(dom){
                     $.renderTpl('#content',dom,data);
                 });
             });
