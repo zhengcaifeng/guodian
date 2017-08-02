@@ -35,11 +35,13 @@
     </a>
     <div class="search-area mt10 fr fix">
         <div class="input-area fl fix">
-            <select class="search-select pl20 fl">
+            <input type="text" class="search-select form-yn" readonly placeholder="全部">
+            <ul class="form-ul"></ul>
+           <!-- <select class="search-select pl20 fl">
                 <option>全站搜索</option>
                 <option>电力专区</option>
                 <option>电子超市</option>
-            </select>
+            </select>-->
             <input type="text" class="search-input fl" placeholder="请输入关键词进行搜索">
         </div>
         <input type="button" class="search-button pl15 f14 fl" value="搜索">
@@ -60,4 +62,4 @@
         <li class="list-style-no fl"><a href="#" class="xunjia tdn">询价</a></li>
     </ul>
 </div>
-<%- include('../_block/footer.ejs',{js:['../../../js/app/shoppingIndex.js']}) %>
+<%- include('../_block/footer.ejs',{js:['../../../js/app/shoppingIndex.js','../../../js/app/form.js']}) %>

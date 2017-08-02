@@ -37,10 +37,12 @@
     </a>
     <div class="search-area mt10 fr fix">
         <div class="input-area fl fix">
-            <select class="search-select pl20 fl">
+            <input type="text" class="search-select form-yn" readonly placeholder="全部">
+            <ul class="form-ul"></ul>
+           <!-- <select class="search-select pl20 fl">
                 <option>招投标</option>
                 <option>询比价</option>
-            </select>
+            </select>-->
             <input type="text" class="search-input fl" placeholder="请输入关键词进行搜索">
         </div>
         <input type="button" class="search-button pl15 f14 fl" value="搜索">
@@ -57,4 +59,4 @@
         <li class="list-style-no fl"><a class="tdn" href="#">商城</a><i class="hot"></i></li>
     </ul>
 </div>
-<%- include('../_block/footer.ejs',{js:['']}) %>
+<%- include('../_block/footer.ejs',{js:['../../../js/app/form.js']}) %>
