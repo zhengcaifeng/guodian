@@ -46,13 +46,18 @@ ul,li{ list-style: none;}
 .boss_leftmenu .list-group-item:hover .glyphicon-white-arrows-right{ display:block;  }
 .boss_leftmenu .list-group-item-title{ color:#8d8787;text-decoration: none; padding-left:54px; font-size:12px;}
 /*供应商中心左侧菜单css*/
-.supplier_leftmenu{ width:180px; background:#fff;}
+.supplier_leftmenu{ width:180px; background:#fff;
+  box-shadow: 2px 0 0 #f3f3f3;
+  -moz-box-shadow: 2px 0 0 #f3f3f3;
+  -webkit-box-shadow: 2px 0 0 #f3f3f3;
+}
 .supplier_leftmenu .leftmemu_title{ background:#fff; color: #CC0000; font-size:16px; height:40px; line-height:40px;padding-left:58px;}
-.boss_leftmenu .memu-item.tive .glyphicon-triangle-left{width:12px; height:8px; background-image:url(../slice/triangle_down.png); left:12px; top:15px;}
+.supplier_leftmenu .memu-item.tive .glyphicon-triangle-left{width:12px; height:8px; background-image:url(../slice/triangle_down.png) !important; left:12px; top:15px;}
 .supplier_leftmenu .memu-item-title{height: 40px; line-height: 40px; display: block;color:#92A6CB; text-decoration: none; padding-left:40px;}
+.supplier_leftmenu .list-group{ display:none;}
 .supplier_leftmenu .list-group-item{height: 40px; line-height: 40px; }
-.hoverred:hover{ background:#ff0000;}
-.hoverblue:hover{ background:#008af4;}
+.hoverred:hover{ background:@var-red;}
+.hoverblue:hover{ background:@var-blue-btn;}
 .supplier_leftmenu .list-group-item:hover .list-group-item-title{color:#fff;}
 .supplier_leftmenu .list-group-item-title{ color:#8b8b8b;text-decoration: none; padding-left:40px;}
 
