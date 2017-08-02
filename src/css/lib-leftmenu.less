@@ -2,56 +2,58 @@
  * Created by 梁青竹 on 2017/7/31.
  * CSS左侧菜单
  */
-.pl40{ padding-left:40px;}
-.pl60{ padding-left:60px;}
+ul,li{ list-style: none;}
 /*左侧菜单*/
 .leftmenu{}
 .glyphicon{ position: absolute;}
-.glyphicon-menu-left{top: 18px; left: 15px; width: 12px; height: 12px;background-image:url(../slice/ico_menu.png);}
-.glyphicon-white-arrows-top{top: 15px; right: 15px; width: 8px; height: 4px;background-image:url(../slice/icoarrows_top.png);}
-.glyphicon-white-arrows-right{top: 20px; right: 15px; width: 4px; height: 8px;background-image:url(../slice/icoarrows_right.png);}
+.glyphicon-menu-left{top: 15px; left: 18px; width: 12px; height: 12px;background-image:url(../slice/ico_menu.png);}
+/*.glyphicon-white-arrows-top{top: 15px; right: 15px; width: 8px; height: 4px;background-image:url(../slice/icoarrows_top.png);}*/
+.glyphicon-white-arrows-right{top: 20px; right: 16px; width: 4px; height: 8px;background-image:url(../slice/icoarrows_right.png);}
 .glyphicon-white-arrows-bottom{top: 15px; right: 15px; width: 8px; height: 4px;background-image:url(../slice/icoarrows_bottom.png);}
 .glyphicon-supmenu-left{top: 22px; left: 50px; width: 5px; height: 5px;}
-.glyphicon-triangle-left{width:12px; height:8px; background-image:url(../slice/triangle.png); left:15px; top:15px;}
-.glyphicon-suppliermenu-left{ width:24px; height:24px; background-image:url(../slice/supplierico.png); left:25px; top:15px;}
-.glyphicon-reduce-left{width:12px; height:12px; background-image:url(../slice/icoreduce.png); left:25px; top:15px;}
-.glyphicon-add-left{width:12px; height:12px; background-image:url(../slice/icoadd.png); left:25px; top:15px;}
+.glyphicon-triangle-left{width:12px; height:8px; background-image:url(../slice/triangle.png); left:12px; top:15px;}
+.glyphicon-suppliermenu-left{ width:24px; height:24px; background-image:url(../slice/supplierico.png); left:22px; top:8px;}
+/*.glyphicon-reduce-left{width:12px; height:12px; background-image:url(../slice/icoreduce.png); left:12px; top:15px;}*/
+.glyphicon-add-left{width:12px; height:12px; background-image:url(../slice/icoadd.png); left:12px; top:15px;}
 .glyphicon-arrows-right{ width:12px;height: 12px;background-image:url(../slice/arrows-right.png);
   right:15px; top:8px; }
 .glyphicon-help-left{ width:18px;height: 18px;background-image:url(../slice/ico_help.png);
-  left:35px; top:17px; }
+  left:32px; top:16px; }
 
-.memu-item{ position: relative; font-size: 14px;}
-.leftmemu_title{ position: relative; font-weight: 400; height: 50px; line-height: 50px; }
-
+.memu-item{ font-size: 14px;}
+.leftmemu_title{ position: relative; font-weight: 400; }
+.memu-item-title{ position:relative;}
+/*帮助中心左侧菜单css*/
 .helpcenter_leftmenu{ width:240px; background:#fff;}
-.helpcenter_leftmenu .leftmemu_title{ background:#157ad4;color: #fff;}
+.helpcenter_leftmenu .leftmemu_title{ background:#157ad4;color: #fff; padding-left:60px; height: 50px; line-height: 50px;}
 .helpcenter_leftmenu .memu-item{ background:#f5f5f5;}
 .helpcenter_leftmenu .memu-item:hover{ background:#e0e0e0;}
 .helpcenter_leftmenu .memu-item.tive .memu-item-title{background:#e0e0e0 !important;}
-.helpcenter_leftmenu .memu-item.tive .glyphicon-add-left{width:12px; height:12px; background-image:url(../slice/icoreduce.png); left:25px; top:15px;}
-.helpcenter_leftmenu .memu-item-title{height: 45px; line-height: 45px; display: block; color: #92A6CB; text-decoration: none;}
+.helpcenter_leftmenu .memu-item.tive .glyphicon-add-left{width:12px; height:12px; background-image:url(../slice/icoreduce.png); left:12px; top:15px;}
+.helpcenter_leftmenu .memu-item-title{height: 45px; line-height: 45px; display: block; color: #666; text-decoration: none; padding-left:36px;}
 .helpcenter_leftmenu .list-group{ padding:10px 0; background:#eaeaea; display:none;}
 .helpcenter_leftmenu .list-group-item{height: 30px; line-height: 30px; background:#eaeaea;  position: relative; }
-.helpcenter_leftmenu .list-group-item-title{ color:@var-gray-2; text-decoration: none;}
-.helpcenter_leftmenu .list-group-item:hover .glyphicon-arrows-right{  display: block; }
-
+.helpcenter_leftmenu .list-group-item-title{ color:#999; text-decoration: none; padding-left:50px;}
+.helpcenter_leftmenu .list-group-item:hover .glyphicon-arrows-right{  display: block;}
+/*运用后台左侧菜单css*/
 .boss_leftmenu{ width: 220px; background: #3F3F3F; color:#fff;}
-.boss_leftmenu .memu-item-title{ color:@var-gray-2; text-decoration:none;}
+.boss_leftmenu .leftmemu_title{ background:#3F3F3F;color: #8d8787; font-size:12px; padding-left:42px; height: 42px; line-height: 42px;}
+.boss_leftmenu .memu-item{ padding:4px 0;}
+.boss_leftmenu .memu-item-title{ color:#8d8787; text-decoration:none; padding-left:42px;height: 34px; line-height: 34px; display: block;}
 .boss_leftmenu .memu-item.tive .memu-item-title{ background: #108DE9!important; color:#fff !important;}
 .boss_leftmenu .memu-item.tive .glyphicon-white-arrows-bottom{top: 15px; right: 15px; width: 8px; height: 4px;background-image:url(../slice/icoarrows_top.png);}
-.boss_leftmenu .memu-item-title{height: 34px; line-height: 34px; display: block;}
 .boss_leftmenu .list-group{display:none;}
 .boss_leftmenu .list-group-item{height: 48px; line-height: 48px; position: relative;background:#323232;}
 .boss_leftmenu .list-group-item:hover .glyphicon-white-arrows-right{ display:block;  }
-.boss_leftmenu .list-group-item-title{ color:@var-gray-2;text-decoration: none;}
-
+.boss_leftmenu .list-group-item-title{ color:#8d8787;text-decoration: none; padding-left:54px;}
+/*供应商中心左侧菜单css*/
 .supplier_leftmenu{ width:180px; background:#fff;}
-.supplier_leftmenu .memu-item-title{height: 40px; line-height: 40px; display: block;color:#8b8b8b; text-decoration: none;}
+.supplier_leftmenu .leftmemu_title{ background:#fff; color: #CC0000; font-size:16px; height:40px; line-height:40px;padding-left:58px;}
+.supplier_leftmenu .memu-item-title{height: 40px; line-height: 40px; display: block;color:#92A6CB; text-decoration: none; padding-left:40px;}
 .supplier_leftmenu .list-group-item{height: 40px; line-height: 40px; }
 .hoverred:hover{ background:#ff0000;}
 .hoverblue:hover{ background:#008af4;}
 .supplier_leftmenu .list-group-item:hover .list-group-item-title{color:#fff;}
-.supplier_leftmenu .list-group-item-title{ color:#8b8b8b;text-decoration: none;}
+.supplier_leftmenu .list-group-item-title{ color:#8b8b8b;text-decoration: none; padding-left:40px;}
 
 

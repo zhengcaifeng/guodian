@@ -1,138 +1,120 @@
 <%- include('../_block/head.ejs',{ title:'商城筛选搜索栏',css:['../../css/style-index.css'] }) %>
-<div class="inner mall">
-		<!--<div>
-			<ul class="list-style-no">
-				<li class="fl mr5 home">
-					<i class="home"></i>
-					当前位置 :
-				</li>
-				<li class="fl mr5">
-					>
-				</li>
-				<li class="fl mr5">
-					首页
-				</li>
-				<li class="fl mr5">
-					>
-				</li>
-				<li class="fl mr5">
-					电子超市
-				</li>
-			</ul>
-		</div>-->
+	<div class="inner mall">
 		<p class="mb10">
 			<img src="../../slice/icon-current-position.png" class="icon-size mr5"/>
 			<span class="vhigh-2">当前位置： 首页 > 电子超市 ></span>
 		</p>
-		<div class="inner mall-title mall-border mb10 mail-marbot">
+		<div class="inner mall-title">
 			<div class="title-cont-left">
 				<p class="title-words">商品<span class="color-red">筛选</span></p>
 			</div>
 			<div class="title-cont-right">
-				<p class="title-block-marrig type-block">
-					<span class="title-block">分类1：<span class="color-red">墨盒4</span>
-						<img src="../../slice/icon-close.png" class="icon-size title-block-img"/>
-				</p>
+				<div class="title-label-show">
+					<p class="title-block">分类1：<span class="color-red">墨盒4</span>
+						<img src="../../slice/icon-close.png" class="title-block-img"/>
+				</div>
 			</div>
 		</div>
-		<div class="title-border-bottom bac-color">
-			<div class="inner mall-title title-more mall-border title-color-white no-border-bottom">
-					<div class="title-cont-left mall-cent-higtline rela">
-						<p class="mall-cent-title absou h100">分类1：</p>
+		<div class="tab-cen">
+			<div class="inner mall-title title-more">
+					<div class="title-left-text">
+						<p class="mall-cent-title">分类：</p>
 					</div>
-					<div class="title-cont-right mall-cent-higtline title-right-cent">
-						<span>办公a文具</span>
-						<span>文件a管理</span> 
-						<span>笔a类</span>       
-						<span>纸a类</span>    
-						<span>办a公文具</span>
-						<span>文件管理</span> 
-						<span>笔a类a</span>       
-						<span>纸类</span> 
-						<span>本a册/便签</span>
-						<span>墨盒硒鼓/墨粉</span>
-						<span>办a公文具</span>
-						<span>文a件管理</span> 
-						<span>笔a类a</span>       
-						<span>办公a文具</span>
-						<span>文a件管理</span> 
-						<span>笔a类</span>       
-						<span>办a公a文具</span>
-					</div>
-					<div class="title-btn">
-						<span class="title-btn-span addMore">更多
-							<img src="../../slice/icon-arrows-down.png" class="btn-img"/>
-						</span>
-						<span class="title-btn-span title-btn-nomargin">多选
-							<img src="../../slice/icon-add.png" class="btn-img img-add"/>
-						</span>
+					<div class="title-cent no-see">
+						<span><input type="checkbox" class="title-check dn">办公文具</span>
+						<span><input type="checkbox" class="title-check dn">文件管理</span>
+						<span><input type="checkbox" class="title-check dn">笔类</span>
+						<span><input type="checkbox" class="title-check dn">纸类</span>
+						<span><input type="checkbox" class="title-check dn">本册/便签</span>
+						<span><input type="checkbox" class="title-check dn">墨盒硒鼓/墨粉</span>
+						<div class="title-btn">
+						<span class="title-btn-span addMore">更多</span>
+							<span class="title-btn-span multiSelect">多选</span>
+						</div>
+						<div class="cen-btn dn">
+							<p class="mail-btn-ok dn">确定</p>
+							<p class="mail-btn-no dn">取消</p>
+						</div>
 					</div>
 			</div>
-			<div class="inner mall-title title-more mall-border title-color-white no-border-bottom">
-					<div class="title-cont-left mall-cent-higtline rela">
-						<p class="mall-cent-title absou h100">分类2：</p>
-					</div>
-					<div class="title-cont-right mall-cent-higtline title-right-cent">
-						<span>办公文具</span>
-						<span>文件管理</span> 
-						<span>笔类</span>       
-						<span>纸类</span> 
-						<span>本册/便签</span>
-						<span>墨盒硒鼓/墨粉</span>
-						<span>办公文具</span>
-						<span>1文件管理</span> 
-						<span>2办公文具</span>
-						<span>3文件管理</span> 
-						<span>4笔类</span>       
-						<span>5纸类</span> 
-						<span>6本册/便签</span>
-						<span>7墨盒硒鼓/墨粉</span>
-						<span>8办公文具</span>
-						<span>9文件管理</span> 
-						<span>8笔类</span>       
-						<span>7办公文具</span>
-					</div>
+			<div class="inner mall-title title-more">
+				<div class="title-left-text">
+					<p class="mall-cent-title">品牌：</p>
+				</div>
+				<div class="title-cent no-see">
+					<span><input type="checkbox" class="title-check dn">得力（deli）</span>
+					<span><input type="checkbox" class="title-check dn">齐心（COMIX）</span>
+					<span><input type="checkbox" class="title-check dn">晨光（M&G）</span>
+					<span><input type="checkbox" class="title-check dn">广博（GuangBo）</span>
+					<span><input type="checkbox" class="title-check dn">优和（UHOO）</span>
+					<span><input type="checkbox" class="title-check dn">三木（SUNWOOD）</span>
+					<span><input type="checkbox" class="title-check dn">得力1（deli）</span>
+					<span><input type="checkbox" class="title-check dn">齐心1（COMIX）</span>
+					<span><input type="checkbox" class="title-check dn">晨光1（M&G）</span>
+					<span><input type="checkbox" class="title-check dn">广博1（GuangBo）</span>
+					<span><input type="checkbox" class="title-check dn">优和1（UHOO）</span>
+					<span><input type="checkbox" class="title-check dn">三木1（SUNWOOD）</span>
 					<div class="title-btn">
-						<span class="title-btn-span addMore">更多
-							<img src="../../slice/icon-arrows-down.png" class="btn-img"/>
-						</span>
-						<span class="title-btn-span title-btn-nomargin">多选
-							<img src="../../slice/icon-add.png" class="btn-img img-add"/>
-						</span>
+						<span class="title-btn-span addMore">更多</span>
+						<span class="title-btn-span multiSelect">多选</span>
 					</div>
+					<div class="cen-btn">
+						<p class="mail-btn-ok dn">确定</p>
+						<p class="mail-btn-no dn">取消</p>
+					</div>
+				</div>
 			</div>
-			<div class="inner mall-title title-more mall-border title-color-white no-border-bottom hide">
-					<div class="title-cont-left mall-cent-higtline rela">
-						<p class="mall-cent-title absou h100">品种：</p>
-					</div>
-					<div class="title-cont-right mall-cent-higtline title-right-cent">
-						<span>办公文具</span>
-						<span>文件管理</span> 
-						<span>笔类</span>       
-						<span>纸类</span> 
-						<span>本册/便签</span>
-						<span>墨盒硒鼓/墨粉1</span>
-						<span>办公文具2</span>
-						<span>文件管理3</span> 
-						<span>笔类4</span>       
-						<span>纸类5</span> 
-						<span>本册/便签6</span>
-						<span>墨盒硒鼓/墨粉2</span>
-						<span>办公文具3</span>
-						<span>文件管理4</span> 
-						<span>笔类5</span>       
-						<span>纸类6</span> 
-						<span>本册/便签7</span>
-						<span>墨盒硒鼓/墨粉8</span>
-					</div>
+			<div class="inner mall-title title-more hide">
+				<div class="title-left-text">
+					<p class="mall-cent-title">属性：</p>
+				</div>
+				<div class="title-cent no-see">
+					<span><input type="checkbox" class="title-check dn">原装耗材</span>
+					<span><input type="checkbox" class="title-check dn">原装耗材</span>
 					<div class="title-btn">
-						<span class="title-btn-span addMore">更多
-							<img src="../../slice/icon-arrows-down.png" class="btn-img"/>
-						</span>
-						<span class="title-btn-span title-btn-nomargin">多选
-							<img src="../../slice/icon-add.png" class="btn-img img-add"/>
-						</span>
+						<span class="title-btn-span addMore">更多</span>
+						<span class="title-btn-span multiSelect">多选</span>
 					</div>
+					<div class="cen-btn">
+						<p class="mail-btn-ok dn">确定</p>
+						<p class="mail-btn-no dn">取消</p>
+					</div>
+				</div>
+			</div>
+			<div class="inner mall-title title-more hide">
+				<div class="title-left-text">
+					<p class="mall-cent-title">规格：</p>
+				</div>
+				<div class="title-cent no-see">
+					<span><input type="checkbox" class="title-check dn">普通装</span>
+					<span><input type="checkbox" class="title-check dn">套装</span>
+					<span><input type="checkbox" class="title-check dn">超值/大容量</span>
+					<span><input type="checkbox" class="title-check dn">墨水</span>
+					<span><input type="checkbox" class="title-check dn">其他</span>
+					<span><input type="checkbox" class="title-check dn">普通装1</span>
+					<span><input type="checkbox" class="title-check dn">套装1</span>
+					<span><input type="checkbox" class="title-check dn">超值/大容量1</span>
+					<span><input type="checkbox" class="title-check dn">墨水1</span>
+					<span><input type="checkbox" class="title-check dn">其他1</span>
+					<span><input type="checkbox" class="title-check dn">普通装2</span>
+					<span><input type="checkbox" class="title-check dn">套装2</span>
+					<span><input type="checkbox" class="title-check dn">超值/大容量2</span>
+					<span><input type="checkbox" class="title-check dn">墨水2</span>
+					<span><input type="checkbox" class="title-check dn">其他2</span>
+					<span><input type="checkbox" class="title-check dn">普通装3</span>
+					<span><input type="checkbox" class="title-check dn">套装3</span>
+					<span><input type="checkbox" class="title-check dn">超值/大容量3</span>
+					<span><input type="checkbox" class="title-check dn">墨水3</span>
+					<span><input type="checkbox" class="title-check dn">其他3</span>
+					<div class="title-btn">
+						<span class="title-btn-span addMore">更多</span>
+						<span class="title-btn-span multiSelect">多选</span>
+					</div>
+					<div class="cen-btn">
+						<p class="mail-btn-ok dn">确定</p>
+						<p class="mail-btn-no dn">取消</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="foot-btn inner" id="dropDown">
@@ -150,13 +132,13 @@
 			<img src="../../slice/icon-warning-search.png" class="no-img"/>
 			<p class="pt20 pb10">抱歉！没有找到与“<span class="blod">墨鼓</span>”相关的商品。</p>
 			<p>别担心，我们根据部分搜索词帮您找到了一些结果：     
-				<span class="size-color marginright border-right">墨盒</span>
+				<span class="size-color border-right">墨盒</span>
 				<span class="size-color marginleft">硒鼓</span>
 			</p>
 		</div>
 		<p class="pt20 pb20">所有类目</p>
 		<div class="foot-div">
-			<span class="marginright">你是不是在找:</span><span class="blod border-right marginright">墨盒</span><span class="blod border-right marginright">硒鼓</span><span class="blod marginright">打印机</span>
+			<span class="mr10">你是不是在找:</span><span class="b br mr10">墨盒</span><span class="b br mr10">硒鼓</span><span class="b mr10">打印机</span>
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
