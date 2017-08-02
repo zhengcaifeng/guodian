@@ -1,0 +1,112 @@
+/*--
+ * 作者：雷清云
+ * 时间：2017-7-31
+ * 描述：表单的网站css样式
+ */
+/* input框样式 */
+input::-webkit-input-placeholder {
+    color: #cccccc;
+}
+input::-moz-input-placeholder {
+    color: #cccccc;
+}
+ //水平排列
+.form-group {
+    .mt10;
+}
+.form-control {
+        width: 250px;
+        height: 26px;
+        border: 1px solid #cccccc;
+        padding-left: 8px;
+        .ml10;
+        color: #cccccc;
+    }
+.control-label{
+    display: inline-block;
+    width: 110px;
+    height: 28px;
+    text-align: right;
+    line-height: 28px;
+    color: #666666;
+    .fl;
+}
+ //内联表单
+.form-inline{
+     zoom:1;
+    .form-group{
+        width: 380px;
+        .fl;
+    } 
+}
+.form-inline:after{
+    display:table; content:''; clear:both;
+    }
+.form-group-yn{
+        position: relative;
+    }
+.form-group-num{
+        position: relative;
+    }
+.form-select{
+    width: 250px;
+    height: 26px;
+    background-image: url("../slice/icon-select-down.png");
+    background-size: 10px 8px;
+    background-position: 240px 10px;
+    background-repeat:no-repeat ;
+    
+}
+.form-select:focus{
+    border: 1px solid #108ee9;
+    box-shadow: 0px 0px 5px #d2eafb;
+}
+.bg-blue {
+    background-color: #f2f3fd;
+}
+.form-ul{
+    display: none;
+    width: 258px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 120px;
+    top: 29px;
+    z-index: 10;
+    .form-li{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+    }
+    .form-li-first{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+    }
+}
+.form-div{
+    display: none;
+    width: 258px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    left: 120px;
+    top: 29px;
+    z-index: 10;
+    .formNum-p{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+        }
+    .formNum-ul {
+            height: 160px;
+            overflow: auto;
+            li {
+                height: 32px;
+                line-height: 32px;
+                padding-left: 8px;
+            }
+        }
+}
