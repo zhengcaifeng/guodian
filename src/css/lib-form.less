@@ -10,6 +10,10 @@ input::-webkit-input-placeholder {
 input::-moz-input-placeholder {
     color: #cccccc;
 }
+input:focus{
+    border: 1px solid #108ee9;
+    box-shadow: 0px 0px 5px #d2eafb;
+}
  //水平排列
 .form-group {
     .mt10;
@@ -41,16 +45,7 @@ input::-moz-input-placeholder {
 }
 .form-inline:after{
     display:table; content:''; clear:both;
-    }
-    
-//内联表单带有右按钮
-.btn-default{
-    margin: 8px 0 0 30px;
 }
-.btn-ghost-default{
-    margin: 8px 0 0 10px;
-}
-    
 //只读状态下
 .form-group-yn{
         position: relative;
@@ -66,10 +61,6 @@ input::-moz-input-placeholder {
     background-position: 240px 10px;
     background-repeat:no-repeat ;
     
-}
-.form-select:focus{
-    border: 1px solid #108ee9;
-    box-shadow: 0px 0px 5px #d2eafb;
 }
 .bg-blue {
     background-color: #f2f3fd;

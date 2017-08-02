@@ -6,6 +6,15 @@
 <%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
 <!--input框样式-->
 <!--水平排列-->
+<style>
+	/*内联表单带有右按钮*/
+.btn-default{
+    margin: 8px 0 0 30px;
+}
+.btn-ghost-default{
+    margin: 8px 0 0 10px;
+}
+</style>
 <h2>水平排列：</h2>
 <form class="form-horizontal">
   <div class="form-group">
@@ -50,7 +59,6 @@
   <button class="btn btn-ghost-default btn-xs">按钮</button>
 </form> 
 
-
 <!--只读状态并且点击下拉--> <br /><br />
 <h2>只读状态下并且点击下拉</h2>
 <div class="form-group form-group-yn">
@@ -64,8 +72,6 @@
     <input type="text" class="form-control form-select form-num" readonly placeholder="全部">
     <div class="form-div"></div>
 </div>
-
-
 
 <%- include('../_block/footer.ejs',{js:['../../../js/app/form.js']}) %>	
 	
