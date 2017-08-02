@@ -82,11 +82,11 @@ require(['jquery','laypage'], function ($,laypage) {
             groups: 7 //连续显示分页数
         });
 
-        $(".js_selectpage").on("click",function(){
+        $(document).on("click",".js_selectpage",function(){
         $(this).next(".selectpage_main").slideToggle();
         })
 
-       $(".selectpage_main li").on("click",function(){
+       $(document).on("click",".selectpage_main li",function(){
            $(".js_selectpage").html($(this).text());
            $(".selectpage_main").hide();
         })
