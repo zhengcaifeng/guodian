@@ -2,17 +2,23 @@
 <script>
     require.config({
         baseUrl:'../../js/',
-        shim:{
-            'layer': {
-                deps: ['jquery'],
-                exports: "layer"
-            }
-        },
         paths:{
             "jquery":"lib/jquery.min",
             "artTemplate":'lib/artTemplate',
             "util":'app/util',
-            "layer":'lib/layer'
+            "layer":'lib/layer',
+            "jedate":'lib/jedate',
+            "css":'lib/css.min'
+        },
+        shim:{
+            'layer': {
+                deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
+                exports: "layer"
+            },
+            'jedate':{
+                deps: ['jquery','css!/css/style-date.css'],
+                exports: "jedate"
+            }
         }
     });
 </script>
