@@ -1,70 +1,80 @@
 <%- include('../_block/head.ejs',{ title:'列表-商城',css:['../../css/style-index.css'] }) %>
 <div class="inner">
     <!--first-->
-    <div class="shop-navigation inner fix c_gray_2">
-        <div class="shop-navigation-left fl tc f13 poi">
-            <span class="fl shop-sort poi shop-span fl tc db bg_red">综合排序</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">销量</span>
-            <span class="fl shop-time shop-border poi shop-span fl tc db">上架时间</span>
-            <span class="fl shop-price shop-border poi shop-span fl tc db">价格</span>
+    <div class="shop-navigation inner fix">
+        <div class="shop-navigation-left">
+            <span class="shop-sort shop-span">综合排序</span>
+            <span class="shop-border shop-span">销量</span>
+            <span class="shop-time shop-border shop-span">上架时间</span>
+            <span class="shop-price shop-border shop-span">价格</span>
         </div>
-        <div class="shop-navigation-rigth fr poi">
-            <span class="arrow-right arrow fr"></span>
-            <span class="arrow-left arrow fr"></span>
-            <span class="arrow fr pl5 pr5 db">
+        <div class="shop-navigation-rigth">
+            <span class="arrow-right arrow"></span>
+            <span class="arrow-left arrow"></span>
+            <span class="arrow arrow-content">
 				<span class="arrow-produce-number">1</span>/22 共<span class="arrow-produce-total">312</span>条相关产品
 			</span>
         </div>
     </div>
     <!--second-->
-    <div class="shop-navigation inner fix shop-margin c_gray_2">
-        <div class="shop-navigation-left fl tc f13 poi">
-            <span class="fl shop-sort poi shop-span fl tc db bg_red">综合排序</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">销量</span>
-            <span class="fl shop-time shop-border poi shop-span fl tc db">上架时间</span>
-            <span class="fl shop-price shop-border poi shop-span fl tc db">价格</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">优惠率</span>
+    <div class="shop-navigation inner fix shop-margin">
+        <div class="shop-navigation-left">
+            <span class="shop-sort shop-span">综合排序</span>
+            <span class="shop-border shop-span">销量</span>
+            <span class="shop-time shop-border shop-span">上架时间</span>
+            <span class="shop-price shop-border shop-span">价格</span>
+            <span class="shop-border shop-span">优惠率</span>
         </div>
-        <div class="shop-navigation-rigth fr poi">
-            <span class="arrow-right arrow fr"></span>
-            <span class="arrow-left arrow fr"></span>
-            <span class="pl5 pr5 db arrow fr">
+        <div class="shop-navigation-rigth">
+            <span class="arrow-right arrow"></span>
+            <span class="arrow-left arrow"></span>
+            <span class="arrow arrow-content">
 				<span class="arrow-produce-number">1</span>/22 共<span class="arrow-produce-total">312</span>条相关产品
 			</span>
         </div>
     </div>
     <!--third-->
-    <div class="shop-navigation inner fix shop-margin c_gray_2">
-        <div class="shop-navigation-left fl tc f13 poi">
-            <span class="fl shop-sort poi shop-span fl tc db bg_red">综合排序</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">销量</span>
-            <span class="fl shop-time shop-border poi shop-span fl tc db">上架时间</span>
-            <span class="fl shop-price shop-border poi shop-span fl tc db">价格</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">优惠率</span>
-            <span class="shop-sales shop-border fl poi ml10">
-						<input type="text" name="" id="" placeholder="￥最低价" class="shop-sale-input fl pl5"/>
-						<p class="pl10 pr10 fl">-</p>
-						<input type="text" name="" id="" placeholder="￥最高价" class="shop-sale-input fl pl5" />
+    <div class="shop-navigation inner fix shop-margin">
+        <div class="shop-navigation-left">
+            <span class="shop-sort shop-span">综合排序</span>
+            <span class="shop-border shop-span">销量</span>
+            <span class="shop-time shop-border shop-span">上架时间</span>
+            <span class="shop-price shop-border shop-span">价格</span>
+            <span class="shop-border shop-span">优惠率</span>
+            <span class="shop-sales shop-border">
+						<input type="text" name="" id="" placeholder="￥最低价" class="shop-sale-input"/>
+						<p class="shop-sale-hp">-</p>
+						<input type="text" name="" id="" placeholder="￥最高价" class="shop-sale-input" />
+			</span>
+            <span class="shop-checkbox">
+						<label class="poi">
+							<input type="checkbox" name="" id="" value="" class="shop-checkinput" />
+							电力专区
+						</label>
+						<label class="shop-checkbox-lable poi">
+							<input type="checkbox" name="" id="" value="" />
+							电子超市
+						</label>
 					</span>
         </div>
         <div class="shop-navigation-rigth">
-            <span class="arrow-right arrow fr"></span>
-            <span class="arrow-left arrow fr"></span>
-            <span class="pl5 pr5 db arrow fr">
+            <span class="arrow-right arrow"></span>
+            <span class="arrow-left arrow"></span>
+            <span class="arrow arrow-content">
 				<span class="arrow-produce-number">1</span>/22 共<span class="arrow-produce-total">312</span>条相关产品
 			</span>
         </div>
     </div>
     <!--third end-->
     <!--fourth-->
-    <div class="shop-navigation inner fix shop-margin c_gray_2">
-        <div class="shop-navigation-left fl tc f13 poi">
-            <span class="fl shop-sort poi shop-span fl tc db bg_red">综合排序</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">销量</span>
-            <span class="fl shop-time shop-border poi shop-span fl tc db">上架时间</span>
-            <span class="fl shop-price shop-border poi shop-span fl tc db">价格</span>
-            <span class="fl shop-sales shop-border poi shop-span fl tc db">优惠率</span>
-            <span class="shop-checkbox fl poi pl10">
+    <div class="shop-navigation inner fix shop-margin">
+        <div class="shop-navigation-left">
+            <span class="shop-sort shop-span">综合排序</span>
+            <span class="shop-border shop-span">销量</span>
+            <span class="shop-time shop-border shop-span">上架时间</span>
+            <span class="shop-price shop-border shop-span">价格</span>
+            <span class="shop-border shop-span">优惠率</span>
+            <span class="shop-checkbox">
 						<label class="poi">
 							<input type="checkbox" name="" id="" value="" class="shop-checkinput" />
 							电力专区
@@ -77,211 +87,232 @@
 
         </div>
         <div class="shop-navigation-rigth">
-            <span class="arrow-right arrow fr"></span>
-            <span class="arrow-left arrow fr"></span>
-            <span class="pl5 pr5 db arrow fr">
-						<span class="arrow-produce-number">1</span>/22 共<span class="arrow-produce-total">312</span>条相关产品
-					</span>
+            <span class="arrow-right arrow"></span>
+            <span class="arrow-left arrow"></span>
+            <span class="arrow arrow-content">
+				<span class="arrow-produce-number">1</span>/22 共<span class="arrow-produce-total">312</span>条相关产品
+			</span>
         </div>
     </div>
     <!--fourth end-->
 
     <div class="shop-list inner fix">
         <ul class="shop-list-ul fix mt20">
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icongreen fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-car.png"/>
-                        </div>
-                        <div class="shop-list-iconrightgreen pl5 pr5 fl">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icongreen fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-car.png"/>
+                            </div>
+                            <div class="shop-list-iconrightgreen">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright pr5 pl5 fl">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix shop-list-linomargin fl list-style-no">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix shop-list-linomargin shop-list-li list-style-no">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
         </ul>
-        <!--list first-->
+        <!--list first end-->
         <ul class="shop-list-ul fix mt20">
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icongreen fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-car.png"/>
-                        </div>
-                        <div class="shop-list-iconrightgreen fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icongreen fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-car.png"/>
+                            </div>
+                            <div class="shop-list-iconrightgreen">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix fl list-style-no mr20">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="f20 pl10 c_red fl">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix list-style-no shop-list-li">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
-            <li class="fix shop-list-linomargin fl list-style-no">
-                <div class="shop-list-image p10"><a href="javascript:;"><img src=""/></a></div>
-                <div class="shop-list-money fix">
-                    <span class="fl f20 pl10 c_red">￥86.00</span>
-                    <span class="shop-list-cont fl c_gray pl5 f12">销售价</span>
-                </div>
-                <div class="shop-list-underlin c_gray pl10">￥86.00市场价</div>
-                <div class="shop-list-message c_gray_2 pl10 pr10">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
-                <div class="shop-list-company c_gray_2 pl10 pt10">京东</div>
-                <div class="shop-list-bottom fix pl10 mt10">
-                    <div class="shop-list-icon fix fl">
-                        <div class="shop-list-iconleft pl5 pr5 fl">
-                            <img src="../../slice/icon-shop-cart.png"/>
-                        </div>
-                        <div class="shop-list-iconright fl pr5 pl5">电子超市</div>
+            <li class="fix shop-list-linomargin shop-list-li list-style-no">
+                <a href="javascript:;" class="shop-list-lia fix">
+                    <div class="shop-list-image"><img src=""/></div>
+                    <div class="shop-list-money fix">
+                        <span class="shop-list-num">￥86.00</span>
+                        <span class="shop-list-cont">销售价</span>
                     </div>
-                    <div class="shop-list-iconrightcon fr c_gray_2 pr10 pt10">全集团</div>
-                </div>
+                    <div class="shop-list-underlin">￥86.00市场价</div>
+                    <div class="shop-list-message">格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A 格之格（G&G）NT-CN2612X 大容量硒鼓 适用惠普HP Q2612A 12A  …</div>
+                    <div class="shop-list-company">京东</div>
+                    <div class="shop-list-bottom fix">
+                        <div class="shop-list-icon fix">
+                            <div class="shop-list-iconleft">
+                                <img src="../../slice/icon-shop-cart.png"/>
+                            </div>
+                            <div class="shop-list-iconright">电子超市</div>
+                        </div>
+                        <div class="shop-list-iconrightcon">全集团</div>
+                    </div>
+                </a>
             </li>
         </ul>
+        <!--list second end-->
     </div>
 
 

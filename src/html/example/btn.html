@@ -1,25 +1,129 @@
-<%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
+<%- include('../_block/head.ejs',{ title:'按钮' , css:['../../css/style-index.css'] }) %>
 <div id="page">
-    <button class="btn btn-ghost-danger btn-lg">页面级焦点按钮</button>
-    <button class="btn btn-danger btn-lg">页面级焦点按钮</button>
-    <button class="btn btn-red btn-ms">焦点按钮</button>
-    <button class="btn btn-ghost-red btn-xs">焦点按钮</button>
-    <button class="btn btn-danger btn-xs">页面级焦点按钮</button>
-    <a class="btn btn-ghost-default btn-xs">页面级焦点按钮</a>
-    <a class="btn btn-success btn-xs">新增</a>
-    <a class="btn btn-ghost-success btn-xs">新增</a>
-    <input type="button" class="btn btn-danger btn-xs" value="按钮"/>
-    <button class="btn btn-ghost-danger btn-xs">按钮</button>
-    <button class="btn btn-default btn-xs">菜单按钮</button><button class="btn btn-default btn-xs btn-pullDown"></button>
-    <button class="btn btn-ms btn-add">+ 添加</button>
+    <!-- 注意事项-->
+    <h1>注意事项：按钮基本样式设定为inline-block,使用时注意页面中的空格、换行产生的间距</h1>
 
+    <!-- 按钮大小-->
+    <div class="mt20">
+        <h2>按钮大小</h2>
+        <br/>
+        <button class="btn btn-danger btn-lg">大号按钮</button>
+        <button class="btn btn-danger btn-ms">中号按钮</button>
+        <button class="btn btn-danger btn-xs">小号按钮</button>
+    </div>
+    <br/>
+    <!-- 按钮类型-->
+    <div>
+        <h2>按钮类型</h2>
+        <br/>
+        <button class="btn btn-default btn-ms">页面级焦点按钮</button>
+        <button class="btn btn-revoke btn-ms">页面级普通按钮</button>
+        <br/><br/>
+        <button class="btn btn-default btn-xs">焦点按钮</button>
+        <button class="btn btn-revoke btn-xs">普通按钮</button>
+        <br/><br/>
+        <button class="btn btn-ghost-revoke btn-xs">幽灵按钮</button>
+        <button class="btn btn-revoke btn-xs">失效按钮</button>
+        <br/><br/>
+        <button class="btn btn-ms btn-add">+ 添加</button>
+        <br/><br/>
+        <button class="btn btn-ghost-revoke btn-xs">加载更多</button>
+        <!--<br/><br/>-->
+        <button class="btn btn-default btn-xs">菜单按钮</button><button class="btn btn-default btn-xs btn-pullDown"></button>
+    </div>
+    <br/>
+    <!-- 按钮用色-->
+    <div class="fix">
+        <h2>按钮用色</h2><br/>
+        <div class="fl">
+            <button class="btn btn-default btn-ms">页面级焦点按钮</button>
+            <button class="btn btn-ghost-default btn-ms">页面级幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-default btn-xs">焦点按钮</button>
+            <button class="btn btn-ghost-default btn-xs">幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-default btn-xs">按钮</button>
+            <button class="btn btn-ghost-default btn-xs">按钮</button>
+            <br/><br/>
+            <p>重复性的、中性的指引</p>
+        </div>
+        <div class="fl ml30">
+            <button class="btn btn-success btn-ms">页面级焦点按钮</button>
+            <button class="btn btn-ghost-success btn-ms">页面级幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-success btn-xs">焦点按钮</button>
+            <button class="btn btn-ghost-success btn-xs">幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-success btn-xs">按钮</button>
+            <button class="btn btn-ghost-success btn-xs">按钮</button>
+            <br/><br/>
+            <p>创造性的、成功的指引</p>
+        </div>
+        <div class="fl ml30">
+            <button class="btn btn-danger btn-ms">页面级焦点按钮</button>
+            <button class="btn btn-ghost-danger btn-ms">页面级幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-danger btn-xs">焦点按钮</button>
+            <button class="btn btn-ghost-danger btn-xs">幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-danger btn-xs">按钮</button>
+            <button class="btn btn-ghost-danger btn-xs">按钮</button>
+            <br/><br/>
+            <p>风险性的、警示的指引</p>
+        </div>
+        <div class="fl ml30">
+            <button class="btn btn-revoke btn-ms">页面级焦点按钮</button>
+            <button class="btn btn-ghost-revoke btn-ms">页面级幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-revoke btn-xs">焦点按钮</button>
+            <button class="btn btn-ghost-revoke btn-xs">幽灵按钮</button>
+            <br/><br/>
+            <button class="btn btn-revoke btn-xs">按钮</button>
+            <button class="btn btn-ghost-revoke btn-xs">按钮</button>
+            <br/><br/>
+            <p>撤销性的、可逆的指引</p>
+        </div>
+    </div>
+    <!-- 常用按钮-->
+    <h2 class="mt30">常用按钮</h2>
+    <div class="mt10">
+        <button class="btn btn-success btn-xs">新增</button>
+        <button class="btn btn-success btn-xs">启用</button>
+        <button class="btn btn-success btn-xs">导入</button>
+        <button class="btn btn-success btn-xs">导出</button>
+    </div>
+    <div class="mt10">
+        <button class="btn btn-ghost-default btn-xs">编辑</button>
+        <button class="btn btn-ghost-default btn-xs">查询</button>
+        <button class="btn btn-ghost-default btn-xs">保存</button>
+        <button class="btn btn-ghost-default btn-xs">提交</button>
+        <button class="btn btn-ghost-default btn-xs">确认</button>
+        <button class="btn btn-ghost-default btn-xs">授权</button>
+        <button class="btn btn-ghost-default btn-xs">关联</button>
+        <button class="btn btn-ghost-default btn-xs">帮助</button>
+    </div>
+    <div class="mt10">
+        <button class="btn btn-red btn-xs">删除</button>
+        <button class="btn btn-red btn-xs">重置</button>
+        <button class="btn btn-red btn-xs">失效</button>
+    </div>
+    <div class="mt10">
+        <button class="btn btn-revoke btn-xs">取消</button>
+        <button class="btn btn-revoke btn-xs">查询</button>
+    </div>
+    <!-- 底部按钮组-->
+    <h2 class="mt20 tc">底部按钮组</h2>
     <div class="btn-box">
         <button class="btn btn-xs btn-revoke">取消</button>
         <button class="btn btn-xs btn-red">确定</button>
-        <button class="btn btn-ghost-revoke btn-xs">加载更多</button>
-        <button class="btn btn-default btn-ms">加载更多</button>
-        <button class="btn btn-ghost-default btn-ms">加载更多</button>
     </div>
-
+    <style>
+        #page{
+            padding: 20px;
+        }
+        button{
+            /*margin-left: 10px;*/
+        }
+    </style>
 </div>
 <%- include('../_block/footer.ejs',{js:['../../../js/app/test.js']}) %>

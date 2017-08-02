@@ -6,24 +6,27 @@
 }
 .mall{
   font-size: 12px;
+  color: @var-gray-2;
 }
 .vhigh-2{
   vertical-align: 2px;
 }
 .mall-title{
   background: @var-gray-7;
-  display: flex;
+  display: table;
+  border-left: 1px solid @var-gray-8;
+  border-right: 1px solid @var-gray-8;
+  border-top: 1px solid @var-gray-8;
+  overflow: hidden;
 }
 .title-cont-left{
   width: 120px;
   line-height: 60px;
   float: left;
-  flex: none;
 }
 .title-cont-right{
-  float: right;
   line-height: 60px;
-  flex:1;
+  margin-top: 15px;
 }
 .color-red{
   color:@var-red-6;
@@ -36,24 +39,21 @@
 }
 .title-block{
   background: white;
-  padding: 6px 20px;
   text-align: left;
   position: relative;
-  padding-right: 30px;
+  border: 1px solid @var-gray-8;
+  margin-left: 24px;
+  line-height: 28px;
+  padding: 0 40px 0 20px;
+  float: left;
+  margin-bottom: 15px;
 }
 .title-block-img{
   position: absolute;
   right: 5px;
   cursor: pointer;
-  width: 13px;
+  width: 14px;
   top: 7px;
-}
-.title-block-marrig{
-  margin-right: 20px;
-}
-.type-block{
-  display: table;
-  float: left;
 }
 .mall-border{
   border-top: 1px solid @var-gray-8;
@@ -64,9 +64,8 @@
 }
 .mall-cent-title{
   text-align: right;
-  margin-right: 25px;
-  background: @var-gray-7;
-  width: 95px;
+  width: 110px;
+  padding-right: 10px;
 }
 .title-right-cent span{
   color: @var-dayBlue;
@@ -80,14 +79,9 @@
 .title-btn{
   line-height: 40px;
   width: 140px;
-}
-.title-btn-span{
-  border: 1px solid @var-gray-8;
-  padding: 5px 10px;
-  margin-right: 10px;
-  position: relative;
-  padding-right: 20px;
-  cursor: pointer;
+  position: absolute;
+  right:0;
+  top:0;
 }
 .btn-img{
   position: absolute;
@@ -121,6 +115,7 @@
   cursor: pointer;
   padding: 0 20px;
   background: white;
+  margin: 0 auto;
   margin-top: -1px;
 }
 .hide{
@@ -128,25 +123,6 @@
 }
 .show{
   display: show;
-}
-.bac-color{
-  background-color: @var-gray-7;
-}
-.visibility-hide{
-  visibility: hidden;
-}
-.rela{
-  position: relative;
-}
-.absou{
-  position: absolute;
-}
-.h100{
-  height: 100%;
-}
-.title-more{
-  height: 41px;
-  overflow: hidden;
 }
 .no-message{
   background-color: @var-gray-9;
@@ -174,7 +150,7 @@
 .no-message .marginright,.foot-div .marginright{
   margin-right: 10px;
 }
-.border-right{
+.br{
   border-right: 1px solid black;
   padding-right: 10px;
 }
@@ -186,10 +162,10 @@
 .mall-checekbox{
   vertical-align: middle;
 }
-.multi-select{
-  outline: 1px solid @var-orange-6;
-  z-index: 999;
-  position: relative;
+.mc{
+  border-bottom: 1px solid;
+  border-color: @var-orange-6;
+  background:@var-gray-6;
 }
 .multi-color{
   background:@var-gray-6;
@@ -206,6 +182,7 @@
   color:@var-gray-8;
   border: 1px solid @var-gray-8;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .mail-btn-no{
   float: right;
@@ -214,6 +191,7 @@
   background: @var-gray-7;
   border: 1px solid @var-gray-8;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .btn-oktrue{
   color: red;
@@ -224,4 +202,63 @@
   background-size: 20px;
   width: 20px;
   height:20px;
+}
+.tab-cen{
+  display: table;
+  background-color: @var-gray-7;
+  border-bottom:1px solid @var-gray-8;
+}
+.no-see{
+  height: 40px;
+}
+.title-cent {
+  background: white;
+  margin-left: 120px;
+  line-height: 40px;
+  position: relative;
+  padding-right: 150px;
+}
+.tab-cen span{
+  color: @var-blue-6;
+  padding: 10px 0px 10px 24px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.title-btn span{
+  border: 1px solid @var-gray-8;
+  padding: 5px 10px;
+  margin-right: 10px;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+  color: @var-gray-2;
+}
+.addMore{
+  background: url(../slice/icon-arrows-down.png) no-repeat 37px 10px;
+}
+.multiSelect{
+  background: url(../slice/icon-add.png) no-repeat 38px 8px;
+  background-size: 10px;
+}
+.title-label-show{
+  display: table;
+  line-height: 60px;
+}
+.title-check{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.cen-btn{
+  width: 124px;
+  margin: auto;
+  display: table;
+}
+.title-left-text{
+  line-height: 40px;
+  width: 120px;
+  float: left;
+}
+.inner{
+  width: 1200px;
+  margin: 0 auto;
 }

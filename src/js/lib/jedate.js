@@ -783,13 +783,14 @@
         return jsPath.substring(0, jsPath.lastIndexOf("/") + 1);
     }());
     jeDt.creatlink = function (lib) {
-        /*var link = document.createElement('link');
-         link.type = 'text/css';
-         link.rel = 'stylesheet';
-         link.href = jeDt.getPath +'skin/'+ lib + '.css';
-         link.id = 'jeDateSkin';
-         QD('head')[0].appendChild(link);
-         link = null;*/
+        // var src = document.location.href.split('html/')[0];
+        // var link = document.createElement('link');
+        //  link.type = 'text/css';
+        //  link.rel = 'stylesheet';
+        //  link.href = src + 'css/style-date.css';
+        //  link.id = 'jeDateSkin';
+        //  QD('head')[0].appendChild(link);
+        //  link = null;
     };
     jeDt.creatlink('jedate');
     jeDate.skin = function (lib) {
