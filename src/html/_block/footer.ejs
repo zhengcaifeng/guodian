@@ -7,16 +7,17 @@
             "artTemplate":'lib/artTemplate',
             "util":'app/util',
             "layer":'lib/layer',
-            "jedate1":'lib/jedate1'
+            "jedate":'lib/jedate',
+            "css":'lib/css.min'
         },
         shim:{
             'layer': {
-                deps: ['jquery'],
+                deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
                 exports: "layer"
             },
-            'jedate1':{
-                deps: ['jquery'],
-                exports: "jedate1"
+            'jedate':{
+                deps: ['jquery','css!/css/style-date.css'],
+                exports: "jedate"
             }
         }
     });
