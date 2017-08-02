@@ -1,52 +1,15 @@
 /*--
  * 作者：雷清云
  * 时间：2017-7-31
- * 描述：input和警各种提示btn的网站css样式
+ * 描述：警告的网站css样式
  */
-/* input框样式 */
-input::-webkit-input-placeholder {
-    color: #cccccc;
-}
-input::-moz-input-placeholder {
-    color: #cccccc;
-}
- //水平排列
-.form-group {
-    .mt10;
-    
-}
-.form-control {
-        height: 20px;
-        border: 1px solid #cccccc;
-        .pl5;
-    }
-.control-label{
-    display: inline-block;
-    width: 105px;
-    text-align: right;
-}
- //内联表单
-.form-inline{
-     zoom:1;
-    .form-group{
-        width: 300px;
-        float: left;
-    }  
-    
-}
-.form-inline:after{display:table; content:''; clear:both;}
-.form-select{
-    
-}
-
-
-
 
 /*警告框样式*/
 .message {
     .f12;
     .mt10;
     .message-p {
+        
         height: 34px;
         line-height: 34px;
         color: #666666;
@@ -54,53 +17,61 @@ input::-moz-input-placeholder {
 }
 //成功提示
 .message-success {
-    background-color: #F0F7EE;
-    border: 1px solid #DBEDD6;
+    background-color: #edf8e8;
+    border: 1px solid #daf0d0;
     .message-success-p {
         .bg-img{
             display: inline-block;
             background-image: url("../slice/icon-message-success.png");
+            background-size: 14px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position: 9px 10px;
         }
     }
 }
 //失败提示
 .message-fail {
-    background-color: #fbebeb;
-    border: 1px solid #F5CFCF;
+    background-color: #fff2f1;
+    border: 1px solid #feddcc;
     .message-fail-p {
         .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-message-fail.png");
+            background-size: 14px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position: 9px 10px;
         }
     }
 }
 //警告提示
 .message-warn {
-    background-color: #FFF3EB;
-    border: 1px solid #FFE2CF;
+    background-color: #fef9ed;
+    border: 1px solid #fbe9c5;
     .message-warn-p {
         .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-message-warn.png");
+            background-size: 14px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position: 9px 10px;
         }
     }
 }
 //注释提示
 .message-comment {
-    background-color: #ECF1F8;
-    border: 1px solid #D1DEED;
+    background-color: #e6f3fc;
+    border: 1px solid #d4f0fc;
     .message-comment-p {
        .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-message-comment.png");
+            background-size: 14px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position: 9px 10px; 
         }
     }
 }
@@ -131,21 +102,23 @@ input::-moz-input-placeholder {
     .mt10;
     height: 132px;
     .messageed-p1 {
-        .f14;
+        .f16;
         height: 24px;
         line-height: 24px;
         color: #333333;
-        margin: 30px 0 0 20px;
-        padding-left: 20px;
+        margin: 18px 0 0 16px;
+        .messageed-span{
+            margin-left: 20px;
+        }
     }
     .messageed-p2 {
-        .f12;
+        .f13;
         color: #666666;
-        margin: 10px 0 0 70px;
+        margin: 14px 0 0 70px;
     }
     .messageed-p3 {
-        .f12;
-        margin: 15px 0 0 70px;
+        .f13;
+        margin: 14px 0 0 70px;
         .messageed-a {
             color: #457AB7;
             text-decoration: none;
@@ -157,53 +130,61 @@ input::-moz-input-placeholder {
 }
 //已成功
 .messageed-success {
-    background-color: #F0F7EE;
-    border: 1px solid #DBEDD6;
+    background-color: #edf8e8;
+    border: 1px solid #daf0d0;
     .messageed-p1 {
        .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-messageed-success.png");
+            background-size: 24px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position:4px 4px;
         }
     }
 }
 //出错了
 .messageed-fail {
-    background-color: #fbebeb;
-    border: 1px solid #F5CFCF;
+    background-color: #fff2f1;
+    border: 1px solid #feddcc;
     .messageed-p1 {
        .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-messageed-fail.png");
+            background-size: 24px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position:4px 4px;
         }
     }
 }
 //请注意
 .messageed-warn {
-    background-color: #FFF3EB;
-    border: 1px solid #FFE2CF;
+    background-color: #fef9ed;
+    border: 1px solid #fbe9c5;
     .messageed-p1 {
        .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-messageed-warn.png");
+            background-size: 24px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position:4px 4px;
         }
     }
 }
 //帮助提示
 .messageed-comment {
-    background-color: #ECF1F8;
-    border: 1px solid #D1DEED;
+     background-color: #e6f3fc;
+    border: 1px solid #d4f0fc;
     .messageed-p1 {
        .bg-img{
             display: inline-block;
-            background-image: url("../slice/icon-message-success.png");
+            background-image: url("../slice/icon-messageed-comment.png");
+            background-size: 24px;
             background-repeat:no-repeat ;
-             vertical-align: middle;
+            vertical-align: middle;
+            background-position:4px 4px;
         }
     }
 }
