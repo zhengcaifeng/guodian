@@ -7,6 +7,8 @@
             "artTemplate":'lib/artTemplate',
             "util":'app/util',
             "layer":'lib/layer',
+            "jedate1":'lib/jedate1',
+            "laypage":'lib/laypage'
             "jedate":'lib/jedate',
             "css":'lib/css.min'
         },
@@ -14,6 +16,14 @@
             'layer': {
                 deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
                 exports: "layer"
+            },
+            'jedate1':{
+                deps: ['jquery'],
+                exports: "jedate1"
+            },
+            'laypage': {
+                deps: ['jquery'],
+                exports: "laypage"
             },
             'jedate':{
                 deps: ['jquery','css!/css/style-date.css'],
