@@ -44,11 +44,6 @@ require(['jquery'], function ($) {
             if($(this).text()=="更多" || $(this).text()=="多选"){
 
             }else if($(this).parent().parent().hasClass("mc")){
-               /* if($(this).find("input").is(":checked")){
-                    $(this).find("input").attr("checked","false");
-                }else{
-                    $(this).find("input").attr("checked","true");
-                }*/
             }
             else{
                     var dom = $(".title-label-show"),
