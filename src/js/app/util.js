@@ -4,7 +4,7 @@ Created by 周志豪 on 2017/7/31.
  */
 
 define(['jquery','artTemplate'],function($,template){
-    var g_data = {
+    var util = {
         debug:true,
         url:'http:127.1.1.1'
     };
@@ -36,13 +36,13 @@ define(['jquery','artTemplate'],function($,template){
         }
     });
     //统一日志打印
-    $.fn['log'] = $['log'] = function (log) {
-        if(true === g_data.debug){
+    util.log = function (log) {
+        if(true === util.debug){
             console.log(log);
         }
     };
     //模板渲染方法
-    $.fn['renderTpl'] = $['renderTpl'] = function (sign,dom,data,callback) {
+    util.renderTpl = function (sign,dom,data,callback) {
         var render = template.compile(dom);
         $(sign).html(render(data));
         callback && callback();
@@ -74,7 +74,7 @@ define(['jquery','artTemplate'],function($,template){
     (function(){
         var dataList = {};
         //添加缓存
-        $.fn["setCache"] = $["setCache"] = function (id, data) {
+        util.setCache = function (id, data) {
             if(typeof data ==="object"){
                 dataList[id] = $.extend(true,{},data);
             }else{
@@ -82,7 +82,7 @@ define(['jquery','artTemplate'],function($,template){
             }
         };
         // 获得缓存
-        $.fn["getCache"] = $["getCache"] = function (id) {
+        util.getCache = function (id) {
             if(dataList[id]){
                 if(typeof dataList[id] ==="object"){
                     return $.extend(true,{},dataList[id]);
@@ -94,16 +94,16 @@ define(['jquery','artTemplate'],function($,template){
             }
         };
         // 根据id清空缓存
-        $.fn["clearCache"] = $["clearCache"] = function (id) {
+        util.clearCache = function (id) {
             delete dataList[id];
         };
         // 清空所有的缓存
-        $.fn["clearAllCache"] = $["clearAllCache"] = function () {
+        util.clearAllCache = function () {
             dataList = {};
         }
     })();
     //获得所有url后携带的参数
-    $.fn['getAllQueryString'] = $['getAllQueryString'] = function (){
+    util.getAllQueryString = function (){
         if(!location.search){
             return {};
         }
@@ -116,5 +116,5 @@ define(['jquery','artTemplate'],function($,template){
         });
         return param;
     };
-    return g_data;
+    return util;
 });

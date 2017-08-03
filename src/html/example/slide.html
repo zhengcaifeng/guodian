@@ -1,0 +1,40 @@
+<%- include('../_block/head.ejs',{ title:'按钮' , css:['../../css/style-index.css'] }) %>
+<div id="page">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../../img/gallery-01.png"></div>
+            <div class="swiper-slide"><img src="../../img/gallery-02.png"></div>
+            <div class="swiper-slide"><img src="../../img/gallery-03.png"></div>
+            <div class="swiper-slide"><img src="../../img/gallery-04.png"></div>
+            <div class="swiper-slide"><img src="../../img/gallery-05.png"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination">
+            <div class="pagination-num">1</div>
+            <div class="pagination-num">2</div>
+            <div class="pagination-num">3</div>
+            <div class="pagination-num">4</div>
+            <div class="pagination-num">5</div>
+        </div>
+    </div>
+    <style>
+        .swiper-container{
+            width: 690px;
+        }
+        .pagination-num{
+            width: 20px;
+            height: 20px;
+            color: white;
+            line-height: 20px;
+            text-align: center;
+            background-color: #008af4;
+            margin-left: 10px;
+            float: left;
+        }
+        .pagination-active{
+            background-color: red;
+        }
+    </style>
+</div>
+<%- include('../_block/footer.ejs',{js:['../../../js/app/swiper.js']}) %>

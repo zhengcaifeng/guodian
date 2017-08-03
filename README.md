@@ -12,3 +12,5 @@
 * jquery延迟对象deferred http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html
 * require学习 http://www.imooc.com/learn/787
 * 深入JavaScript http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html
+* JavaScript 运行机制详解 http://www.ruanyifeng.com/blog/2014/10/event-loop.html
+* css禅意花园 http://www.csszengarden.com/tr/zh-cn/

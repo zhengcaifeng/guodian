@@ -1,9 +1,10 @@
 <%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
+
 <div style=" margin:10px auto; width: 800px;" class="fix">
-<div class="bg_bgGray f16 pl15" style="line-height: 50px;">帮助中心左侧菜单效果和代码</div>
+<div class="bg_bgGray f16 pl15" style="line-height: 50px;">帮助中心左侧菜单效果和代码（data-shrink="all"为多类目展开模式）</div>
 	<div class="fl">
-<div class="leftmenu helpcenter_leftmenu">
-	<h2 class="leftmemu_title f16"><i class="glyphicon glyphicon-help-left"></i>帮助中心</h2>
+<div class="leftmenu helpcenter_leftmenu" data-shrink="all">
+	<h2 class="leftmemu_title"><i class="glyphicon glyphicon-help-left"></i>帮助中心</h2>
 	<ul>
 		<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-add-left"></i></a>
 			<ul class="list-group">
@@ -44,8 +45,8 @@
 </div>
 	<div class="fr">
 		<textarea style="width: 500px; height: 300px;">
-			<div class="leftmenu helpcenter_leftmenu">
-				<h2 class="leftmemu_title f16"><i class="glyphicon glyphicon-help-left"></i>帮助中心</h2>
+			<div class="leftmenu helpcenter_leftmenu" data-shrink="all">
+				<h2 class="leftmemu_title"><i class="glyphicon glyphicon-help-left"></i>帮助中心</h2>
 				<ul>
 					<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-add-left"></i></a>
 						<ul class="list-group">
@@ -89,10 +90,10 @@
 </div>
 
 <div style=" margin:10px auto; width: 800px;" class="fix">
-	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">运用后台左侧菜单效果和代码</div>
+	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">运用后台左侧菜单效果和代码（data-shrink="single"为单一类目展开模式）</div>
 	<div class="fl">
-		<div class="leftmenu boss_leftmenu">
-			<h2 class="leftmemu_title c_gray f14"><i class="glyphicon glyphicon-menu-left"></i>菜单</h2>
+		<div class="leftmenu boss_leftmenu" data-shrink="single">
+			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-menu-left"></i>菜单</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-white-arrows-bottom"></i></a>
 					<ul class="list-group">
@@ -127,8 +128,8 @@
 	</div>
 	<div class="fr">
 		<textarea style="width: 500px; height: 300px;">
-		<div class="leftmenu boss_leftmenu">
-			<h2 class="leftmemu_title c_gray f14"><i class="glyphicon glyphicon-menu-left"></i>菜单</h2>
+		<div class="leftmenu boss_leftmenu" data-shrink="single">
+			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-menu-left"></i>菜单</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-white-arrows-bottom"></i></a>
 					<ul class="list-group">
@@ -165,10 +166,10 @@
 	</div>
 
 
-<div style=" margin:10px auto; width: 800px;" class="fix">
-	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">采购商中心左侧菜单效果和代码</div>
+<div style=" margin:10px auto; width: 800px; background:#ecf1f8;" class="fix">
+	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">采购商中心左侧菜单效果和代码（data-shrink="single"为单一类目展开模式）</div>
 	<div class="fl">
-		<div class="leftmenu supplier_leftmenu">
+		<div class="leftmenu supplier_leftmenu" data-shrink="single">
 			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-suppliermenu-left"></i>一级导航</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-triangle-left"></i></a>
@@ -187,7 +188,7 @@
 	</div>
 	<div class="fr">
 		<textarea style="width: 500px; height: 300px;">
-		<div class="leftmenu supplier_leftmenu">
+		<div class="leftmenu supplier_leftmenu" data-shrink="single">
 			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-suppliermenu-left"></i>一级导航</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-triangle-left"></i></a>
@@ -208,11 +209,11 @@
 	</div>
 
 
-<div style=" margin:10px auto; width: 800px;" class="fix">
-	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">供应商中心左侧菜单效果和代码</div>
+<div style=" margin:10px auto; width: 800px;background:#ecf1f8;" class="fix">
+	<div class="bg_bgGray f16 pl15" style="line-height: 50px;">供应商中心左侧菜单效果和代码（data-shrink="all"为多类目展开模式）</div>
 	<div class="fl">
-		<div class="leftmenu supplier_leftmenu">
-			<h2 class="leftmemu_title f16"><i class="glyphicon glyphicon-suppliermenu-left"></i>菜单</h2>
+		<div class="leftmenu supplier_leftmenu" data-shrink="all">
+			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-suppliermenu-left"></i>菜单</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-triangle-left"></i></a>
 					<ul class="list-group">
@@ -231,8 +232,8 @@
 	</div>
 	<div class="fr">
 	<textarea style="width: 500px; height: 300px;">
-		<div class="leftmenu supplier_leftmenu">
-			<h2 class="leftmemu_title f16"><i class="glyphicon glyphicon-suppliermenu-left"></i>菜单</h2>
+		<div class="leftmenu supplier_leftmenu" data-shrink="all">
+			<h2 class="leftmemu_title"><i class="glyphicon glyphicon-suppliermenu-left"></i>菜单</h2>
 			<ul>
 				<li class="memu-item"><a class="memu-item-title" href="javascript:;">一级类目<i class="glyphicon glyphicon-triangle-left"></i></a>
 					<ul class="list-group">

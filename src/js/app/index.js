@@ -16,7 +16,8 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
             age:'33'
         };
         module.init = function(){
-            $.log('页面初始化');
+            util.log('页面初始化');
+            util.setCache('i','123');
             fn.initTpl(pageData);
         };
         fn.initTpl = function (data) {
@@ -25,10 +26,11 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
         var renderHtml = (function(){
             $.subscribe('dataRender',function(e,data){
                 $.ajax({url:'component/title.html'}).done(function(dom){
-                    $.renderTpl('#header',dom,data);
+                    util.log(util.getCache('i'));
+                    util.renderTpl('#header',dom,data);
                 });
                 $.ajax({url:'_page/index.html'}).done(function(dom){
-                    $.renderTpl('#content',dom,data);
+                    util.renderTpl('#content',dom,data);
                 });
             });
         })();

@@ -23,7 +23,6 @@ require(['jquery'], function ($) {
 			});
 		$(document).on("mouseover", ".form-li-first", function() {
 				$(this).addClass("bg-blue");
-
 			});
 	    $(document).on("mouseout", ".form-li-first", function() {
 				$(this).removeClass("bg-blue");
