@@ -6,11 +6,13 @@
             "jquery":"lib/jquery.min",
             "artTemplate":'lib/artTemplate',
             "util":'app/util',
+            "table":'app/table',
             "layer":'lib/layer',
             "laypage":'lib/laypage',
             "jedate":'lib/jedate',
             "css":'lib/css.min',
-            "slide":'lib/jquery.SuperSlide.2.1.1'
+            "slide":'lib/jquery.SuperSlide.2.1.1',
+            "datagrid":'lib/jquery.easyui.min'
         },
         shim:{
             'layer': {
@@ -28,6 +30,10 @@
             'slide':{
                 deps: ['jquery'],
                 exports: "slide"
+            },
+            "datagrid":{
+                deps:['jquery','css!/css/style-datagrid.css'],
+                exports:"datagrid"
             }
         }
     });
