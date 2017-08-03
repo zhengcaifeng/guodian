@@ -5,7 +5,7 @@
 
 //按钮基本样式，input,a,button
 .btn {
-  font-family: "Microsoft YaHei";
+  //font-family: "Microsoft YaHei";
   //font-size: 12px;
   font-weight: inherit;
   display: inline-block;
@@ -104,7 +104,11 @@ a.btn {
     background-color: @var-blue-btn;
   }
 }
-
+//失效按钮
+.btn-invalid{
+  color: @var-gray-1;
+  background-color: @var-gray-11;
+}
 //幽灵按钮类型
 .btn-ghost-revoke{
   color: @var-gray;
@@ -122,10 +126,10 @@ a.btn {
   background-color: white;
   border-color: @var-green-btn;
   &:hover{
-    background-color: @var-green-1;
+    background-color: @var-green-hover1;
   }
   &:active{
-    background-color: @var-green-2;
+    background-color: @var-green-hover2;
   }
 }
 .btn-ghost-danger{
@@ -133,10 +137,10 @@ a.btn {
   background-color: white;
   border-color: @var-orange-btn;
   &:hover{
-    background-color: @var-orange-1;
+    background-color: @var-orange-hover1;
   }
   &:active{
-    background-color: @var-orange-2;
+    background-color: @var-orange-hover2;
   }
 }
 .btn-ghost-red{
@@ -155,10 +159,10 @@ a.btn {
   background-color: white;
   border-color: @var-blue-btn;
   &:hover{
-    background-color: @var-blue-1;
+    background-color: @var-blue-hover1;
   }
   &:active{
-    background-color: @var-blue-2;
+    background-color: @var-blue-hover2;
   }
 }
 
@@ -198,12 +202,13 @@ a.btn {
     height: 0;
     border-width: 6px 6px 0px 6px;
     border-style: solid;
-    border-color: @var-blue transparent transparent transparent;
+    border-color: @var-blue-btn transparent transparent transparent;
   }
   &:hover{
-    background-color: @var-blue;
+    background-color: @var-blue-btn;
   }
   &:active{
-    background-color: @var-blue;
+    background-color: @var-blue-btn;
   }
 }
+
