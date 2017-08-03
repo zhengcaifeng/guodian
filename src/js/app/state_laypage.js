@@ -1,3 +1,6 @@
+/**
+ * Created by liangqingzhu on 2017/8/1.
+ */
 require(['jquery','laypage'], function ($,laypage) {
     $(function(){
         //测试数据
