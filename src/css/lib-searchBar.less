@@ -11,6 +11,10 @@
   font-size: 12px;
   color:@var-dayBlue;
   vertical-align: middle;
+  font-size: 12px;
+  padding-right: 20px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 /*上下箭头背景图片*/
 .up{
@@ -21,18 +25,45 @@
   background: url(../slice/icon-down-arr.png) no-repeat 26px;
   background-size: 15px;
 }
-/*input css没好  自己写了一个用于测试 好了之后替换掉*/
-.CESHIINPUT{
-  color: @var-gray-2;
+.sear-form-btn{
+  clear: both;
+  float: right;
+}
+.search-bar-div,.search-bar-line{
+  background: #F7F7F7;
+  font-size: 14px;
+  padding: 30px;
+  margin: auto;
+  width: 1200px;
+  box-sizing: border-box;
+}
+.search-bar-title{
   font-size: 12px;
+  height: 16px;
+  color:@var-gray;
 }
-.CESHIINPUT span{
-  line-height: 30px;
+.crumbs{
+  margin: auto;
+  width: 1200px;
+  margin-bottom: 10px;
 }
-.CESHIINPUT input{
-  height: 30px;
-  width: 160px;
-  border: 1px solid @var-gray-1;
+.crumbs .search-bar-title li{
+  float: left;
+  &:hover{
+    color:@var-dayBlue;
+  }
+}
+.curmbs-margin-poi{
+  margin-right: 10px;
+  cursor: pointer;
   margin-left: 10px;
-  padding-left: 5px;
+}
+.search-bar-div .form-inline .form-group{
+  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: 0;
+}
+.search-bar-line .form-inline .form-group{
+  margin-top: 0;
+  margin-left: 0;
 }
