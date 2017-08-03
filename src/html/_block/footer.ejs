@@ -10,7 +10,7 @@
             "laypage":'lib/laypage',
             "jedate":'lib/jedate',
             "css":'lib/css.min',
-            "Swiper":'https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery'
+            "slide":'lib/jquery.SuperSlide.2.1.1'
         },
         shim:{
             'layer': {
@@ -25,9 +25,9 @@
                 deps: ['jquery','css!/css/style-date.css'],
                 exports: "jedate"
             },
-            'Swiper':{
-                deps: ['jquery','css!https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css'],
-                exports: "Swiper"
+            'slide':{
+                deps: ['jquery'],
+                exports: "slide"
             }
         }
     });
