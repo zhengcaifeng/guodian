@@ -6,10 +6,15 @@
   -->
 <!--input框样式-->
 <style>
+h2{
+	margin: 30px;
+}
+form{
+	margin: 30px;
+}
 	/*内联表单带有右按钮*/
 .form-inline-btn{
 	width: 150px;
-	margin: 8px 0 0 24px;
 	float: left;
 }
 .form-inline-btn .form-btn-right{
@@ -24,10 +29,10 @@
 		float: right;
 }
 .form-inline-btns .form-btn-left{
-	margin: 20px 20px 0 0;
+	margin: 20px 15px 0 0;
  }
  .form-inline-btns .form-btn-right{
-	margin: 20px 60px 0 0;
+	margin: 20px 120px 0 0;
  }
 h2{
 	margin-top: 50px;
@@ -35,7 +40,7 @@ h2{
 </style>
 
 <!--普通表单-->
-<h2>普通表单</h2>
+<h2>普通表单：</h2>
 <form>
   <div class="form-group">
     <label class="form-lable">单行文本框：</label>
@@ -46,7 +51,7 @@ h2{
     <input type="text" class="form-control" placeholder="请输入关键字和编码">
   </div>
   <div class="form-group">
-  	<lable class="form-lable rmb-lable"><input class="checkbox" type="checkbox" />&nbsp;&nbsp;&nbsp;记住信息</lable>
+  	<lable class="form-lable box-inline"><input class="checkbox-inline" type="checkbox" />&nbsp;&nbsp;&nbsp;记住信息</lable>
   </div>
   <div class="form-group">
   	<button class="btn btn-ghost-default btn-xs">提交</button>
@@ -106,19 +111,91 @@ h2{
   
 </form> 
 
+<h2>复选框</h2>
+<form>
+	<lable class="box-inline"><input class="checkbox-inline" type="checkbox"/> 1 </lable>
+	<lable class="box-inline"><input class="checkbox-inline" type="checkbox"/> 2 </lable>
+	<lable class="box-inline"><input class="checkbox-inline" type="checkbox"/> 3 </lable>
+</form>
+
+<h2>单选按钮</h2>
+<form>
+	<lable class="box-inline"><input class="radio-inline" type="radio"/> 1 </lable>
+	<lable class="box-inline"><input class="radio-inline" type="radio"/> 2 </lable>
+	<lable class="box-inline"><input class="radio-inline" type="radio"/> 3 </lable>
+</form>
+
+
 <!--只读状态并且点击下拉-->
-<h2>只读状态下并且点击下拉:</h2>
-<div class="form-group form-group-yn">
+<h2>只读状态下并且点击下拉：</h2>
+<form class="form-group form-group-yn">
     <label class="control-label">下拉列表一：</label>
     <input type="text" class="form-control form-control-ml  form-select form-yn" readonly placeholder="全部">
     <ul class="form-ul"></ul>
-</div>
+</form>
 
-<div class="form-group form-group-num">
+<form class="form-group form-group-num">
     <label class="control-label">下拉列表四：</label>
     <input type="text" class="form-control form-control-ml form-select form-num" readonly placeholder="全部">
-    <div class="form-div"></div>
-</div>
+    <div class="form-num-div"></div>
+</form>
+
+<!--可搜索下拉框-->
+<form class="form-group form-group-search">
+    <label class="control-label">可搜索下拉框：</label>
+    <img class="form-search-img" src="../../slice/icon-search-sx.png" alt="" />
+    <input type="text" class="form-control form-control-ml form-select form-search" readonly placeholder="全部">
+    <div class="form-search-div">
+    	<input class="form-search-input" type="text" placeholder="请输入关键字"/>
+    	<ul class="form-search-ul">
+    		<li class="form-search-li">的数据发斯蒂芬教</li>
+    		<li class="form-search-li">二二无若若无</li>
+    		<li class="form-search-li">热发送方</li>
+    		<li class="form-search-li">盛世嫡妃</li>
+    		<li class="form-search-li">收费方式分</li>
+    		<li class="form-search-li">发送的方式</li>
+    	</ul>
+    </div>
+</form>
+
+<!--三级下拉菜单-->
+<form class="form-group form-group-three">
+    <label class="control-label">三级下拉菜单：</label>
+    <input type="text" class="form-control form-control-ml form-select form-three" readonly placeholder="全部">
+    <div class="form-three-div">
+    	<p class="form-three-p">全部</p>
+    	<ul class="form-three-ul">
+    		<li class="form-three-li">的数据发斯蒂芬教</li>
+    		<li class="form-three-li">二二无若若无</li>
+    		<li class="form-three-li">热发送方</li>
+    		<li class="form-three-li">盛世嫡妃</li>
+    		<li class="form-three-li">收费方式分</li>
+    		<li class="form-three-li">发送的方式</li>
+    	</ul>
+    </div>
+    <div class="form-three-div1">
+    	<p class="form-three-p1">全部</p>
+    	<ul class="form-three-ul1">
+    		<li class="form-three-li1">的数据发斯蒂芬教</li>
+    		<li class="form-three-li1">二二无若若无</li>
+    		<li class="form-three-li1">热发送方</li>
+    		<li class="form-three-li1">盛世嫡妃</li>
+    		<li class="form-three-li1">收费方式分</li>
+    		<li class="form-three-li1">发送的方式</li>
+    	</ul>
+    </div><div class="form-three-div2">
+    	<p class="form-three-p2">全部</p>
+    	<ul class="form-three-ul2">
+    		<li class="form-three-li2">的数据发斯蒂芬教</li>
+    		<li class="form-three-li2">二二无若若无</li>
+    		<li class="form-three-li2">热发送方</li>
+    		<li class="form-three-li2">盛世嫡妃</li>
+    		<li class="form-three-li2">收费方式分</li>
+    		<li class="form-three-li2">发送的方式</li>
+    	</ul>
+    </div>
+</form>
+
 
 <%- include('../_block/footer.ejs',{js:['../../../js/app/form.js']}) %>	
 	
