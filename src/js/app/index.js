@@ -4,8 +4,11 @@
 require(['jquery','artTemplate','util'], function ($,template,util) {
     $(function(){
         page.init();
-        $(document).on('click','.btn-page',function () {
-
+        $(document).on('click','.btn-page',function (e) {
+            e.preventDefault();
+            var _this = $(this);
+            var type = _this.data("fn");
+            page[type](_this)?page[type](_this):console.log('not fonud');
         });
     });
     var page = (function (module) {
@@ -20,6 +23,9 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
             util.setCache('i','123');
             fn.initTpl(pageData);
         };
+        module.test = function () {
+
+        };
         fn.initTpl = function (data) {
             $.publish('dataRender',data);
         };
@@ -32,6 +38,9 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
                 $.ajax({url:'_page/index.html'}).done(function(dom){
                     util.renderTpl('#content',dom,data);
                 });
+                $.when($.ajax({url:'component/title.html'}),$.ajax({url:'_page/index.html'})).done(function(s1,s2){
+
+                })
             });
         })();
         return module;

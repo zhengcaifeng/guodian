@@ -4,29 +4,46 @@
  * 描述：表单的网站css样式
  */
 /* input框样式 */
-input::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder {
     color: #cccccc;
 }
-input::-moz-input-placeholder {
+.form-control::-moz-input-placeholder {
     color: #cccccc;
 }
-input:focus{
-    border: 1px solid #108ee9;
-    box-shadow: 0px 0px 5px #d2eafb;
+.form-control:focus{
+  border-color: #108ee9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
 }
  //水平排列
-.form-group {
-    .mt10;
-    margin-left: 24px;
-}
 .form-control {
         width: 250px;
         height: 26px;
         border: 1px solid #cccccc;
         padding-left: 8px;
-        margin-left: 8px;
         color: #cccccc;
     }
+    .form-control-ml{
+    margin-left: 8px;
+ }
+//普通表单
+
+.form-lable{
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+    color: #666666;
+}
+.rmb-lable {
+    font-weight: 400;
+    .checkbox{
+        vertical-align: middle;
+    }
+}
+
+
+ //水平排列
 .control-label{
     display: inline-block;
     width: 110px;
@@ -59,7 +76,7 @@ input:focus{
     height: 26px;
     background-image: url("../slice/icon-select-down.png");
     background-size: 10px 8px;
-    background-position: 240px 10px;
+    background-position: 230px 10px;
     background-repeat:no-repeat ;
     
 }
@@ -68,13 +85,13 @@ input:focus{
 }
 .form-ul{
     display: none;
-    width: 258px;
+    width: 250px;
     border: 1px solid #cccccc;
     cursor: pointer;
     background-color: white;
     position: absolute;
-    left: 120px;
-    top: 29px;
+    left: 118px;
+    top: 27px;
     z-index: 10;
     .form-li{
             height: 32px;
@@ -89,13 +106,13 @@ input:focus{
 }
 .form-div{
     display: none;
-    width: 258px;
+    width: 250px;
     border: 1px solid #cccccc;
     cursor: pointer;
     background-color: white;
     position: absolute;
-    left: 120px;
-    top: 29px;
+    left: 118px;
+    top: 27px;
     z-index: 10;
     .formNum-p{
             height: 32px;

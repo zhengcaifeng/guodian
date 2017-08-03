@@ -1,85 +1,83 @@
 <%- include('../_block/head.ejs',{ title:'首页' , css:[''] }) %>
 <br/><br/><br/>
-<div class="mau pct90 mb10">
-    <ul class="nd fix h16 f12 list-style-no">
-        <li class="fl ml10 mr10 poi c_gray_2">菜单一</li>
-        <li class="fl c_gray_2">/</li>
-        <li class="fl ml10 mr10 poi c_gray_2">一级类目 01</li>
-        <li class="fl c_gray_2">/</li>
-        <li class="fl ml10 mr10 poi">二级类目 01</li>
+<div class="crumbs">
+    <ul class="search-bar-title">
+        <li class="curmbs-margin-poi">菜单一</li>
+        <li>/</li>
+        <li class="curmbs-margin-poi">一级类目 01</li>
+        <li>/</li>
+        <li class="curmbs-margin-poi c_gray_2">二级类目 01</li>
     </ul>
 </div>
-<div class="p30 f14 pct90 mau bg_bgGray fix">
-    <div class="fix">
-        <div class="fl pr70 CESHIINPUT">
-            <span>单行文本框：</span>
-            <input type="text" placeholder="请输入关键字"/>
+<div class="search-bar-line">
+    <form class="form-inline" action="#">
+        <div class="form-group">
+            <label class="control-label">查询项一：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项一">
         </div>
-        <div class="fl pr40 CESHIINPUT">
-            <span>单行文本框：</span>
-            <input type="text" placeholder="请输入关键字"/>
+        <div class="form-group">
+            <label class="control-label">查询项二：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项二">
         </div>
         <div class="fr">
             <input type="button" class="btn btn-default btn-xs mr15" value="搜索"/>
             <button class="btn btn-ghost-revoke btn-xs">重置</button>
         </div>
-    </div>
+    </form>
 </div>
 <br/><br/><br/>
-<div class="p30 f14 pct90 mau bg_bgGray fix">
-    <div class="fix mb30">
-        <div class="fl pr70 CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+<div class="search-bar-div">
+    <form class="form-inline"  action="#">
+        <div class="form-group">
+            <label class="control-label">查询项一：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项一">
         </div>
-        <div class="fl pr70 CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group">
+            <label class="control-label">查询项二：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项二">
         </div>
-        <div class="fl CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group">
+            <label class="control-label">查询项三：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项三">
         </div>
-    </div>
-    <div class="fr mb30">
-        <input type="button" class="btn btn-default btn-xs mr15" value="搜索"/>
-        <button class="btn btn-ghost-revoke btn-xs">重置</button>
-    </div>
+        <div class="fr sear-form-btn">
+            <input type="button" class="btn btn-default btn-xs mr15" value="搜索"/>
+            <button class="btn btn-ghost-revoke btn-xs">重置</button>
+        </div>
+    </form>
 </div>
 <br/><br/><br/><br/>
-<div class="p30 f14 pct90 mau bg_bgGray fix">
-    <div class="fix mb30 CESHIINPUT">
-        <div class="fl pr70">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+<div class="search-bar-div">
+    <form class="form-inline" action="#">
+        <div class="form-group">
+            <label class="control-label">查询项一：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项一">
         </div>
-        <div class="fl pr70 CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group">
+            <label class="control-label">查询项二：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项二">
         </div>
-        <div class="fl">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group">
+            <label class="control-label">查询项三：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项三">
         </div>
-    </div>
-    <div class="fix mb30 dn">
-        <div class="fl pr70 CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group dn">
+            <label class="control-label">查询项一：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项一">
         </div>
-        <div class="fl pr70 CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group dn">
+            <label class="control-label">查询项二：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项二">
         </div>
-        <div class="fl CESHIINPUT">
-            <span class="pr15">查询项一 :</span>
-            <input type="text" name="" placeholder="请输入查询项一"/>
+        <div class="form-group dn">
+            <label class="control-label">查询项三：</label>
+            <input type="text" class="form-control form-control-ml" placeholder="请输入查询项三">
         </div>
-    </div>
-    <div class="fr">
-        <input type="button" class="btn btn-default btn-xs mr15" value="搜索"/>
-        <button class="btn btn-ghost-revoke btn-xs">重置</button>
-        <span class="up_down f12 pr20 poi ml15 down" id="up_down">展开</span>
-    </div>
+        <div class="fr sear-form-btn">
+            <input type="button" class="btn btn-default btn-xs mr15" value="搜索"/>
+            <button class="btn btn-ghost-revoke btn-xs">重置</button>
+            <span class="up_down down" id="up_down">展开</span>
+        </div>
+    </form>
 </div>
 <%- include('../_block/footer.ejs',{js:['../../../js/app/searchBar.js']}) %>

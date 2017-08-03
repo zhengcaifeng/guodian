@@ -11,7 +11,7 @@
             "ztree":'lib/jquery.ztree.core',
             "jedate":'lib/jedate',
             "css":'lib/css.min',
-            "Swiper":'https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery'
+            "slide":'lib/jquery.SuperSlide.2.1.1'
         },
         shim:{
             'layer': {
@@ -34,6 +34,10 @@
                 deps: ['jquery','css!/css/style-ztree.css'],
                 exports: "ztree"
             },
+            'slide':{
+                deps: ['jquery'],
+                exports: "slide"
+            }
         }
     });
 </script>
