@@ -1,109 +1,109 @@
 define(['jquery','layer'],function($,layer){
-    /*layer.config({
-        path: '/js/layer/'
-    });*/
-    var fn = {};
-    $.fn['gdLayer'] = $['gdLayer'] = function(option, callback) {
-        if(option["type"]) {
-            fn[option["type"]](option["width"],option["height"],option["text"], option["littleMsg"], callback);
-        }
-    };
+   var dialog = {};
+    (function(){
+        var fn = {};
+        dialog.modal = function(option, callback,cancelCallBack) {
+            fn.publicLayer_open(option["title"],option["content"],callback,cancelCallBack,1,option["width"],option["height"]);
+        };
 
-    fn.base = function(lwith,lheight,text, littleMsg, callback) {
-        var result = "";
-        if(text != "" || littleMsg != ""){
-            result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        }
-        fn.publicLayer_open('标题',result,'base-Layer',['确定', '取消'],lwith,lheight,callback,'base',-1,0);
-    };
-
-    fn.twoLayer = function(lwith,lheight,text, littleMsg, callback) {
-        var result = "";
-        if(text != "" || littleMsg != ""){
-            result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        }
-        fn.publicLayer_open('标题',result,'base-Layer',['确定', '取消'],lwith,lheight,callback,'base',-1,1);
-    };
-
-    fn.warn = function(lwith,lheight,text, littleMsg, callback) {
-        var result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        fn.publicLayer_msg(result,'msg-Layer',['继续', '取消'],lwith,lheight,callback,'warn',7);
-    };
-
-    fn.success = function(lwith,lheight,text, littleMsg, callback) {
-        var result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        fn.publicLayer_msg(result,'msg-Layer',['确定'],lwith,lheight,callback,'success',1);
-    };
-
-    fn.error = function(lwith,lheight,text, littleMsg, callback) {
-        var result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        fn.publicLayer_msg(result,'msg-Layer',['确定','取消'],lwith,lheight,callback,'error',2);
-    };
-
-    fn.message = function(lwith,lheight,text, littleMsg, callback) {
-        var result = text + '<div style="color: #999;font-size: 12px;">' + littleMsg + '</div>';
-        fn.publicLayer_msg(result,'msg-Layer',['知道了'],lwith,lheight,callback,'message',3);
-    };
-
-    fn.prompt = function(lwith,lheight,text, littleMsg, callback) {
-        var result = text + '<div style="padding-top: 10px;color: #999;font-size: 12px;line-height: 17px">' + littleMsg + '</div>';
-        fn.publicLayer_msg(result,'prompt-layer',['确定','取消'],lwith,lheight,callback,'prompt',-1);
-    };
-
-    fn.publicLayer_msg = function(resultText,cssSkin,typeBtn,lwith,lheight,callback,type,icon){
-        layer.msg(resultText, {
-            icon:icon,
-            extend: 'gdLayer.css', //加载您的扩展样式
-            skin: cssSkin,
-            time: 0,
-            shade : [0.5 , '#000' , true],
-            area: [lwith, lheight],
-            btn: typeBtn,
-            yes: function(index) {
-                callback ? callback(index) : layer.close(index);
-            },
-            btn2: function(index) {
-                layer.close(index);
-            },
-            success:function(index){
-                if(type == "prompt"){
-                    $('.layui-layer-dialog .layui-layer-content').css("padding","20px 20px 20px 20px");
-                }
-                if(type == "message" || type == "warn" || type == "success" || type == "error"){
-                    $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("top","30px");
-                    $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("left","30px");
-                    $('.layui-layer-dialog .layui-layer-padding').css("padding","30px 20px 10px 70px");
-                }
+        dialog.alert = function(option, callback,cancelCallBack){
+            if(option["type"]) {
+                fn.publicLayer_msg(option["type"],option["data"], callback,cancelCallBack,option["width"],option["height"]);
             }
-        });
-    };
+        };
 
-    fn.publicLayer_open = function(layerTitle,resultText,cssSkin,typeBtn,lwith,lheight,callback,type,icon,layerType){
-        layer.open({
-            type:layerType,
-            icon:icon,
-            extend: 'gdLayer.css', //加载您的扩展样式
-            skin: cssSkin,
-            shade : [0.5 , '#000' , true],
-            area: [lwith, lheight],
-            title:layerTitle,
-            content: resultText,
-            btn: typeBtn,
-            yes: function(index) {
-                callback ? callback(index) : layer.close(index);
-            },
-            btn2: function(index) {
-                layer.close(index);
-            },
-            cancel: function(index) {
-                layer.close(index);
-            },
-            success:function(index){
-                if(type == "base"){
+        fn.publicLayer_msg = function(type,data,callback,cancelCallBack,width,height){
+            var result = "";
+            var icon = "";
+            var typeBtn = null;
+            var cssSkin = "";
+            var lwidth = "";
+            width !="" ? lwidth = width : lwidth = "390";
+            switch(type){
+                case "prompt" :
+                    result = data.text + '<div style="padding-top: 10px;color: #999;font-size: 12px;line-height: 17px">' + data.littleMsg + '</div>'
+                    icon = -1;
+                    typeBtn = ['确定','取消'];
+                    cssSkin = "prompt-layer";
+                    break;
+                case "message" :
+                    result = data.text + '<div style="color: #999;font-size: 12px;">' + data.littleMsg + '</div>';
+                    icon = 3;
+                    typeBtn = ['知道了'];
+                    cssSkin = "msg-Layer";
+                    break;
+                case "warn" :
+                    result = data.text + '<div style="color: #999;font-size: 12px;">' + data.littleMsg + '</div>';
+                    icon = 7;
+                    typeBtn = ['确定','取消'];
+                    cssSkin = "msg-Layer";
+                    break;
+                case "success" :
+                    result = data.text + '<div style="color: #999;font-size: 12px;">' + data.littleMsg + '</div>';
+                    icon = 1;
+                    typeBtn = ['确定'];
+                    cssSkin = "msg-Layer";
+                    break;
+                case "error" :
+                    result = data.text + '<div style="color: #999;font-size: 12px;">' + data.littleMsg + '</div>';
+                    icon = 2;
+                    typeBtn = ['确定','取消'];
+                    cssSkin = "msg-Layer";
+                    break;
+            }
+            layer.msg(result, {
+                icon:icon,
+                extend: 'gdLayer.css', //加载您的扩展样式
+                skin: cssSkin,
+                time: 0,
+                shade : [0.5 , '#000' , true],
+                area: [lwidth+'px', height+'px'],
+                btn: typeBtn,
+                yes: function(index) {
+                    callback ? callback(index) : layer.close(index);
+                },
+                btn2: function(index) {
+                    cancelCallBack ? cancelCallBack(index) : layer.close(index);
+                },
+                success:function(index){
+                    if(type == "prompt"){
+                        $('.layui-layer-dialog .layui-layer-content').css("padding","20px 20px 20px 20px");
+                    }
+                    if(type == "message" || type == "warn" || type == "success" || type == "error"){
+                        $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("top","30px");
+                        $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("left","30px");
+                        $('.layui-layer-dialog .layui-layer-padding').css("padding","30px 20px 10px 70px");
+                    }
+                }
+            });
+        };
+
+        fn.publicLayer_open = function(layerTitle,resultText,callback,cancelCallBack,layerType,width,height){
+            var lwidth = "";
+            width !="" ? lwidth = width : lwidth = "522";
+            layer.open({
+                type:1,
+                extend: 'gdLayer.css', //加载您的扩展样式
+                skin: 'base-Layer',
+                shade : [0.5 , '#000' , true],
+                area: [lwidth+"px", height+"px"],
+                title:layerTitle,
+                content: resultText,
+                btn: ['确定', '取消'],
+                yes: function(index) {
+                    callback ? callback(index) : layer.close(index);
+                },
+                btn2: function(index) {
+                    cancelCallBack ? cancelCallBack(index) : layer.close(index);
+                },
+                cancel: function(index) {
+                    layer.close(index);
+                },
+                success:function(index){
                     $('.layui-layer-dialog .layui-layer-content').css("padding","20px 20px 20px 50px");
                 }
-            }
-        });
-    };
-    //return fn;
+            });
+        };
+    })();
+    return dialog;
 });
