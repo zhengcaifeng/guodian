@@ -48,3 +48,9 @@
          background-image: url('../img/icon-twitter.png');
        }
     ```
+
+### JavaScript 编写规范
+
+#### 页面逻辑代码
+
+业务相关的代码都写在js目录下的logic文件下，命名规则
