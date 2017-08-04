@@ -144,16 +144,4 @@ require(['jquery'], function ($) {
 	//调用执行
 	$('.form-three').formThree();
 	
-//	var record;
-//		$.ajax({
-//			type:"get",
-//			url:"../../js/mock/a.txt",
-//			data:{},
-//			dataType:"json",
-//			async:true,
-//			success:function(data){
-//				record = data;
-//				console.log(record);
-//			}
-//		});
 });
