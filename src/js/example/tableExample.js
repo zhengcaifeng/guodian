@@ -1,7 +1,7 @@
 /**
  * Created by 刘泽举 on 2017/8/3.
  */
-require(['jquery','table'], function ($,table) {
+require(['jquery','table','util'], function ($,table,util) {
     $.getJSON("../../js/mock/managerData.js",function (data) {
         table.initTable({
             target:'#table',
@@ -10,7 +10,7 @@ require(['jquery','table'], function ($,table) {
             data:data,
             columns: [
                 {field:'userCode',title:'角色编码',width:80},
-                {field:'userName',title:'角色名称',width:400},
+                {field:'userName',title:'角色名称',width:200},
                 {field:'userType',title:'角色类型',width:180},
                 {field:'creater',title:'创建人',width:160},
                 {field:'creatTime',title:'创建日期',width:120}
@@ -18,17 +18,12 @@ require(['jquery','table'], function ($,table) {
             hasCheckbox:true,
             hasSortNumber:true
         });
-        // var option =  table.defaultOption;
-        // option.data = data;
-        // option.columns = [[
-        //     {field:'',title:'',checkbox:true,resizable:false},
-        //     {field:'userCode',title:'角色编码',width:80,align:'center',resizable:false},
-        //     {field:'userName',title:'角色名称',width:400,align:'center',resizable:false},
-        //     {field:'userType',title:'角色类型',width:180,align:'center',resizable:false},
-        //     {field:'creater',title:'创建人',width:160,align:'center',resizable:false},
-        //     {field:'creatTime',title:'创建日期',width:120,align:'center',resizable:false}
-        // ]];
-        //
-        // table.updateTable("#table",option);
     });
+
+    $(document).on("click","#getData",function () {
+       util.log(table.getCheckedData({
+           target:'#table'
+       }));
+    });
+
 });
