@@ -1,24 +1,45 @@
+<!--/**-->
+<!--* Created by wangxiao on 2017/8/4.-->
+<!--* 表单验证插件demo-->
+<!--*/-->
 <%- include('../_block/head.ejs',{ title:'按钮' , css:['../../css/style-index.css'] }) %>
 <div id="page">
-    <form id="form1">
+    <form id="form1" class="form-horizontal">
         <div class="form-group">
-            <label class="form-lable">姓名：</label>
-            <input type="text" name="uName" class="form-control" placeholder="请输入关键字">
+            <label class="control-label">用户名：</label>
+            <input type="text" name="username" class="form-control form-control-ml" placeholder="请输入关键字">
         </div>
         <div class="form-group">
-            <label class="form-lable">密码：</label>
-            <input type="text" name="pwd" class="form-control" placeholder="请输入关键字和编码">
+            <label class="control-label">密码：</label>
+            <input type="text" name="pwd" class="form-control form-control-ml" placeholder="请输入关键字和编码">
+        </div><div class="form-group">
+            <label class="control-label">确认密码：</label>
+            <input type="text" name="confirmPwd" class="form-control form-control-ml" placeholder="请输入关键字和编码">
         </div>
-        <div class="form-group">
-            <label class="form-lable">       手机号：</label>
-            <input type="text" name="mobile" class="form-control" placeholder="请输入关键字和编码">
-        </div>
-        <div class="form-group">
-            <lable class="form-lable box-inline"><input class="checkbox-inline" type="checkbox" />&nbsp;&nbsp;&nbsp;记住信息</lable>
-        </div>
-        <div class="form-group">
+        <div class="form-group btn-box">
             <button class="btn btn-ghost-default btn-xs">提交</button>
         </div>
     </form>
 </div>
+<style>
+    .form-group{
+        margin-top: 30px;
+    }
+    /*错误提示语位置*/
+    .n-msg{
+        margin-left: 8px;
+        line-height: 30px;
+    }
+
+    .n-bottom .msg-wrap{
+        margin-top: 0px;
+    }
+    /*提示图标的位置，按照实际情况调整*/
+    .n-icon{
+        display: block;
+        position: absolute;
+        margin-left: 275px;
+        top: -22px;
+    }
+</style>
 <%- include('../_block/footer.ejs',{js:['../../../js/app/valid.js']}) %>
