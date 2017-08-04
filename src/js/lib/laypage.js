@@ -21,7 +21,7 @@ function laypage(options){
 
 laypage.v = '1.3';
 
-var doc = document, id = 'getElementById', tag = 'getElementsByTagName';
+var doc = document, id = 'getElementById', tag = 'getElementsByTagName',classname = 'getElementsByClassName';
 var index = 0, Page = function(options){
     var that = this;
     var conf = that.config = options || {};
@@ -125,7 +125,7 @@ Page.prototype.view = function(){
     }
     //当multiterm为true时,开启选择每页多少条主要用于后台
     if(conf.multiterm){
-        view.push('<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main"><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div>');
+        view.push('<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main" ><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div>');
     }
     //输出当前一共多少页
     if(conf.isshowtotal){
@@ -151,6 +151,9 @@ Page.prototype.jump = function(elem){
     var that = this, conf = that.config, childs = elem.children;
     var btn = elem[tag]('button')[0];
     var input = elem[tag]('input')[0];
+    var jsselect=elem[classname]('js_selectpage')[0];
+    var jsselectmain=elem[classname]('selectpage_main')[0];
+    var jsselect_li=elem[tag]('li');
     for(var i = 0, len = childs.length; i < len; i++){
         if(childs[i].nodeName.toLowerCase() === 'a'){
             Page.on(childs[i], 'click', function(){
@@ -170,6 +173,25 @@ Page.prototype.jump = function(elem){
             }
         });
     }
+    if(jsselect){
+        Page.on(jsselect,'click',function(){
+            if(jsselectmain.style.display=="block"){
+                jsselectmain.style.display="none";
+            }else{
+                jsselectmain.style.display="block";
+            }
+        })
+    }
+    if(jsselectmain){
+        Page.on(jsselectmain,'click',function(event){
+            event = event ? event : window.event;
+            var obj = event.srcElement ? event.srcElement : event.target;
+            jsselect.innerText=obj.innerText;
+            jsselectmain.style.display="none";
+        })
+    }
+
+
 };
 
 //渲染分页

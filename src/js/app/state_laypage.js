@@ -74,14 +74,13 @@ require(['jquery','laypage'], function ($,laypage) {
             groups: 7 //连续显示分页数
         });
 
-        $(document).on("click",".js_selectpage",function(){
+  /*      $(document).on("click",".js_selectpage",function(){
         $(this).next(".selectpage_main").slideToggle();
         })
-
-       $(document).on("click",".selectpage_main li",function(){
+            $(document).on("click",".selectpage_main li",function(){
            $(".js_selectpage").html($(this).text());
            $(".selectpage_main").hide();
-        })
+        })*/
 
         laypage({
             cont: 'page_style01', //容器。值支持id名、原生dom对象，jquery对象,
