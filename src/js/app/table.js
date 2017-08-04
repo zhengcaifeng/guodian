@@ -2,62 +2,92 @@
  * Created by 刘泽举 on 2017/8/3.
  */
 define(['jquery','datagrid'], function ($,datagrid) {
+    var fn = {};
     var table = {
         defaultOption:{//表格默认配置参数
-            width:'1000px',
-            height:"460px",
+            width:1000,
+            height:460,
+            data:{},
+            columns:[],
+            rowStyle:'',
             singleSelect:false,
             selectOnCheck:false,
             checkOnSelect:false,
-            columns:[],
-            rowStyler:function () {
-                return "background:white";
-            }
+            hasCheckbox:false,
+            hasSortNumber:false
         }
     };
-    /**
-     * 初始化表格
-     * @param selector  选择器
-     */
-    table.initTable = function(selector){
-        table.updateTable(selector,table.defaultOption);
 
-        $(document).on("mouseover",".datagrid-row",function () {
-            //$(this).css("background","#FEF9E6");
-            var index = $(this).attr("datagrid-row-index");
-            $(".datagrid-view1").find(".datagrid-row").each(function(i){
-                if(i===index){
-                    $(this).css("background","#FEF9E6");
-                }
-            });
-            $(".datagrid-view2").find(".datagrid-row").each(function(i){
-                if(i===index){
-                    $(this).css("background","#FEF9E6");
-                }
-            });
+    table.initTable = function (options) {
+        var settings = $.extend(true,table.defaultOption,options || {});
+        fn.setTable(settings);
+    };
+    table.updateTable = function (data) {
+        table.initTable(data);
+    };
+
+
+    fn.setTable = function(data){
+        var columns = [];
+
+        data.hasCheckbox && fn.addCheckbox(columns);
+        data.hasSortNumber && fn.addSortNumber(columns);
+
+        fn.addColumns(data,columns);
+        console.log(columns);
+        $(data.target).datagrid({
+            width:data.width+'px',
+            height:data.height+'px',
+            data:data.data,
+            columns:[columns],
+            singleSelect:data.singleSelect,
+            selectOnCheck:data.selectOnCheck,
+            checkOnSelect:data.checkOnSelect,
+            rowStyler:function () {
+                return {class:data.rowStyle};
+            }
         });
-        $(document).on("mouseout",".datagrid-row",function () {
-            //$(this).css("background","white");
-            var index = $(this).attr("datagrid-row-index");
-            $(".datagrid-view1").find(".datagrid-row").each(function(i){
-                if(i===index){
-                    $(this).css("background","white");
-                }
-            });
-            $(".datagrid-view2").find(".datagrid-row").each(function(i){
-                if(i===index){
-                    $(this).css("background","white");
-                }
-            });
-        });
+    };
+    /**
+     * 为表格添加checkbox
+     * @param array
+     * @returns {*}
+     */
+    fn.addCheckbox = function (array) {
+        var itemCheckbox = {field:'',title:'',checkbox:true,resizable:false};
+        array.push(itemCheckbox);
+        return array;
+    }
+
+    /**
+     * 为表格添加序号
+     * @param array
+     * @returns {*}
+     */
+    fn.addSortNumber = function (array) {
+        var itemSortNumber = {field:'sortNumber',title:'序号',width:40,align:'center', resizable:false,
+            formatter:function(v,r,i){
+                return i+1;
+            }
+        };
+        array.push(itemSortNumber);
+        return array;
     }
     /**
-     * 更新表格数据
-     * @param selector  选择器
-     * @param data      传入配置参数数据
+     * 为表格添加列数据
+     * @param array
      */
-    table.updateTable = function (selector,data) {
-        $(selector).datagrid(data);
+    fn.addColumns = function (data,array) {
+        var defalutColumnsOption = {
+            align:'center',
+            resizable:false
+        };
+        $.each(data.columns,function (index,vlue) {
+            var item = $.extend(true,vlue,defalutColumnsOption||{});
+            array.push(item);
+        });
+        return array;
     }
+
     return table;
 });
