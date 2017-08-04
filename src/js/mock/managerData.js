@@ -1,0 +1,71 @@
+[{
+  "userCode":"00001",
+  "userName":"管理员1",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":1
+},{
+  "userCode":"00002",
+  "userName":"管理员2",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":1
+},{
+  "userCode":"00003",
+  "userName":"管理员3",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00004",
+  "userName":"管理员4",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00005",
+  "userName":"管理员5",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00006",
+  "userName":"管理员6",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":1
+},{
+  "userCode":"00007",
+  "userName":"管理员7",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00008",
+  "userName":"管理员8",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00009",
+  "userName":"管理员9",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+},{
+  "userCode":"00010",
+  "userName":"管理员10",
+  "userType":"运营角色",
+  "creater":"系统管理员",
+  "creatTime":"2017-8-1",
+  "status":0
+}]
