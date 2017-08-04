@@ -15,3 +15,36 @@
 * JavaScript 运行机制详解 http://www.ruanyifeng.com/blog/2014/10/event-loop.html
 * css禅意花园 http://www.csszengarden.com/tr/zh-cn/
 * JavaScript Promise http://liubin.org/promises-book/
+
+### CSS 编写规范
+
+#### CSS基本骨架
+
+* CSS reset
+* 通用CSS样式库（类似浮动，居中，边距等）
+* 网站CSS样式库（文字链接颜色，背景样式，高度，宽度，margin等）
+* 网站通用样式（按钮，导航，菜单，选项卡，文本框样式等）
+* 网站公共结构样式（最外层div样式，导航外层样式，分栏样式）
+* css sprite，图片，字体图片等
+
+#### CSS命名
+
+* 通用CSS样式和网站CSS样式采用，约定俗成的简化版方便使用和减小体积 例如
+    ```
+    dn -> display:none
+    fl -> float:left
+    ```
+* 网站通用样式和网站公共结构采用语义化命名规则，-规则 例如
+    ```
+       member-content-auto
+       pur-ul-li
+    ```
+* css sprite 和 图片 采用单独命名规则 小图标都采用i标签icon开头命名(小图标都存放在slice中统一生成雪碧图)，图片采用img开头名， 例如
+    ```
+       .icon-word {
+           background-image: url('../slice/icon-twitter.png');
+       }
+       .img-test{
+         background-image: url('../img/icon-twitter.png');
+       }
+    ```
