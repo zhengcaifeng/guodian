@@ -98,7 +98,7 @@ require(['jquery','laypage'], function ($,laypage) {
             next: '下一页', //若不显示，设置false即可
             first: 1,
             last: 10,
-            isshowtotal:true,
+            isshowtotal:true,//是否显示总页数
             groups: 6 //连续显示分页数
         });
 
@@ -117,8 +117,8 @@ require(['jquery','laypage'], function ($,laypage) {
             next: '下一页', //若不显示，设置false即可
             first: 1,
             last: 10,
-            isshowtotal:true,
-            totalrecord:1000,
+            isshowtotal:true,//是否显示总页数
+            totalrecord:1000,//总共条数并且显示
             groups: 6 //连续显示分页数
         });
 
