@@ -6,7 +6,7 @@ require(['jquery','ztree'], function ($) {
         var setting = {
             view: {
                // showIcon: showIconForTree
-                showIcon:false
+                showIcon:false//是否展示icon
             },
             data: {
                 simpleData: {
@@ -14,6 +14,7 @@ require(['jquery','ztree'], function ($) {
                 }
             }
         };
+        //open 是否为展开状态 //isParent 是否是父节点
         var zNodes =[
             { id:1, pId:0, name:"公司名称（L02）", open:true},
             { id:2, pId:1, name:"一级部门（L0201)", open:true},
@@ -23,7 +24,7 @@ require(['jquery','ztree'], function ($) {
             { id:222, pId:22, name:"三级部门（L0201)"},
             { id:223, pId:22, name:"三级部门（L0201)"},
             { id:23, pId:2, name:"二级部门（L0201)"},
-            { id:3, pId:1, name:"一级部门（L0201)", isParent:true},
+            { id:3, pId:1, name:"一级部门（L0201)"},
             { id:31, pId:3, name:"二级部门（L0201)"},
             { id:32, pId:3, name:"二级部门（L0201)"},
             { id:4, pId:1, name:"一级部门（L0201)", isParent:true},
