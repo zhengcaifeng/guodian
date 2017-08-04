@@ -111,7 +111,7 @@ Page.prototype.view = function(){
     
     //总页数大于连续分页数，且当前组最大页小于总页，输出尾页
     if(conf.pages > conf.groups && dict.end < conf.pages && conf.last && conf.groups !== 0){
-         view.push('<span>&#x2026;</span><a href="javascript:;" class="laypage_last" title="&#x5C3E;&#x9875;"  data-page="'+ conf.pages +'">'+ conf.last +'</a>');
+         view.push('<span class="laypage_more">&#x2026;</span><a href="javascript:;" class="laypage_last" title="&#x5C3E;&#x9875;"  data-page="'+ conf.pages +'">'+ conf.last +'</a>');
     }
     
     //当前页不为尾页时，输出下一页
@@ -123,12 +123,23 @@ Page.prototype.view = function(){
             : '<a href="javascript:;" class="laypage_next" data-page="'+ (conf.curr + 1) +'">'+ conf.next +'</a>';
         }()));
     }
-    
+    //当multiterm为true时,开启选择每页多少条主要用于后台
+    if(conf.multiterm){
+        view.push('<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main"><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div>');
+    }
+    //输出当前一共多少页
+    if(conf.isshowtotal){
+        view.push('<span class="laypage_pages">共'+conf.pages+'页</span>');
+    }
+    //输出共计多少条
+    if(conf.totalrecord){
+        view.push('<span class="laypage_record">共'+conf.totalrecord+'页</span>');
+    }
     return '<div name="laypage'+ laypage.v +'" class="laypage_main laypageskin_'+ (conf.skin ? (function(skin){
         return /^#/.test(skin) ? 'molv' : skin;
     }(conf.skin)) : 'default') +'" id="laypage_'+ that.config.item +'">'+ view.join('') + function(){
         return conf.skip 
-        ? '<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main"><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div><span class="laypage_total"><label>&#36339;&#33267;</label><input type="text" min="1" onkeyup="this.value=this.value.replace(/\\D/, \'\');" class="laypage_skip"><label>&#x9875;</label>'
+        ?'<span class="laypage_total"><label>&#36339;&#33267;</label><input type="text" min="1" onkeyup="this.value=this.value.replace(/\\D/, \'\');" class="laypage_skip"><label>&#x9875;</label>'
         + '<button type="button" class="laypage_btn">&#x786e;&#x5b9a;</button></span>' 
         : '';
     }() +'</div>';

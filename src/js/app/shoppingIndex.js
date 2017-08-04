@@ -3,7 +3,6 @@
  */
 require(['jquery'], function ($) {
     var fn = {};
-
     $(document).on('click', '.arrow-toggle', function(e) {
         e.preventDefault();
         var $this = $(this);

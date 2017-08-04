@@ -1,0 +1,240 @@
+/*--
+ * 作者：雷清云
+ * 时间：2017-7-31
+ * 描述：表单的网站css样式
+ */
+/* input框样式 */
+.form-control::-webkit-input-placeholder {
+    color: @var-gray-1;
+}
+.form-control::-moz-input-placeholder {
+    color: @var-gray-1;
+}
+.form-search-input::-webkit-input-placeholder {
+    color: @var-gray-1;
+}
+.form-search-input::-moz-input-placeholder {
+    color: @var-gray-1;
+}
+.form-control:focus{
+  border-color: @var-dayBlue;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.form-group{
+    width: 100%;
+}
+ //水平排列
+.form-control {
+        width: 250px;
+        height: 28px;
+        border: 1px solid @var-gray-1;
+        padding-left: 8px;
+        color: @var-gray-1;
+    }
+    .form-control-ml{
+    margin-left: 8px;
+ }
+//普通表单
+
+.form-lable{
+    .dib;
+    width: 100%;
+    height: 28px;
+    color: @var-gray-2;
+}
+ //水平排列
+.control-label{
+    .dib;
+    width: 110px;
+    height: 28px;
+    .tr;
+    line-height: 28px;
+    color:@var-gray-2;
+    .fl;
+}
+ //内联表单
+.form-inline{
+     zoom:1;
+    .form-group{
+        width: 380px;
+        .fl;
+    } 
+}
+.form-inline:after{
+    display:table; content:''; clear:both;
+}
+
+//复选框
+.box-inline{
+    .rel;
+    .dib;
+    padding-left: 20px;
+    vertical-align: middle;
+    .checkbox-inline{
+        .abs;
+        margin-left: -20px;
+        margin: 4px 0 0 -18px;
+ }
+     .radio-inline{
+            .abs;
+            margin-left: -20px;
+            margin: 4px 0 0 -18px;
+     }
+}
+
+
+//单选按钮
+
+
+//只读状态下
+.form-group-yn{
+        .rel;
+    }
+.form-group-num{
+        .rel;
+    }
+.form-group-search{
+        .rel;
+}
+.form-group-three{
+        .rel;
+}    
+.form-select{
+    width: 250px;
+    height: 28px;
+    background-image: url("../slice/icon-select-down.png");
+    background-size: 10px 8px;
+    background-position: 230px 10px;
+    background-repeat:no-repeat ;
+    
+}
+.bg-blue {
+    background-color: @var-blue-7;
+}
+.form-ul{
+    .dn;
+    width: 250px;
+    border: 1px solid @var-gray-1;
+    cursor: pointer;
+    .abs;
+    left: 118px;
+    top: 27px;
+    z-index: 10;
+    .form-li{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+    }
+    .form-li-first{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+    }
+}
+
+.form-num-div{
+    .dn;
+    width: 250px;
+    border: 1px solid @var-gray-1;
+    cursor: pointer;
+    .abs;
+    left: 118px;
+    top: 27px;
+    z-index: 10;
+    .formNum-p{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+        }
+    .formNum-ul {
+            height: 160px;
+            .ova;
+            .formNum-li {
+                height: 32px;
+                line-height: 32px;
+                padding-left: 8px;
+            }
+        }
+}
+
+//可搜索的下拉框
+.form-search-img{
+        .abs;
+        left: 330px;
+        top: 9px;
+        width: 12px;
+        height: 12px;
+    }
+.form-search-div{
+    .dn;
+    width: 250px;
+    border: 1px solid @var-gray-1;
+    cursor: pointer;
+    .abs;
+    left: 118px;
+    top: 29px;
+    z-index: 10;
+    .form-search-input {
+            width: 238px;
+            height: 26px;
+            border: 1px solid #cccccc;
+            margin: 5px 0 0 5px;
+            background-image: url("../slice/icon-serachs.png");
+            background-size: 12px 12px;
+            background-position: 216px 6px;
+            background-repeat:no-repeat ;
+    }
+    
+    .form-search-ul {
+            height: 160px;
+            .ova;
+            color: @var-gray-2;
+            .form-search-li {
+                height: 32px;
+                line-height: 32px;
+                padding-left: 8px;
+            }
+        }
+}
+
+//三级下拉菜单
+.form-three-div{
+    left: 118px;
+}
+.form-three-div1{
+    left: 268px;
+}
+.form-three-div2{
+    left: 418px;
+}
+.form-three-div,.form-three-div1,.form-three-div2{
+    .dn;
+    width: 150px;
+    border: 1px solid @var-gray-1;
+    cursor: pointer;
+    .abs;
+    top: 28px;
+    z-index: 10;
+    .form-three-p,.form-three-p1,.form-three-p2{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 8px;
+        }
+    .form-three-ul,.form-three-ul1,.form-three-ul2 {
+            height: 160px;
+            .ova;
+            .form-three-li,.form-three-li1,.form-three-li2 {
+                height: 32px;
+                line-height: 32px;
+                padding-left: 8px;
+            }
+        }
+}
+.form-three-div1{
+    border-left: none;
+}
+.form-three-div2{
+    border-left: none;
+}

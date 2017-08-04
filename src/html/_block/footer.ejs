@@ -5,12 +5,17 @@
         paths:{
             "jquery":"lib/jquery.min",
             "artTemplate":'lib/artTemplate',
-            "util":'app/util',
             "layer":'lib/layer',
             "laypage":'lib/laypage',
+            "ztree":'lib/jquery.ztree.core',
             "jedate":'lib/jedate',
             "css":'lib/css.min',
-            "slide":'lib/jquery.SuperSlide.2.1.1'
+            "slide":'lib/jquery.SuperSlide.2.1.1',
+            "datagrid":'lib/jquery.easyui.min',
+            //开发者定制的库
+            "util":'app/util',
+            "table":'app/table',
+            "dialog":'app/gdLayer'
         },
         shim:{
             'layer': {
@@ -25,9 +30,21 @@
                 deps: ['jquery','css!/css/style-date.css'],
                 exports: "jedate"
             },
+            'Swiper':{
+                deps: ['jquery','css!https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css'],
+                exports: "Swiper"
+            },
+            'ztree': {
+                deps: ['jquery','css!/css/style-ztree.css'],
+                exports: "ztree"
+            },
             'slide':{
                 deps: ['jquery'],
                 exports: "slide"
+            },
+            "datagrid":{
+                deps:['jquery','css!/css/style-datagrid.css'],
+                exports:"datagrid"
             }
         }
     });
