@@ -3,6 +3,7 @@
     require.config({
         baseUrl:'../../js/',
         paths:{
+            //第三方插件库
             "jquery":"lib/jquery.min",
             "artTemplate":'lib/artTemplate',
             "layer":'lib/layer',
@@ -12,6 +13,7 @@
             "css":'lib/css.min',
             "slide":'lib/jquery.SuperSlide.2.1.1',
             "datagrid":'lib/jquery.easyui.min',
+            "validator": 'lib/validator/zh-CN',
             //开发者定制的库
             "util":'app/util',
             "table":'app/table',
@@ -45,7 +47,11 @@
             "datagrid":{
                 deps:['jquery','css!/css/style-datagrid.css'],
                 exports:"datagrid"
-            }
+            },
+            "validator": {
+                deps:['../../js/lib/validator/jquery.validator.js','css!/css/style-valid.css'],
+                exports:"validator"
+            },
         }
     });
 </script>

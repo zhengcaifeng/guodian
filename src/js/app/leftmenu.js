@@ -3,6 +3,8 @@
  */
 require(['jquery'], function ($) {
 
+
+
     $(".leftmenu  .memu-item-title").click(function(){
         var ulObject=$(this).siblings("ul");
         ulObject.slideToggle();
@@ -12,7 +14,7 @@ require(['jquery'], function ($) {
             thatPart.removeClass("tive");
         }else{
             thatPart.addClass("tive");
-            /*判断是否是单个展开模式*/
+            /*鍒ゆ柇鏄崟鑿滃崟灞曞紑杩樻槸澶氳彍鍗曞睍寮�*/
             if($(this).parents(".leftmenu").attr("data-shrink")=="single"){
             thatPart.siblings().removeClass("tive");
                 thatPart.siblings().find("ul").slideUp();

@@ -4,16 +4,16 @@
  */
 require(['jquery'], function ($) {
     $("#up_down").on("click",function(){
-        if($(this).is(".down")){
-            $(this).text("收起");
-            $(this).removeClass("down");
-            $(this).addClass("up");
-            $(this).parent().parent().find(".dn").show();
+        var that = $(this);
+        var thatF = that.parent().parent();
+        if(!that.find("i").is(".down")){
+            that.html("展开<i class='down'></i>");
+            thatF.find(".ds").addClass("dn");
+            thatF.find(".ds").removeClass("ds");
         }else{
-            $(this).text("展开");
-            $(this).removeClass("up");
-            $(this).addClass("down");
-            $(this).parent().parent().find(".dn").hide();
+            that.html("收起<i class='up'></i>");
+            thatF.find(".dn").addClass("ds");
+            thatF.find(".dn").removeClass("dn");
         }
     })
 });

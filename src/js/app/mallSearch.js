@@ -34,7 +34,7 @@ require(['jquery'], function ($) {
         }
     })
     //头部选项取消
-    $(document).on("click",".title-block-img",function(){
+    $(document).on("click",".icon-close",function(){
         $(this).parent().remove();
     })
     //
@@ -51,7 +51,7 @@ require(['jquery'], function ($) {
                     typeName = $(this).parent().prev().find("p").text();
                 if(dom.text().indexOf(text)==-1){
                     var html = ' <p class="title-block">'+typeName+'<span class="color-red">'+text+'</span>\
-								<img src="../../slice/icon-close.png" class="title-block-img"/></p>';
+								<i class="icon-close"></i></p>';
                     dom.append(html);
                 }
             }
