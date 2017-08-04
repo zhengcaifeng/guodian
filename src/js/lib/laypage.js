@@ -125,7 +125,9 @@ Page.prototype.view = function(){
     }
     //当multiterm为true时,开启选择每页多少条主要用于后台
     if(conf.multiterm){
-        view.push('<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main"><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div>');
+        view.push('<form class="form-group form-group-yn"><label class="control-label">下拉列表一：</label><input type="text" class="form-control form-control-ml  form-select form-yn" readonly="" placeholder="全部" style="background-image: url(&quot;../../slice/icon-select-down.png&quot;); color: rgb(204, 204, 204);"><ul class="form-ul" style="display: none;"><li class="form-li-first">全部</li><li class="form-li">是</li><li class="form-li">否</li></ul></form>');
+
+       /* view.push('<div class="laypage_select"><span class="laypage_selected js_selectpage">10&#26465;/&#39029;</span><ul class="selectpage_main"><li>10&#26465;/&#39029;</li><li>20&#26465;/&#39029;</li><li>30&#26465;/&#39029;</li></ul><i class="glyphicon-select"></i></div>');*/
     }
     //输出当前一共多少页
     if(conf.isshowtotal){
