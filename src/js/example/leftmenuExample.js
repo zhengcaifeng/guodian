@@ -1,9 +1,7 @@
 /**
  * Created by liangqingzhu on 2017/8/5.
  */
-require(['jquery','leftmenu'], function ($,leftmenu) {
-
-    leftmenu.initdata({
+    $.leftMenuInit({
         ele:"leftmenu",
         datashrink:"single",//data-shrink="all"为多类目展开模式data-shrink="single"为单一类目展开模式
         menuname:"帮助中心",
@@ -71,6 +69,4 @@ require(['jquery','leftmenu'], function ($,leftmenu) {
             }
 
         ]
-    })
-
-});
+    });
