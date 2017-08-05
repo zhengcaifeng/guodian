@@ -1,4 +1,4 @@
-<%- include('../_block/head.ejs',{ title:'分页插件' , css:[] }) %>
+<%- include('../_block/head.ejs',{ title:'分页插件' , css:['../../css/style-laypage.css'] }) %>
 <div class="pl15 h24">分页插件</div>
 <ul id="biuuu_city_list"></ul>
 
@@ -12,4 +12,4 @@
 
 
 
-<%- include('../_block/footer.ejs',{js:['../../js/example/paginationExample.js']}) %>
+<%- include('../_block/footer.ejs',{js:['../../js/lib/laypage.js','../../js/app/pagination.js','../../js/example/paginationExample.js']}) %>

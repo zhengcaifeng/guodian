@@ -1,5 +1,5 @@
-<%- include('../_block/head.ejs',{ title:'结构树' , css:[] }) %>
+<%- include('../_block/head.ejs',{ title:'结构树' , css:['../../css/style-ztree.css'] }) %>
 
 <ul id="treeDemo" class="ztree"></ul>
 
-<%- include('../_block/footer.ejs',{js:['../../js/example/ztreeExample.js']}) %>
+<%- include('../_block/footer.ejs',{js:['../../js/lib/jquery.ztree.core.js','../../js/app/ztree.js','../../js/example/ztreeExample.js']}) %>

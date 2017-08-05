@@ -1,7 +1,6 @@
 /**
  * Created by liangqingzhu on 2017/8/3.
  */
-require(['jquery','pagination'], function ($,_laypage) {
     //测试数据
     var data = [
         '北京',
@@ -55,7 +54,7 @@ require(['jquery','pagination'], function ($,_laypage) {
         return str;
     };
 
-    _laypage.initpage({
+    $.initpage({
         ele: 'page_default', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
@@ -72,7 +71,7 @@ require(['jquery','pagination'], function ($,_laypage) {
         last: false,
         groups: 7 //连续显示分页数
     })
-    _laypage.initpage({
+    $.initpage({
         ele: 'page_style01', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
@@ -91,7 +90,7 @@ require(['jquery','pagination'], function ($,_laypage) {
         groups: 6 //连续显示分页数
 
     })
-    _laypage.initpage({
+    $.initpage({
         ele: 'page_style02', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
@@ -113,4 +112,3 @@ require(['jquery','pagination'], function ($,_laypage) {
 
 
 
-});

@@ -1,9 +1,8 @@
 /**
  * Created by liangqingzhu on 2017/8/3.
  */
-require(['jquery','structtree'], function ($,_ztree) {
 
-_ztree.initzNodes([
+$.initzNodes([
     { id:1, pId:0, name:"公司名称（L02）", open:true},
     { id:2, pId:1, name:"一级部门（L0201)", open:true},
     { id:21, pId:2, name:"二级部门（L0201)"},
@@ -23,4 +22,3 @@ _ztree.initzNodes([
     { id:9, pId:1, name:"一级部门（L0201)", isParent:true}
 ])
 
-});

@@ -1,7 +1,8 @@
 /**
  * Created by liangqingzhu on 2017/8/1.
  */
-define(['jquery','laypage'], function ($,laypage) {
+/*define(['jquery','laypage'], function ($,laypage) {*/
+ ;(function($){
     var _laypage={
         paging:{
             ele: 'page_default', //容器。值支持id名、原生dom对象，jquery对象,
@@ -17,11 +18,11 @@ define(['jquery','laypage'], function ($,laypage) {
         }
     }
 
-    _laypage.initpage = function (options) {
+    $.initpage = function (options) {
         var settings = $.extend(true,_laypage.paging,options || {});
         laypage(settings);
     };
 
-return _laypage;
-
-});
+//return _laypage;
+    })(jQuery);
+/*});*/
