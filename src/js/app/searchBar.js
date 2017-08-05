@@ -15,5 +15,6 @@ require(['jquery'], function ($) {
             thatF.find(".dn").addClass("ds");
             thatF.find(".dn").removeClass("dn");
         }
-    })
+    });
+    return null;
 });
