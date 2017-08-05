@@ -1,7 +1,7 @@
 /**
  * Created by liangqingzhu on 2017/8/3.
  */
-require(['jquery','laypaging'], function ($,_laypage) {
+require(['jquery','pagination'], function ($,_laypage) {
     //测试数据
     var data = [
         '北京',
@@ -55,9 +55,8 @@ require(['jquery','laypaging'], function ($,_laypage) {
         return str;
     };
 
-
     _laypage.initpage({
-        cont: 'page_default', //容器。值支持id名、原生dom对象，jquery对象,
+        ele: 'page_default', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
         skin: 'gd',
@@ -74,7 +73,7 @@ require(['jquery','laypaging'], function ($,_laypage) {
         groups: 7 //连续显示分页数
     })
     _laypage.initpage({
-        cont: 'page_style01', //容器。值支持id名、原生dom对象，jquery对象,
+        ele: 'page_style01', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
         skin: 'gd2',
@@ -93,7 +92,7 @@ require(['jquery','laypaging'], function ($,_laypage) {
 
     })
     _laypage.initpage({
-        cont: 'page_style02', //容器。值支持id名、原生dom对象，jquery对象,
+        ele: 'page_style02', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数
         skip: true, //是否开启跳页
         skin: 'gd3',

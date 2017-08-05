@@ -2,7 +2,10 @@ define(['jquery'],function($){
 	var search = {
 		
 	};
-	
+	table:{
+	search:｛
+	formClick:function(){}
+	｝}
 	search.formClick = function($this){
 		$this.siblings('.form-search-div').show();
 		$this.css("background-image", "url(../../slice/icon-select-up.png)");

@@ -97,10 +97,10 @@
 }
 .title-btn{
   line-height: 40px;
-  width: 140px;
   position: absolute;
   right:0;
   top:0;
+  display: table;
 }
 .btn-img{
   position: absolute;
@@ -240,19 +240,25 @@
 }
 .title-btn span{
   border: 1px solid @var-gray-8;
-  padding: 5px 10px;
+  padding: 5px;
   margin-right: 10px;
-  position: relative;
-  padding-right: 20px;
+  padding-left: 10px;
   cursor: pointer;
   color: @var-gray-2;
 }
-.addMore{
-  background: url(../slice/icon-arrows-down.png) no-repeat 37px 10px;
+.addMore{}
+.icon-addMore{
+  background: url(../../slice/icon-arrows-down.png) no-repeat;
+  display: inline-block;
+  margin-left: 5px;
+}
+.icon-multiSelect{
+  background: url(../../slice/icon-add.png) no-repeat;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: -2px;
 }
 .multiSelect{
-  background: url(../slice/icon-add.png) no-repeat 38px 8px;
-  background-size: 10px;
 }
 .title-label-show{
   display: table;
