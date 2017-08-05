@@ -1,5 +1,5 @@
 /**
- * Created by 刘泽举 on 2017/8/3.
+ * Created by liangqingzhu on 2017/8/3.
  */
 require(['jquery','structtree'], function ($,_ztree) {
 
