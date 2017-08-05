@@ -2,7 +2,7 @@
 <!--* Created by wangxiao on 2017/8/4.-->
 <!--* 表单验证插件demo-->
 <!--*/-->
-<%- include('../_block/head.ejs',{ title:'按钮' , css:['../../css/style-index.css'] }) %>
+<%- include('../_block/head.ejs',{ title:'按钮' , css:['../../css/style-index.css','../../css/style-valid.css'] }) %>
 <div id="page">
     <form id="form1" class="form-horizontal">
         <div class="form-group">
@@ -42,4 +42,4 @@
         top: -22px;
     }
 </style>
-<%- include('../_block/footer.ejs',{js:['../../../js/app/valid.js']}) %>
+<%- include('../_block/footer.ejs',{js:['../../../js/lib/validator/jquery.validator.js?zh-CN','../../../js/app/valid.js']}) %>
