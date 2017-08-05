@@ -1,12 +1,13 @@
-define(['jquery'],function($){
-	var dimSearch = {
-		
-        
-    };
+/**
+ * Created by 雷清云 on 2017/8/3.
+ */
+;(function($){
+	var dimSearch = {};
     dimSearch.initSearch = function (values) {
        // var settings = $.extend(true,dimSearch.defaultValue,values || {});
-        $('.form-search').formSearch();
+        
     };
+    
 	$.fn.formSearch = function(){
 		var $this = $(this);
 		$this.on("click", function(e){
@@ -40,26 +41,12 @@ define(['jquery'],function($){
 			$(".form-search-div").hide();
 			$this.css("background-image", "url(../../slice/icon-select-down.png)");
 			})
-	search.formClick = function($this){
-		$this.siblings('.form-search-div').show();
-		$this.css("background-image", "url(../../slice/icon-select-up.png)");
-	}
-	search.formMoveOver = function($this){
-		$this.addClass("bg-blue").siblings().removeClass("bg-blue");
-	}
-	search.formMoveOut = function($this){
-		$this.removeClass("bg-blue");
-	}
-	search.formValue = function($this){
-		$(".form-search").css("color","#000000");
-		$(".form-search").val($this.html());
-		$this.parent().parent().hide();
-		$(".form-search").css("background-image", "url(../../slice/icon-select-down.png)");
-	}
+
 	$(document).on("click",".form-search-input",function(e){
 		e.stopPropagation();
 	});
 	}
-	
+	$('.form-search').formSearch();
 	return dimSearch;
-})
+})(jQuery)
+	
