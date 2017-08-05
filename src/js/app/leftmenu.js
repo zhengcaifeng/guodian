@@ -1,7 +1,7 @@
 /**
  * Created by liangqingzhu on 2017/7/31.
  */
-define(['jquery'], function ($) {
+;(function($){
     var fn={};
     var leftmenu={
         menu_data:{
@@ -11,26 +11,25 @@ define(['jquery'], function ($) {
             data:[]
         }
     }
-
-    leftmenu.initdata = function (options) {
+    $.leftMenuInit = function (options) {
         var setdata = $.extend(true,leftmenu.menu_data,options || []);
         fn.applymenu(setdata);
     };
 
     fn.applymenu=function(menudata){
-                var menuhtml='';
+        var menuhtml='';
         if(menudata.menuname){
-                    menuhtml+='<h2 class="leftmemu_title"><i class="glyphicon glyphicon-menu-left"></i>'+menudata.menuname+'</h2>';
-                }
+            menuhtml+='<h2 class="leftmemu_title"><i class="glyphicon glyphicon-menu-left"></i>'+menudata.menuname+'</h2>';
+        }
         menuhtml+='<ul>';
-                var fn={};
-                menudata.data.forEach(function(item,index){
-                    menuhtml+='<li class="memu-item"><a class="memu-item-title" href="javascript:;">'+item.name+'<i class="glyphicon glyphicon-add-left"></i></a>'+IsChild(item.submenu||"")
-                        + '</li>';
-                })
-                menuhtml+='</ul>';
-                 $("."+menudata.ele).html(menuhtml);
-                $("."+menudata.ele).attr("data-shrink",menudata.datashrink);
+        var fn={};
+        menudata.data.forEach(function(item,index){
+            menuhtml+='<li class="memu-item"><a class="memu-item-title" href="javascript:;">'+item.name+'<i class="glyphicon glyphicon-add-left"></i></a>'+IsChild(item.submenu||"")
+                + '</li>';
+        })
+        menuhtml+='</ul>';
+        $("."+menudata.ele).html(menuhtml);
+        $("."+menudata.ele).attr("data-shrink",menudata.datashrink);
     }
 
     function IsChild(childdata){
@@ -56,15 +55,11 @@ define(['jquery'], function ($) {
             thatPart.addClass("tive");
             /*判断是单菜单展开还是多菜单展开*/
             if($(this).parents(".leftmenu").attr("data-shrink")=="single"){
-            thatPart.siblings().removeClass("tive");
+                thatPart.siblings().removeClass("tive");
                 thatPart.siblings().find("ul").slideUp();
-           // thatPart.siblings().find("ul").hide();
+                // thatPart.siblings().find("ul").hide();
             }
         }
 
     });
-
-    return leftmenu;
-
-
-});
+})(jQuery);
