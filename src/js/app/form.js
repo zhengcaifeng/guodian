@@ -1,4 +1,7 @@
-require(['jquery'], function ($) {
+/**
+ * Created by 雷清云 on 2017/8/3.
+ */
+;(function ($) {
 	//下拉列表一
 	$.fn.formSelect = function(){
 		var $this = $(this);
@@ -144,4 +147,4 @@ require(['jquery'], function ($) {
 	//调用执行
 	$('.form-three').formThree();
 	
-});
+})(jQuery);
