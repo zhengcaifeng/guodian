@@ -14,72 +14,16 @@
     
     
     
-<script>function webpsupport(a){var c=window.localStorage;if(typeof a!="function"){a=function(){}}if(c!=undefined&&c._tmtwebp!=undefined&&c._tmtwebp==0){a();return false}else{if(c!=undefined&&c._tmtwebp!=undefined&&c._tmtwebp==1){a(1);return true}else{var f=new Image();f.onload=f.onerror=function(){if(f.height!=2){if(c!=undefined){c._tmtwebp=0}a();return false}else{if(c!=undefined){c._tmtwebp=1}a(1);return true}};f.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}}};;(function(){function b(t){var f=document.getElementsByTagName("link");for(var e=0,d=f.length;e<d;e++){if(t){f[e].href=f[e].getAttribute("data-href").replace(".css",".webp.css");}else{f[e].href=f[e].getAttribute("data-href")}}}webpsupport(b);})();</script><script>window.imgMap = {"style-index.7bcc4447.png":1,"style-laypage.23f5d73a.png":1,"code.1815fbe0.png":1,"gallery-01.26a6f75c.png":1,"gallery-02.5010dba7.png":1,"gallery-03.cf2548fa.png":1,"gallery-04.b34f43fd.png":1,"gallery-05.06e84b6d.png":1,"ico-tree-line.2f3208be.png":0,"icon-iphone-android.230c9850.png":1,"logo-index-attach.8bf0f341.png":1,"logo-index.1c1bbe8a.png":0,"logo-shopping-white.846bf180.png":1,"logo-shopping.38067f01.png":1,"slide-bg_index.ebec206c.png":0,"validator_default.5865da6a.png":0,"validator_simple.e29da7ed.png":1}</script>
+<script>function webpsupport(a){var c=window.localStorage;if(typeof a!="function"){a=function(){}}if(c!=undefined&&c._tmtwebp!=undefined&&c._tmtwebp==0){a();return false}else{if(c!=undefined&&c._tmtwebp!=undefined&&c._tmtwebp==1){a(1);return true}else{var f=new Image();f.onload=f.onerror=function(){if(f.height!=2){if(c!=undefined){c._tmtwebp=0}a();return false}else{if(c!=undefined){c._tmtwebp=1}a(1);return true}};f.src="data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"}}};;(function(){function b(t){var f=document.getElementsByTagName("link");for(var e=0,d=f.length;e<d;e++){if(t){f[e].href=f[e].getAttribute("data-href").replace(".css",".webp.css");}else{f[e].href=f[e].getAttribute("data-href")}}}webpsupport(b);})();</script><script>window.imgMap = {"style-index.16e82fe0.png":1,"style-laypage.23f5d73a.png":1,"code.1815fbe0.png":1,"gallery-01.26a6f75c.png":1,"gallery-02.5010dba7.png":1,"gallery-03.cf2548fa.png":1,"gallery-04.b34f43fd.png":1,"gallery-05.06e84b6d.png":1,"ico-tree-line.2f3208be.png":0,"icon-iphone-android.230c9850.png":1,"logo-index-attach.8bf0f341.png":1,"logo-index.1c1bbe8a.png":0,"logo-shopping-white.846bf180.png":1,"logo-shopping.38067f01.png":1,"slide-bg_index.ebec206c.png":0,"validator_default.5865da6a.png":0,"validator_simple.e29da7ed.png":1}</script>
 <body>
 <div id="header"></div>
 <div id="content"></div>
-<script src="../../js/lib/require.min.js"></script>
 <script src="../../js/lib/jquery1.11.1.js"></script>
-<script>
-    require.config({
-        baseUrl:'../../js/',
-        paths:{
-            //第三方插件库
-            "jquery":"lib/jquery.min",
-            "artTemplate":'lib/artTemplate',
-            "layer":'lib/layer',
-            "laypage":'lib/laypage',
-            "ztree":'lib/jquery.ztree.core',
-            "jedate":'lib/jedate',
-            "css":'lib/css.min',
-            "slide":'lib/jquery.SuperSlide.2.1.1',
-            "datagrid":'lib/jquery.easyui.min',
-            "validator": 'lib/validator/zh-CN',
-            //开发者定制的库
-            "util":'app/util',
-            "table":'app/table',
-            "dialog":'app/dialog',
-            "laypaging":'app/laypaging'
-        },
-        shim:{
-            'layer': {
-                deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
-                exports: "layer"
-            },
-            'laypage': {
-                deps: ['jquery','css!/css/style-laypage.769c40ef.css'],
-                exports: "laypage"
-            },
-            'jedate':{
-                deps: ['jquery','css!/css/style-date.3de2e3a7.css'],
-                exports: "jedate"
-            },
-            'Swiper':{
-                deps: ['jquery','css!https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css'],
-                exports: "Swiper"
-            },
-            'ztree': {
-                deps: ['jquery','css!/css/style-ztree.865d81cc.css'],
-                exports: "ztree"
-            },
-            'slide':{
-                deps: ['jquery'],
-                exports: "slide"
-            },
-            "datagrid":{
-                deps:['jquery','css!/css/style-datagrid.68ef0d11.css'],
-                exports:"datagrid"
-            },
-            "validator": {
-                deps:['../../js/lib/validator/jquery.validator.js','css!/css/style-valid.c81a2607.css'],
-                exports:"validator"
-            },
-        }
-    });
-</script>
+<script src="../../js/lib/template.js"></script>
+<script src="../../js/app/util.js"></script>
 
     
-    <script src="../../js/app/index.js"></script>
+    <script src=""></script>
     
 
 </body>
