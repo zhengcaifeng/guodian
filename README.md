@@ -53,4 +53,68 @@
 
 #### 页面逻辑代码
 
-业务相关的代码都写在js目录下的logic文件下，命名规则
+* 业务相关的代码都写在js目录下的logic文件下，文件夹分类和命名周一确定，也希望大家给出解决方案
+* 相关页面js代码编写规范 例如 (可以参考index.js)
+```
+/**
+* Created by 周志豪 on 2017/7/30.
+* xxx功能或者业务
+*/
+//相关require用法这里不多做说明，请看相关文档
+require(['jquery'],function($){
+    $(function(){
+        page.init();
+        //事件都写在这里，这里不过多说明
+        $(document).on('click','.btn-page',function(){
+
+        });
+    });
+    //初始化页面，为每一个页面创建一个模板
+    var page = (function(module){
+        //定义初始化数据
+        var page = {
+
+        };
+        //定义内部调用函数
+        var fn = {};
+        //定义初始化函数
+        module.init = function(){
+
+        };
+        fn.xx = function(){
+
+        };
+        return module;
+    })(page || {});
+});
+```
+* 相关公共模块js编写规范 例如(可以参考table.js)
+```
+/**
+* Created by 刘泽举 on 2017/8/3.
+* 表格插件
+*/
+define(['jquery','datagrid'],function($,datagrid){
+    //定义一个内部使用对象
+    var fn = {};
+    //定义要抛出的模块名同时定义默认参数，命名规则此变量名与js文件名称保持一致，方便使用
+    var table = {
+        defaultOption：{
+            //这里不做说明
+        }
+    }
+    table.initTable = function () {
+
+    };
+    table.updateTable = function () {
+
+    };
+    fn.addCheckbox = function () {
+
+    };
+    fn.getCheckedData = function () {
+
+    };
+    return table;
+});
+```

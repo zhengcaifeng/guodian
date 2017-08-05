@@ -1,7 +1,7 @@
 /**
  * Created by 刘泽举 on 2017/8/3.
  */
-define(['jquery','datagrid'], function ($,datagrid) {
+;(function($){
     var fn = {};
     var table = {
         defaultOption:{//表格默认配置参数
@@ -18,15 +18,15 @@ define(['jquery','datagrid'], function ($,datagrid) {
         }
     };
 
-    table.initTable = function (options) {
+    $.initTable = function (options) {
         var settings = $.extend(true,table.defaultOption,options || {});
         fn.setTable(settings);
     };
-    table.updateTable = function (data) {
+    $.updateTable = function (data) {
         table.initTable(data);
     };
 
-    table.getCheckedData = function (data) {
+    $.getCheckedData = function (data) {
         return fn.getCheckedData(data);
     }
 
@@ -100,5 +100,4 @@ define(['jquery','datagrid'], function ($,datagrid) {
         var array = $(data.target).datagrid("getChecked");
         return array;
     }
-    return table;
-});
+})(jQuery);

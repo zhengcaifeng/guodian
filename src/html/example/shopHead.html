@@ -3,38 +3,38 @@
 <div class="shortcut-orange">
     <div class="inner fix">
         <ul class="shortcut-left fix">
-            <li class="user list-style-no"><a class="tdn" href="#">admin</a></li>
-            <li class="msg list-style-no"><a class="tdn" href="#">消息</a></li>
+            <li class="user"><a href="#">admin<i class="shortcut-user"></i></a></li>
+            <li class="msg"><a href="#"><i class="shortcut-msg-orange"></i>消息</a></li>
         </ul>
         <ul class="shortcut-right fix">
-            <li class="list-style-no"><a class="tdn" href="#">首页</a></li>
-            <li class="list-style-no"><a class="tdn" href="#">我的会员中心</a></li>
-            <li class="list-style-no"><a class="tdn" href="#">帮助中心</a></li>
-            <li class="phone list-style-no">
-                <a class="tdn" href="#">手机</a>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">我的会员中心</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <li class="phone">
+                <a href="#"><i class="shortcut-phone-orange"></i>手机</a>
                 <div class="box">
-                    <div class="code-area fl">
+                    <div class="code-area">
                         <img src="../../../img/code.png">
                     </div>
-                    <div class="content  mt10 fr">
+                    <div class="content">
                         <div>扫一扫，下载客户端</div>
                         <div class="word-green">手机采购 移动办公</div>
                         <div class="iphone-android"></div>
                     </div>
                 </div>
             </li>
-            <li class="collect list-style-no"><a class="tdn" href="#">收藏网站</a></li>
-            <li class="tel list-style-no"><a class="tdn" href="#">客服电话<span>400-018-4000</span></a></li>
+            <li class="collect"><a href="#"><i class="shortcut-collect-orange"></i>收藏网站</a></li>
+            <li class="tel"><a href="#">客服电话<span>400-018-4000</span></a></li>
         </ul>
     </div>
 </div>
 <!--商城头部-->
 <div class="header-shopping inner fix">
-    <a href="#" class="logo-area fl fix">
-        <div class="logo-shopping fl"></div>
+    <a href="#" class="logo-area fix">
+        <div class="logo-shopping"></div>
     </a>
-    <div class="search-area mt10 fr fix">
-        <div class="input-area fl fix">
+    <div class="search-area fix">
+        <div class="input-area fix">
             <input type="text" class="search-select form-yn" readonly placeholder="全部">
             <ul class="form-ul"></ul>
            <!-- <select class="search-select pl20 fl">
@@ -42,24 +42,24 @@
                 <option>电力专区</option>
                 <option>电子超市</option>
             </select>-->
-            <input type="text" class="search-input fl" placeholder="请输入关键词进行搜索">
+            <input type="text" class="search-input" placeholder="请输入关键词进行搜索">
         </div>
-        <input type="button" class="search-button pl15 f14 fl" value="搜索">
-        <a href="#" class="my-shopping ml30 mr10 tdn fl">我的购物车<span class="ml10">99+</span></a>
+        <div class="search-button"><i class="shopping-search"></i>搜索</div>
+        <a href="#" class="my-shopping"><i class="shopping-car"></i>我的购物车<span>99+</span></a>
     </div>
 </div>
 
 <!--商城导航栏-->
 <div class="nav-shopping inner">
-    <div class="arrow-toggle arrow-down pl15 f14 fl"><i class="goods"></i>企业采购商品分类</div>
-    <ul class="fix fl">
-        <li class="list-style-no fl"><a class="tdn" href="#">首页</a></li>
-        <li class="list-style-no fl"><a class="tdn" href="#">电力专区</a></li>
-        <li class="list-style-no fl"><a class="tdn" href="#">电子超市</a></li>
+    <div class="goodsDiv"><i class="shopping-goods"></i>企业采购商品分类<i class="arrow-toggle arrow-down"></i></div>
+    <ul class="fix">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">电力专区</a></li>
+        <li><a href="#">电子超市</a></li>
     </ul>
-    <ul class="other fr fix">
-        <li class="list-style-no fl"><a href="#" class="zhaobiao tdn">招标</a></li>
-        <li class="list-style-no fl"><a href="#" class="xunjia tdn">询价</a></li>
+    <ul class="other fix">
+        <li><a href="#"><i class="zhaobiao"></i>招标</a></li>
+        <li><a href="#"><i class="xunjia"></i>询价</a></li>
     </ul>
 </div>
 <%- include('../_block/footer.ejs',{js:['../../../js/app/shoppingIndex.js','../../../js/app/form.js']}) %>
