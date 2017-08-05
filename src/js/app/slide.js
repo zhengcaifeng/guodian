@@ -27,6 +27,6 @@
 //        mySwiper.startAutoplay();
 //    })
 //})
-require(['jquery','slide'],function($,slide){
+//require(['jquery','slide'],function($,slide){
     $(".slideBox").slide({mainCell:".bd ul",effect:"left",autoPlay:true,trigger:"click"});
-})
+//})
