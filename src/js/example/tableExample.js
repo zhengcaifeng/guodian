@@ -1,9 +1,8 @@
 /**
  * Created by 刘泽举 on 2017/8/3.
  */
-require(['jquery','table','util'], function ($,table,util) {
     $.getJSON("../../js/mock/managerData.js",function (data) {
-        table.initTable({
+        $.initTable({
             target:'#table',
             width:800,
             height:500,
@@ -21,9 +20,7 @@ require(['jquery','table','util'], function ($,table,util) {
     });
 
     $(document).on("click","#getData",function () {
-       util.log(table.getCheckedData({
+       $.log(table.getCheckedData({
            target:'#table'
        }));
     });
-
-});

@@ -2,7 +2,7 @@
  * Created by luyouwei on 2017/7/31
  * 搜索栏手风琴效果
  */
-define(['jquery'], function ($) {
+;(function($){
     $("#up_down").on("click",function(){
         var that = $(this);
         var thatF = that.parent().parent();
@@ -15,5 +15,5 @@ define(['jquery'], function ($) {
             thatF.find(".dn").addClass("ds");
             thatF.find(".dn").removeClass("dn");
         }
-    });
-});
+    })
+})(jQuery)

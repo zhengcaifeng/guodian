@@ -1,4 +1,4 @@
-<%- include('../_block/head.ejs',{ title:'表格' , css:[''] }) %>
+<%- include('../_block/head.ejs',{ title:'表格' , css:['../../css/style-datagrid.css'] }) %>
 <div>
     <table class="easyui-datagrid" id="table">
 
@@ -17,4 +17,4 @@
     </table>
 </div>
 
-<%- include('../_block/footer.ejs',{js:['../../js/example/tableExample.js']}) %>
+<%- include('../_block/footer.ejs',{js:['../../js/lib/jquery.easyui.min.js','../../js/app/table.js','../../js/example/tableExample.js']}) %>

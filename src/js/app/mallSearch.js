@@ -2,7 +2,7 @@
  * Created by luyouwei on 2017/7/31
  * 商城搜索筛选栏
  */
-define(['jquery'], function ($) {
+;(function(){
     $(function () {
         //绑定事件机制待定。。。。
         $("#dropDown").on("click",function(){
@@ -147,4 +147,4 @@ define(['jquery'], function ($) {
     fn.multiTrue = function(){
 
     }
-});
+})(jQuery)
