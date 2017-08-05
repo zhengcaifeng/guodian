@@ -2,7 +2,7 @@
  * Created by luyouwei on 2017/7/31
  * 商城搜索筛选栏
  */
-require(['jquery'], function ($) {
+define(['jquery'], function ($) {
     $(function () {
         //绑定事件机制待定。。。。
         $("#dropDown").on("click",function(){
