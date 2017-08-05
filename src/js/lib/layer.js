@@ -83,10 +83,10 @@
         },
 
         ready: function(callback){
-            var cssname = 'skinlayercss', ver = '303';
-            isLayui ? layui.addcss('modules/layer/default/layer.css?v='+layer.v+ver, callback, cssname)
-                : layer.link('skin/default/layer.css?v='+layer.v+ver, callback, cssname);
-            return this;
+            // var cssname = 'skinlayercss', ver = '303';
+            // isLayui ? layui.addcss('modules/layer/default/layer.css?v='+layer.v+ver, callback, cssname)
+            //     : layer.link('skin/default/layer.css?v='+layer.v+ver, callback, cssname);
+            // return this;
         },
 
         //各种快捷引用
