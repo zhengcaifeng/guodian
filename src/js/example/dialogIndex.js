@@ -1,9 +1,7 @@
 /**
- * Created by YLN on 2017/7/31.
+ * Created by YaoLiNa on 2017/7/31.
  */
-require(['jquery', 'layer', 'util', 'dialog'], function ($, layer,util,dialog) {
-    var fn = {};
-
+$(function () {
     $(document).on('click', '.baseLayer', function (e) {
         e.preventDefault();
         var _this = $(this),
@@ -13,7 +11,7 @@ require(['jquery', 'layer', 'util', 'dialog'], function ($, layer,util,dialog) {
         var title = "";
         if (type == "base") {
             title = "标题";
-            dialog.modal({
+            $.modal({
                 title: title,
                 content: "",
                 width: "",
@@ -44,7 +42,7 @@ require(['jquery', 'layer', 'util', 'dialog'], function ($, layer,util,dialog) {
                 text = "这是一个标题";
                 littleMsg = "此处是一条通知提醒，衬衫的价格是九磅十五便士，所以你选择B选项。 衬衫的价格是九磅十五便士，所以你选择B选项。";
             }
-            dialog.alert({
+            $.alert({
                 type: type,
                 data: {
                     text: text,
