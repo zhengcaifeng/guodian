@@ -2,7 +2,7 @@
  * Created by wangxiao on 2017/8/4.
  * 表单验证插件
  */
-require(['jquery', 'validator'], function($){
+//require(['jquery', 'validator'], function($){
     $('#form1').validator({
         msgClass: "n-bottom", //提示信息的class，一般用n-top\right，代表天提示在输入框的位置
         msgIcon:'<i class="n-icon"></i>',//提示图标标签
@@ -63,4 +63,4 @@ require(['jquery', 'validator'], function($){
 
         },
     });
-});
+//});
