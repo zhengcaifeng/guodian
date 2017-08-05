@@ -55,7 +55,6 @@ require(['jquery','pagination'], function ($,_laypage) {
         return str;
     };
 
-
     _laypage.initpage({
         ele: 'page_default', //容器。值支持id名、原生dom对象，jquery对象,
         pages: pages, //总页数

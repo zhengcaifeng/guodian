@@ -8,7 +8,7 @@ define(['jquery','laypage'], function ($,laypage) {
             pages: 10, //总页数
             skip: true, //是否开启跳页
             skin: 'gd',
-            multiterm:true,//是否开启选择每页多少条
+            multiterm:false,//是否开启选择每页多少条
             prev: '<i class="glyphicon-pre"></i>', //若不显示，设置false即可
             next: '<i class="glyphicon-next"></i>', //若不显示，设置false即可
             first: false,
