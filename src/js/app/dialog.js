@@ -88,7 +88,7 @@
                 }
                 if (option.type == "message" || option.type == "warn" || option.type == "success" || option.type == "error") {
                     $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("top", "30px");
-                    $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("left", "30px");
+                    $('.layui-layer-dialog .layui-layer-content .layui-layer-ico').css("left", "36px");
                     $('.layui-layer-dialog .layui-layer-padding').css("padding", "30px 20px 10px 70px");
                 }
             }
