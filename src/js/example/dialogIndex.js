@@ -2,9 +2,6 @@
  * Created by YLN on 2017/7/31.
  */
 require(['jquery', 'layer', 'util', 'dialog'], function ($, layer,util,dialog) {
-    /* layer.config({
-     path: '/js/layer/'
-     });*/
     var fn = {};
 
     $(document).on('click', '.baseLayer', function (e) {

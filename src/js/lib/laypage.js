@@ -54,8 +54,8 @@ Page.use = function(lib, id){
 //判断传入的容器类型
 Page.prototype.type = function(){
     var conf = this.config;
-    if(typeof conf.cont === 'object'){
-        return conf.cont.length === undefined ? 2 : 3;
+    if(typeof conf.ele === 'object'){
+        return conf.ele.length === undefined ? 2 : 3;
     }
 };
 
@@ -199,11 +199,11 @@ Page.prototype.render = function(load){
     var that = this, conf = that.config, type = that.type();
     var view = that.view();
     if(type === 2){
-        conf.cont.innerHTML = view;
+        conf.ele.innerHTML = view;
     } else if(type === 3){
-        conf.cont.html(view);
+        conf.ele.html(view);
     } else {
-        doc[id](conf.cont).innerHTML = view;
+        doc[id](conf.ele).innerHTML = view;
     }
     conf.jump && conf.jump(conf, load);
     that.jump(doc[id]('laypage_' + conf.item));

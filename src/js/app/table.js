@@ -26,6 +26,9 @@ define(['jquery','datagrid'], function ($,datagrid) {
         table.initTable(data);
     };
 
+    table.getCheckedData = function (data) {
+        return fn.getCheckedData(data);
+    }
 
     fn.setTable = function(data){
         var columns = [];
@@ -88,6 +91,14 @@ define(['jquery','datagrid'], function ($,datagrid) {
         });
         return array;
     }
-
+    /**
+     * 获取勾选行数据
+     * @param data
+     * @returns {jQuery}
+     */
+    fn.getCheckedData = function (data) {
+        var array = $(data.target).datagrid("getChecked");
+        return array;
+    }
     return table;
 });
