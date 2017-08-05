@@ -1,64 +1,6 @@
-<script src="../../js/lib/require.min.js"></script>
 <script src="../../js/lib/jquery1.11.1.js"></script>
-<script>
-    require.config({
-        baseUrl:'../../js/',
-        paths:{
-            //第三方插件库
-            "jquery":"lib/jquery.min",
-            "artTemplate":'lib/artTemplate',
-            "layer":'lib/layer',
-            "laypage":'lib/laypage',
-            "ztree":'lib/jquery.ztree.core',
-            "jedate":'lib/jedate',
-            "css":'lib/css.min',
-            "slide":'lib/jquery.SuperSlide.2.1.1',
-            "datagrid":'lib/jquery.easyui.min',
-            "validator": 'lib/validator/zh-CN',
-            //开发者定制的库
-            "util":'app/util',
-            "table":'app/table',
-            "dialog":'app/dialog',
-            "pagination":'app/pagination',
-            "leftmenu":'app/leftmenu',
-            "structtree":'app/ztree'
-        },
-        shim:{
-            'layer': {
-                deps: ['jquery','css!https://cdn.bootcss.com/layer/3.0.1/skin/default/layer.min.css'],
-                exports: "layer"
-            },
-            'laypage': {
-                deps: ['jquery','css!/css/style-laypage.css'],
-                exports: "laypage"
-            },
-            'jedate':{
-                deps: ['jquery','css!/css/style-date.css'],
-                exports: "jedate"
-            },
-            'Swiper':{
-                deps: ['jquery','css!https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css'],
-                exports: "Swiper"
-            },
-            'ztree': {
-                deps: ['jquery','css!/css/style-ztree.css'],
-                exports: "ztree"
-            },
-            'slide':{
-                deps: ['jquery'],
-                exports: "slide"
-            },
-            "datagrid":{
-                deps:['jquery','css!/css/style-datagrid.css'],
-                exports:"datagrid"
-            },
-            "validator": {
-                deps:['../../js/lib/validator/jquery.validator.js','css!/css/style-valid.css'],
-                exports:"validator"
-            },
-        }
-    });
-</script>
+<script src="../../js/lib/template-web.js"></script>
+<script src="../../js/app/util.js"></script>
 <% if(js){ %>
     <%  js.forEach(function(path){ %>
     <script src="<%=path  %>"></script>
