@@ -1,11 +1,61 @@
-<script src="../../js/lib/jquery1.11.1.js"></script>
-<script src="../../js/lib/layer.js"></script>
-<!--<script src="../../js/lib/template.js"></script>-->
-<script src="../../js/app/util.js"></script>
+<script src="../../js/lib/require.js"></script>
+<script>
+    require.config({
+        baseUrl:'../../js/',
+        paths:{
+            //第三方插件库
+            "jquery":"lib/jquery1.11.1",
+            "artTemplate":'lib/artTemplate',
+            "layer":'lib/layer',
+            "laypage":'lib/laypage',
+            "ztree":'lib/jquery.ztree.core',
+            "jedate":'lib/jedate',
+            "css":'lib/css.min',
+            "slide":'lib/jquery.SuperSlide.2.1.1',
+            "datagrid":'lib/jquery.easyui.min',
+            "validator": 'lib/validator/zh-CN',
+            //开发者定制的库
+            "util":'app/util',
+            "table":'app/table',
+            "dialog":'app/dialog',
+            "laypaging":'app/laypaging'
+        },
+        shim:{
+            'layer': {
+                deps: ['jquery','css!/css/style-layer.css'],
+                exports: "layer"
+            },
+            'laypage': {
+                deps: ['jquery','css!/css/style-laypage.css'],
+                exports: "laypage"
+            },
+            'jedate':{
+                deps: ['jquery','css!/css/style-date.css'],
+                exports: "jedate"
+            },
+            'ztree': {
+                deps: ['jquery','css!/css/style-ztree.css'],
+                exports: "ztree"
+            },
+            'slide':{
+                deps: ['jquery'],
+                exports: "slide"
+            },
+            "datagrid":{
+                deps:['jquery','css!/css/style-datagrid.css'],
+                exports:"datagrid"
+            },
+            "validator": {
+                deps:['../../js/lib/validator/jquery.validator.js','css!/css/style-valid.css'],
+                exports:"validator"
+            },
+        }
+    });
+</script>
 <% if(js){ %>
-    <%  js.forEach(function(path){ %>
-    <script src="<%=path  %>"></script>
-    <% }); %>
+<%  js.forEach(function(path){ %>
+<script src="<%=path  %>"></script>
+<% }); %>
 <% }  %>
 </body>
 </html>

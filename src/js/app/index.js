@@ -31,14 +31,14 @@ require(['jquery','artTemplate','util'], function ($,template,util) {
         };
         var renderHtml = (function(){
             $.subscribe('dataRender',function(e,data){
-                $.ajax({url:'component/title.html'}).done(function(dom){
+                $.ajax({url:'../component/title.html'}).done(function(dom){
                     util.log(util.getCache('i'));
                     util.renderTpl('#header',dom,data);
                 });
-                $.ajax({url:'_page/index.html'}).done(function(dom){
+                $.ajax({url:'../_page/index.html'}).done(function(dom){
                     util.renderTpl('#content',dom,data);
                 });
-                $.when($.ajax({url:'component/title.html'}),$.ajax({url:'_page/index.html'})).done(function(s1,s2){
+                $.when($.ajax({url:'../component/title.html'}),$.ajax({url:'../_page/index.html'})).done(function(s1,s2){
 
                 })
             });
