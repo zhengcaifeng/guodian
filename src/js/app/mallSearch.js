@@ -2,7 +2,7 @@
  * Created by luyouwei on 2017/7/31
  * 商城搜索筛选栏
  */
-;(function(){
+define(["jquery"],function(){
     $(function () {
         //绑定事件机制待定。。。。
         $("#dropDown").on("click",function(){
@@ -47,7 +47,8 @@
     fn.open =function () {
         var that = $(this);
         that.find("span").text("展开");
-        that.find("img").attr("src","../../slice/icon-arrows-down.png");
+        that.find("i").addClass("icon-foot-down");
+        that.find("i").removeClass("icon-foot-top");
         $(".show").addClass("hide");
         $(".show").removeClass("show");
         mallSearch["option"].show=true;
@@ -55,7 +56,8 @@
     fn.stop = function(){
         var that = $(this);
         that.find("span").text("收起");
-        that.find("img").attr("src","../../slice/icon-arrows-up.png");
+        that.find("i").removeClass("icon-foot-down");
+        that.find("i").addClass("icon-foot-top");
         $(".hide").addClass("show");
         $(".hide").removeClass("hide");
         mallSearch["option"].show=false;
@@ -147,4 +149,4 @@
     fn.multiTrue = function(){
 
     }
-})(jQuery)
+})
